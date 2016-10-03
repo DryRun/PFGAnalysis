@@ -109,6 +109,14 @@ public :
    virtual void    SlaveTerminate();
    virtual void    Terminate();
 
+/*** START MANUALLY INSERTED CODE ***/
+protected:
+   std::vector<pfg::Detector_t> detectors_;
+   std::map<pfg::Detector_t, TString> detector_strings_;
+   std::map<pfg::Detector_t, std::vector<pfg::ChannelIndex> > channel_map_;
+
+/*** END MANUALLY INSERTED CODE ***/
+
    ClassDef(AnalysisBase,0);
 
 };
@@ -126,6 +134,33 @@ void AnalysisBase::Init(TTree *tree)
    // (once per file to be processed).
 
    fReader.SetTree(tree);
+
+/*** START MANUALLY INSERTED CODE ***/
+   detectors_.push_back(pfg::kHBHE);
+   detectors_.push_back(pfg::kHF);
+   detectors_.push_back(pfg::kHO);
+
+   detector_strings_[pfg::kHBHE] = "HBHE";
+   detector_strings_[pfg::kHF] = "HF";
+   detector_strings_[pfg::kHO] = "HO";
+
+   FIX THESE
+   range_ieta[pfg::kHBHE] = std::make_pair(-39, 39);
+   range_iphi[pfg::kHBHE] = std::make_pair(0, 72);
+   range_depth[pfg::kHBHE] = std::make_pair(0, 3);
+   range_ieta[pfg::kHF] = std::make_pair(-39, 39);
+   range_iphi[pfg::kHF] = std::make_pair(0, 72);
+   range_depth[pfg::kHF] = std::make_pair(0, 3);
+   range_ieta[pfg::kHO] = std::make_pair(-39, 39);
+   range_iphi[pfg::kHO] = std::make_pair(0, 72);
+   range_depth[pfg::kHO] = std::make_pair(4, 4);
+
+   channel_map_[pfg::kHBHE] = std::vector<pfg::ChannelIndex>();
+   fill this out!
+   channel_map_[pfg::kHF] = std::vector<pfg::ChannelIndex>();
+   channel_map_[pfg::kHO] = std::vector<pfg::ChannelIndex>();
+/*** END MANUALLY INSERTED CODE ***/
+
 }
 
 Bool_t AnalysisBase::Notify()
