@@ -7,60 +7,38 @@
 namespace pfg {
 	enum Detector_t {
 		kHBHE,
-		kHFP,
-		kHFM,
+		kHF,
 		kHO
 	};
 
 	static const std::map<Detector_t, std::string> detector_strings= {
 		{kHBHE, "HBHE"},
-		{kHFP, "HFP"},
-		{kHFM, "HFM"},
+		{kHF, "HF"},
 		{kHO, "HO"},
 	};
 
 	struct ChannelIndex {
-		int ieta,
-		int iphi,
-		int depth
+		int ieta;
+		int iphi;
+		int depth;
 	};
 
 	struct DetectorVolume {
-		std::pair<int, int> ieta,
-		std::pair<int, int> iphi,
-		std::pair<int, int> depth
-	};
-
-	struct Dummy {
-		DetectorVolume MakeDetectorVolume(Detector_t detector) {
-			detector_volume = DetectorVolume();
-			if (detector == kHBHE) {
-				detector_volume.ieta = std::make_pair(-29, 29);
-				detector_volume.iphi = std::make_pair(1, 72);
-				detector_volume.depth = std::make_pair(1, 4);
-			} else if (detector == kHFP) {
-				detector_volume.ieta = std::make_pair(29, 41);
-				detector_volume.iphi = std::make_pair(1, 72);
-				detector_volume.depth = std::make_pair(1, 4);
-			} else if (detector == kHFM) {
-				detector_volume.ieta = std::make_pair(-41, -29);
-				detector_volume.iphi = std::make_pair(1, 72);
-				detector_volume.depth = std::make_pair(1, 2);
-			} else if (detector == kHO) {
-				detector_volume.ieta = std::make_pair(-29, 29);
-				detector_volume.iphi = std::make_pair(1, 72);
-				detector_volume.depth = std::make_pair(4, 4);
-			}
-			return detector_volume;
+		std::pair<int, int> ieta;
+		std::pair<int, int> iphi;
+		std::pair<int, int> depth;
+		DetectorVolume(int ieta_min, int ieta_max, int iphi_min, int iphi_max, int depth_min, int depth_max) {
+			ieta = std::make_pair(ieta_min, ieta_max);
+			iphi = std::make_pair(iphi_min, iphi_max);
+			depth = std::make_pair(depth_min, depth_max);
 		}
 	};
 
 	static const std::map<Detector_t, DetectorVolume> detector_volumes = {
-		{kHBHE, Dummy::MakeDetectorVolume(kHBHE)},
-		{kHFP, Dummy::MakeDetectorVolume(kHFP)},
-		{kHFM, Dummy::MakeDetectorVolume(kHFM)},
-		{kHO, Dummy::MakeDetectorVolume(kHO)}
-	}
+		{kHBHE, DetectorVolume(-29, 29, 1, 72, 1, 4)},
+		{kHF, DetectorVolume(-41, 41, 1, 72, 1, 2)},
+		{kHO, DetectorVolume(-29, 29, 1, 72, 4, 4)}
+	};
 
 }
 

@@ -1,0 +1,23 @@
+<lcgdict>
+	<class name="IDTypes"/>
+	<class name="Cell"/>
+	<class name="HOSample"/>
+	<class name="HODigi"/>
+	<class name="HFSample"/>
+	<class name="HFDigi"/>
+	<class name="HcalTupleTree"/>
+	<class name="HcalSample"/>
+	<class name="HcalDigi"/>
+	<class name="HBHEDigi"/>
+	<class name="HBHESample"/>
+	<class name="Collection"/>
+	<class name="Object"/>
+	<class name="HcalData"/>
+	<class name="HLTFilterObjectCollectionHelper"/>
+	<class name="HLTFilterObject"/>
+	<class name="HFUTCASample"/>
+	<class name="HFUTCA"/>
+	<class name="HBHEUTCASample"/>
+	<class name="HBHEUTCA"/>
+	<class name="RBXMap"/>
+</lcgdict>
