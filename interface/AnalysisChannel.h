@@ -12,7 +12,12 @@ public:
 	void SlaveBegin(TTree *tree);
 	Bool_t Process(Long64_t entry);
 
+	inline void AddDetector(pfg::Detector_t detector) {
+		detectors_.push_back(detector);
+	}
+
 private:
+	std::vector<pfg::Detector_t> detectors_;
 	std::map<pfg::Detector_t, Root::HistogramManager*> histograms_;
 
 };
