@@ -53,7 +53,7 @@ class HcalAnalysis(object):
 					estimated_completion = self._ts_start + (1. * elapsed_time * (last_event - first_event) / (this_event - first_event))
 					m, s = divmod(elapsed_time, 60)
 					h, m = divmod(m, 60)
-					print "[HcalAnalysis::print_progress] INFO : \tElapsed time: {} : {} : {:.2}".format(round(h, 0), round(m, 0), s)
+					print "[HcalAnalysis::print_progress] INFO : \tElapsed time: {} : {} : {:.3}".format(int(round(h, 0)), int(round(m, 0)), s)
 					print "[HcalAnalysis::print_progress] INFO : \tEstimated finish time: {}".format(datetime.datetime.fromtimestamp(estimated_completion).strftime('%Y-%m-%d %H:%M:%S'))
 				else:
 					print "[HcalAnalysis::print_progress] INFO : \tFor time estimates, call self.start_timer() right before starting the event loop"
