@@ -1,0 +1,1276 @@
+\hypertarget{class_hcal_tuple_tree}{}\section{Hcal\+Tuple\+Tree Class Reference}
+\label{class_hcal_tuple_tree}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+
+
+{\ttfamily \#include $<$Hcal\+Tuple\+Tree.\+h$>$}
+
+Inheritance diagram for Hcal\+Tuple\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hcal_tuple_tree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hcal_tuple_tree_a93a2b9686fd32bc3145c0653c2255203}{Hcal\+Tuple\+Tree} (T\+Tree $\ast$tree=0)
+\item 
+virtual \hyperlink{class_hcal_tuple_tree_a2bba2f967fd63217177ec8275f4378d1}{$\sim$\+Hcal\+Tuple\+Tree} ()
+\item 
+virtual Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a3c6f115f9de0929d577fd3fee90ab347}{Cut} (Long64\+\_\+t entry)
+\item 
+virtual Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a61ac2553042cf88a12bd462a7814c18d}{Get\+Entry} (Long64\+\_\+t entry)
+\item 
+virtual Long64\+\_\+t \hyperlink{class_hcal_tuple_tree_ae02bb52e1602961c2d50eb112a539ab2}{Load\+Tree} (Long64\+\_\+t entry)
+\item 
+virtual void \hyperlink{class_hcal_tuple_tree_ad624a0b1c545a1aade5b6c1af6f680f9}{Init} (T\+Tree $\ast$tree)
+\item 
+virtual void \hyperlink{class_hcal_tuple_tree_a2786184220161c1733fe48f6b729ad03}{Loop} ()
+\item 
+virtual Bool\+\_\+t \hyperlink{class_hcal_tuple_tree_a96cea8c5f1ff0a479fa1f5f46267fd1d}{Notify} ()
+\item 
+virtual void \hyperlink{class_hcal_tuple_tree_ab48299f2334cd356df44d4d695e4f6c6}{Show} (Long64\+\_\+t entry=-\/1)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+Tree $\ast$ \hyperlink{class_hcal_tuple_tree_ab2d0b951f1d870277db06338998d359c}{f\+Chain}
+\item 
+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a08b8ee5bd18d61d595dabae8738f94f0}{f\+Current}
+\begin{DoxyCompactList}\small\item\em pointer to the analyzed T\+Tree or T\+Chain \end{DoxyCompactList}\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_abf3ece84d6c5e826fe0afe18259efdf6}{H\+B\+H\+E\+Digi\+Eta}
+\begin{DoxyCompactList}\small\item\em current Tree number in a T\+Chain \end{DoxyCompactList}\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a4465ac5c76bde5c83e2c0440e94377e6}{H\+B\+H\+E\+Digi\+Phi}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a71d33dc8870ce67415396153c1c0b8fc}{H\+B\+H\+E\+Digi\+Rec\+Energy}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a932a5241aeb73633d88a523951bd04b7}{H\+B\+H\+E\+Digi\+Rec\+Time}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a4ee87b23a35d035afec70d98d6c319aa}{H\+F\+Digi\+Eta}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a778805ed9ac0fb9bd7c0ada3adfb05ef}{H\+F\+Digi\+Phi}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a3e26e7151e6cbba42bee136f6e46e07e}{H\+F\+Digi\+Rec\+Energy}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af95d1984176d950add73dc9d411cda04}{H\+F\+Digi\+Rec\+Time}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af4c462a15fc5e42100dc88e4eaa16f1e}{H\+O\+Digi\+Eta}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a31ee04dc7198ca962dfaf857a6e19339}{H\+O\+Digi\+Phi}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a74256e07cba2a77b6d96c50e5dbcab2f}{H\+O\+Digi\+Rec\+Energy}
+\item 
+vector$<$ float $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a518d0a94b9cc0ca05a72210dd907a932}{H\+O\+Digi\+Rec\+Time}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a5dc5cdeb59f28eaa2308daa56474c892}{H\+B\+H\+E\+Digi\+All\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ae64aeab5ce5b05e5b0e8c140bba901b1}{H\+B\+H\+E\+Digi\+Energy}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a9146017ce5694aaa1c4616e06218c39c}{H\+B\+H\+E\+Digi\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a2bb6e71cd46bf0e2fdbccce0d141d506}{H\+B\+H\+E\+Digi\+Gain}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aa829f8de833074383a9758072440a572}{H\+B\+H\+E\+Digi\+Nom\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a75ddbcd15a6c3c15370257f4e18f93dc}{H\+B\+H\+E\+Digi\+Ped\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_acbd3f4798c9bd4c991a537d4658eb96e}{H\+B\+H\+E\+Digi\+R\+C\+Gain}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ae9cf3812ae649b0941182c185eb6a721}{H\+F\+Digi\+All\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af4208c69d37152cef6fff1c1dd026155}{H\+F\+Digi\+Energy}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ac47c0113b05b20cdee0a28017cd08724}{H\+F\+Digi\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_abc594e1718c4ca609859b9c5da187ce9}{H\+F\+Digi\+Gain}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a237a14d107a2090e46f21ffe7500123d}{H\+F\+Digi\+Nom\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a66aa7dc7b2ca36a103449a29aa6af319}{H\+F\+Digi\+Ped\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a9cc44ef6fd299d20874e0b07eb68b94c}{H\+F\+Digi\+R\+C\+Gain}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_afe37a056626eef4c965a339b420171a9}{H\+O\+Digi\+All\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a379a809505a4af9fbdd8ed073cdadebf}{H\+O\+Digi\+Energy}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a285842d23b6b8d21ebed868753ee1e68}{H\+O\+Digi\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ab3d383dc83018d2bc4e468a40af05787}{H\+O\+Digi\+Gain}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a56ee5bb65a6e34d5b0934fad381f2015}{H\+O\+Digi\+Nom\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af4ae835aebd4b9754cde9868afed4d7d}{H\+O\+Digi\+Ped\+F\+C}
+\item 
+vector$<$ vector$<$ float $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a760900f2eccc37b9c8efc78b6af457fa}{H\+O\+Digi\+R\+C\+Gain}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ae5ed39ea705aff8363edefc34423426e}{H\+B\+H\+E\+Digi\+Depth}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a030e840a1ceb41ce84181c68926aa948}{H\+B\+H\+E\+Digi\+Electronics\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aaf4a8badc474e66b2f2918cfd80b5a2a}{H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ac80f55cd8338af07ad6e76357e2bdc02}{H\+B\+H\+E\+Digi\+I\+Eta}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af201c74f0517d348fcbe767c156139f2}{H\+B\+H\+E\+Digi\+I\+Phi}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aa12edf8c843903084ea22da932cea02b}{H\+B\+H\+E\+Digi\+Presamples}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a79e823d5bf62909c8bebc784f6a8ceb9}{H\+B\+H\+E\+Digi\+Raw\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a285d80e2b161b7ee52a52e1439db3373}{H\+B\+H\+E\+Digi\+Size}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aba0b417a85be88cc0f21e3d2cc19d80d}{H\+B\+H\+E\+Digi\+Subdet}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a0e59299846d8138c04f69fe451511dfa}{H\+F\+Digi\+Depth}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a9882d2d652d197b5ccdc03234ca08ca3}{H\+F\+Digi\+Electronics\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a06e52ec27931ef2fc92bcc0efc8901ba}{H\+F\+Digi\+Fiber\+Idle\+Offset}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_add1b36acb835d09d747c682fb65ce7c9}{H\+F\+Digi\+I\+Eta}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aaba8842e7e41699165e52a3345e36221}{H\+F\+Digi\+I\+Phi}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ad7090a8222127b46bd6c6b4cafc79d43}{H\+F\+Digi\+Presamples}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a55519617ad78d9e9ec81e88aaa2f7e60}{H\+F\+Digi\+Raw\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a49bb2b44d538e77e9d13793881c53d97}{H\+F\+Digi\+Size}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a7e6e32f123dcbd48805db8f63c17698e}{H\+F\+Digi\+Subdet}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a0de64b4e4a03a43dd7bd54afe6b91121}{H\+O\+Digi\+Depth}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af1e174814a68ab2f6d4d38208388b769}{H\+O\+Digi\+Electronics\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aaff952a6b231321e8ff459a7be299b89}{H\+O\+Digi\+Fiber\+Idle\+Offset}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a5f25a69ba6f14ae239054b745cc2f19c}{H\+O\+Digi\+I\+Eta}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a4c609f165405dd9d65e93d84b7b2b08d}{H\+O\+Digi\+I\+Phi}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a419defccb7894e4a204632feef490ccf}{H\+O\+Digi\+Presamples}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aa5b1adb6d1e454dbaa1c2ea8c6d1ce17}{H\+O\+Digi\+Raw\+I\+D}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a474c798a52945bf3edef9637b3577e75}{H\+O\+Digi\+Size}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a19e6167120f3b6e5d9a93340ed80d334}{H\+O\+Digi\+Subdet}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aff8eb56b17cec378fb0996f850bacec1}{Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a39066327f0677ba5edc25eb97d3865aa}{Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a702f080483a7152f714355afded4f4f0}{Hcal\+Trigger\+Primitive\+I\+Eta}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a2a2a59eb3b63204e75540d5d7c08a3a5}{Hcal\+Trigger\+Primitive\+I\+Phi}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aeaf7e05adf680e56bb139054b889ae08}{Hcal\+Trigger\+Primitive\+Presamples}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a340bb0e90c7f033c6013c9bfbeb1a6ed}{Hcal\+Trigger\+Primitive\+Size}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a82028d16026e71637ce6c8a37fe19fa2}{Hcal\+Unpacker\+Bad\+Digi\+Depth}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a48eec514f2d009bfb583c129ed741c34}{Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a554c455a205854a1dca3e67222da4003}{Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}
+\item 
+vector$<$ int $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a7ae78222f2c842d8047c8e4d43bf2db5}{Hcal\+Unpacker\+Bad\+Digi\+Subdet}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aabfac31abb8a835c19bc571bdd28632d}{H\+B\+H\+E\+Digi\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a300d8be67219f5369ac7ce004f95b554}{H\+B\+H\+E\+Digi\+Cap\+I\+D}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a170d23abeaeed048957ada3b4a15f570}{H\+B\+H\+E\+Digi\+D\+V}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a1d61f55b869a51c062b92a71be950b6f}{H\+B\+H\+E\+Digi\+E\+R}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ae14f61c3fa4bc10c7ca6bd3da8d35efb}{H\+B\+H\+E\+Digi\+Fiber}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a227e7a0df2915b2349bbfb0b5dc7d9c2}{H\+B\+H\+E\+Digi\+Fiber\+Chan}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a011228f536f5778b8f97fce17ddbd714}{H\+B\+H\+E\+Digi\+L\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a7bffd95bc16723e633cfe233e57f21b6}{H\+B\+H\+E\+Digi\+Raw}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a6b10444e0b3e05ebcd322870130dd20e}{H\+F\+Digi\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a6257529e73c5059596f204b05bc8d894}{H\+F\+Digi\+Cap\+I\+D}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_adc64a7cf0e29af0c19a864d1ee5541c7}{H\+F\+Digi\+D\+V}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a9a2b7882484368d1d4976f6388d306c7}{H\+F\+Digi\+E\+R}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_afa91f65c9740c7625235ef9da5adefc3}{H\+F\+Digi\+Fiber}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a739afd6b2bb92d5fd58d345333531cc9}{H\+F\+Digi\+Fiber\+Chan}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_aba96a4641a9750ed5bcc626abbe44c3c}{H\+F\+Digi\+L\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ae3043c51037d009294ec7567b8c9ce01}{H\+F\+Digi\+Raw}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a66f1270b14c4fcf3c3c2152414aa867d}{H\+O\+Digi\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a81df879ffcc93b380edb13aaea8eb689}{H\+O\+Digi\+Cap\+I\+D}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a12d79c1f523b7762cba3fb3e7f9a6290}{H\+O\+Digi\+D\+V}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a541ae5ada795a82a8309b0d3e06a53a3}{H\+O\+Digi\+E\+R}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af0fe6322bab84267ca6092eef461829f}{H\+O\+Digi\+Fiber}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a558b32faee67ce93024ef6b65d39eea8}{H\+O\+Digi\+Fiber\+Chan}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af5bd84878d749154d56e72a85ea99291}{H\+O\+Digi\+L\+A\+D\+C}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ad1871cbc92384941dfc7824c9d3066ea}{H\+O\+Digi\+Raw}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_a34ce7962d072f721b08f74274f1559e4}{Hcal\+Trigger\+Primitive\+Compressed\+Et}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ab3e76e89779572ff1a02dd94167df44c}{Hcal\+Trigger\+Primitive\+Fine\+Grain}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_af6d68e4006a3145f25130b4f5a3fb600}{Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}
+\item 
+vector$<$ vector$<$ int $>$ $>$ $\ast$ \hyperlink{class_hcal_tuple_tree_ad552a76a8e3b13e2302f8f8c651170b1}{Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_ac8b12f3fd8e1a7f7c17f96de2b7df6d0}{bx}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_acf307d3c7425105ab941eaf2b06e5941}{event}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a6a440ac41ccfdf350de9344c160cd2d4}{ls}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a387c336e6d042e9b98d4a7552b42daf0}{run}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_aa5836af17158d1bfe24fb78838c8c641}{Hcal\+Unpacker\+Any\+Valid}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a7c773a60c5bbb4114478451b065c4e07}{Hcal\+Unpacker\+B\+S\+Y\+Spigots}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a9dba097a78cfc58eec9ab8e149f20155}{Hcal\+Unpacker\+Bad\+Quality\+Digis}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a32c6d9d87a0fc537de1d48c8cb37423a}{Hcal\+Unpacker\+Empty\+Spigots}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_ac97729e4a501486a76c030ad3477fd0d}{Hcal\+Unpacker\+Error\+Free}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a4d23f168f9e4948b045b705731d1d45d}{Hcal\+Unpacker\+Has\+Calib}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_adf6324d2cb40e19a2e5f21f50782b57a}{Hcal\+Unpacker\+N\+Z\+S}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_ac79c12cb05d569a9ff352cd14d43a9a4}{Hcal\+Unpacker\+O\+F\+W\+Spigots}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_ab4502a1a4a6f7991d0f31037629d97e5}{Hcal\+Unpacker\+Spigot\+Format\+Errors}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a242efa87206609b258889647bd7e43a3}{Hcal\+Unpacker\+Total\+Digis}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a1e0af5cb1807324313c88596f45e2714}{Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}
+\item 
+U\+Int\+\_\+t \hyperlink{class_hcal_tuple_tree_a5482217d22a5c536052aad17145cac3d}{Hcal\+Unpacker\+Total\+T\+P\+Digis}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a2b1691084e9caadecc33e8f11dd954e6}{b\+\_\+\+H\+B\+H\+E\+Digi\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a2cd86d0c6fe62416a3db3118feb29aa6}{b\+\_\+\+H\+B\+H\+E\+Digi\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a6d9dadbb9ea5ffd0bd426c3a210f7c73}{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad081f8b42cf7a8f06aadb8bbec1215b0}{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_af649d3db8a8480c98e9afa39cc67730f}{b\+\_\+\+H\+F\+Digi\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad9ebda7de737b7e813582130ec32ba4e}{b\+\_\+\+H\+F\+Digi\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_af1721c2512d8f475e07d4840c5554d28}{b\+\_\+\+H\+F\+Digi\+Rec\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab4886846d83acb34994f1c419dda7c55}{b\+\_\+\+H\+F\+Digi\+Rec\+Time}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a9da16ed42e34f42d6348588f32d261c4}{b\+\_\+\+H\+O\+Digi\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab6cf295ce3adf6582d95e87cd3d9dfe7}{b\+\_\+\+H\+O\+Digi\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a9c725c8ac0af59bca2f3bf220773a1c9}{b\+\_\+\+H\+O\+Digi\+Rec\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aa8d0faf24fba30ed1ac024d899aa2918}{b\+\_\+\+H\+O\+Digi\+Rec\+Time}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab8a9521710e3615a2eafc9e1963dcfcb}{b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a455a310701b9a32463a6b5f2f11d7b6d}{b\+\_\+\+H\+B\+H\+E\+Digi\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a39f4fd8c8aa9a5304f3c485818db210a}{b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a80aa3db0d9955a54ca4714b26de5f7da}{b\+\_\+\+H\+B\+H\+E\+Digi\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a878cadb80d849757f61a62701ce85909}{b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a29835761f0be9230cc747e0403ab90a4}{b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad2250b5610b205d32db692c9488f703b}{b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a1e1405537122f4406f16b500edc7c082}{b\+\_\+\+H\+F\+Digi\+All\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab5153b823d5f948228f674de33311f1b}{b\+\_\+\+H\+F\+Digi\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a9fa6148288e48f333d64874b47f75d64}{b\+\_\+\+H\+F\+Digi\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ac98c3d4bd54cc3adbf260f3de541aae6}{b\+\_\+\+H\+F\+Digi\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a069ece0b46c846c39a461e5fc69610f9}{b\+\_\+\+H\+F\+Digi\+Nom\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aec82a6cfa2eaec644874a4a6ad3802b4}{b\+\_\+\+H\+F\+Digi\+Ped\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aecaedbcae1b8d7c364f273c6d6223673}{b\+\_\+\+H\+F\+Digi\+R\+C\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_afd649f5fd77825cd7dd2de84a977130d}{b\+\_\+\+H\+O\+Digi\+All\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad13314a7fc7995677522e58f39ab07d8}{b\+\_\+\+H\+O\+Digi\+Energy}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a0d217752a6b58690c8c3cf356579d9b4}{b\+\_\+\+H\+O\+Digi\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a5f38efe1a6af728b44f4aca3358931a3}{b\+\_\+\+H\+O\+Digi\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a63b5ebcaf92cfbd86b742a3d51f8e9c7}{b\+\_\+\+H\+O\+Digi\+Nom\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a4f3b0c5bb93b68f4fdea80ec2b85ac40}{b\+\_\+\+H\+O\+Digi\+Ped\+F\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a2a478dd45a47b02e3892d4ba21ffe8f1}{b\+\_\+\+H\+O\+Digi\+R\+C\+Gain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ac420b6097c743146a82b051576e65664}{b\+\_\+\+H\+B\+H\+E\+Digi\+Depth}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a8af2a96cd531a4d20e67945b95752fa3}{b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a70a6887cdb94ac4b2cdf545a6583c6ff}{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ac89b0daae526046d2508a0c71dcd4460}{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aee36bdefe9815bf0d2ba8fc845cacb76}{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a88a9ed5712686cae5b65180be9356464}{b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a17f4f5752a1f30f0d6e6eb2d964204df}{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a8dfa0af54d6583ced45951fca821098a}{b\+\_\+\+H\+B\+H\+E\+Digi\+Size}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a83352cedcad5bab00ff723f05bbd8595}{b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a534f8ded1efb2b122e716b422c0b5c38}{b\+\_\+\+H\+F\+Digi\+Depth}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_acfdc42d9d8334fec1ce727a40d0e516c}{b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a304c98fa8ce712bc83f5abcbb0343b6d}{b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a01e0fc502fcc61dd725ef0c4969e07b0}{b\+\_\+\+H\+F\+Digi\+I\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a3babf2e37148283a58472514e1d1782c}{b\+\_\+\+H\+F\+Digi\+I\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aed8d2d48206392ae0327c17a88ec70c3}{b\+\_\+\+H\+F\+Digi\+Presamples}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ae5834790911dc72d51600342e0c690b2}{b\+\_\+\+H\+F\+Digi\+Raw\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a7dc6644fce711632ef3e307cb787fb1d}{b\+\_\+\+H\+F\+Digi\+Size}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a368b90fe559482c1d29312d50802506b}{b\+\_\+\+H\+F\+Digi\+Subdet}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a2172531cd2c25e3a6dbd462bccada046}{b\+\_\+\+H\+O\+Digi\+Depth}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a3e97d7440c8cafed91eb928ba1b76455}{b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a5e0d32424ae14cfd4499eeaaaeadf8a0}{b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab0259ff430dca03ae316aedeaf2870f5}{b\+\_\+\+H\+O\+Digi\+I\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a5311dcb724f54bb7398654b1f367aaca}{b\+\_\+\+H\+O\+Digi\+I\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a04520870887cc734f0a01b82f13256b3}{b\+\_\+\+H\+O\+Digi\+Presamples}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aa09860c5b5f92fca14aec01d696674f8}{b\+\_\+\+H\+O\+Digi\+Raw\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a80b9b38ae544d61182fa930565e2d517}{b\+\_\+\+H\+O\+Digi\+Size}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad03aeb309f6aebb9f82151259522bf11}{b\+\_\+\+H\+O\+Digi\+Subdet}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a739d95f6bac6fd9c895bbe289a03614c}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad36994fe2634944e1e5055aab1d01f06}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a20ca342b1ff8340f87df92fc043f530a}{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a013a10f87ec84bdca82f079ea9c5f939}{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a59d56d4761c890340bc2cd9f842d3a12}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a80e9be60bdf812e122948410b96af74b}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Size}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad75fffeafb23f44f750e2a8d78613d42}{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a8d428324f6502ceb9e9e1178e648311f}{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aaf07c9ed061f545aefe71bf2caffede0}{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a23686b1f311fd4eb95a71ca3dc7b6446}{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a4e35c984d9da2afb3c7b0931e8197fb6}{b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a41fcdaa7b66f5c91a50c2d1fa3092110}{b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a0947cb59c0a285f2d10bc40ebbb29294}{b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a5fba315446794d9c897db9be7ac1505e}{b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a9ee339ced6939a693a1323e24389a8b3}{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aca05db160fd7f79deb82957d9bfd5f91}{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a00fc378c85700d30e32a89282f562117}{b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a46080fc785795af416b74b32647f49cb}{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a144fa5ce350665dbdb0533659d986a8c}{b\+\_\+\+H\+F\+Digi\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a1f5322299c4c92c89806c472b30351f5}{b\+\_\+\+H\+F\+Digi\+Cap\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ad092ad332ed4dee55d581ce3432844d8}{b\+\_\+\+H\+F\+Digi\+D\+V}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a291fa9ec1c74b753bee69ec5eca9fe52}{b\+\_\+\+H\+F\+Digi\+E\+R}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a532aa2f5870fc18b9395b55b8841e672}{b\+\_\+\+H\+F\+Digi\+Fiber}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ae35065b2245e679b7e62870864abd00d}{b\+\_\+\+H\+F\+Digi\+Fiber\+Chan}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aef889b9eca9be9db2cce250b9b2ab113}{b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a985099b927f65ac7f5739d6f0d04775e}{b\+\_\+\+H\+F\+Digi\+Raw}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a202e751ee660f8199c2af94e4776e289}{b\+\_\+\+H\+O\+Digi\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_abcff06b7d4d00ef7a68338d5566c65d4}{b\+\_\+\+H\+O\+Digi\+Cap\+I\+D}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aab27faf53eac4fa90f51936f3c211a24}{b\+\_\+\+H\+O\+Digi\+D\+V}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a8b27ab9d3c09df306d78038c6ec1d095}{b\+\_\+\+H\+O\+Digi\+E\+R}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_af775c7fbf9c4d20a71833176c7ecd379}{b\+\_\+\+H\+O\+Digi\+Fiber}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a20d9d674656fab8624587f56b796f82d}{b\+\_\+\+H\+O\+Digi\+Fiber\+Chan}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a3439baf7f88c8c4ef013bb425905a74a}{b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a149e3b2a253d87fccb7884945a4b55b0}{b\+\_\+\+H\+O\+Digi\+Raw}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a11d179155ff9deacbd3f70f752a3383a}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aa5b776930738d5bb3b01bdd6ff8083d1}{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ab86b80f73d1b563d0c26cc1a627f1390}{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a8878c07329b1274f6ff2aa3ee7748a16}{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a0dc79b450e2928bf833003b53dbc84d8}{b\+\_\+bx}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a23277666c0cadc1107d47f62c8064a94}{b\+\_\+event}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ade006033ab46c1803517ad75d24fa344}{b\+\_\+ls}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a12b2c9703af3dd7246dbbe0ec1f84ee5}{b\+\_\+run}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a60a83ba3b2e47919e7c586143bae5a76}{b\+\_\+\+Hcal\+Unpacker\+Any\+Valid}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aed84d619963cc98e917ae9fd1c26ca5c}{b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aa9bb381f441b7cbbc3556f59fd6f7dc5}{b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_ae8069c5ef49af3ec4175e162b8287259}{b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_aec204fe1288b01a20b7c5230e2517dbb}{b\+\_\+\+Hcal\+Unpacker\+Error\+Free}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a82dd61dd9c6a16f3d38aad1f84265df8}{b\+\_\+\+Hcal\+Unpacker\+Has\+Calib}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a462c90b3a97d139de2e785a26663940c}{b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a489da1a30031418fc546260c3e5e7314}{b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a01ade9dbb04c1484cf72f284148df1ae}{b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a9f479c6cccde70cd1a3bd71679c686c5}{b\+\_\+\+Hcal\+Unpacker\+Total\+Digis}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_accf114a01da5500535692994685688af}{b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}
+\item 
+T\+Branch $\ast$ \hyperlink{class_hcal_tuple_tree_a6325dfc7baa69f77cfe6d013d6364924}{b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hcal_tuple_tree_a93a2b9686fd32bc3145c0653c2255203}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Tuple\+Tree(\+T\+Tree $\ast$tree=0)}]{\setlength{\rightskip}{0pt plus 5cm}Hcal\+Tuple\+Tree\+::\+Hcal\+Tuple\+Tree (
+\begin{DoxyParamCaption}
+\item[{T\+Tree $\ast$}]{tree = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_hcal_tuple_tree_a93a2b9686fd32bc3145c0653c2255203}
+\hypertarget{class_hcal_tuple_tree_a2bba2f967fd63217177ec8275f4378d1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!````~Hcal\+Tuple\+Tree@{$\sim$\+Hcal\+Tuple\+Tree}}
+\index{````~Hcal\+Tuple\+Tree@{$\sim$\+Hcal\+Tuple\+Tree}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{$\sim$\+Hcal\+Tuple\+Tree()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Hcal\+Tuple\+Tree\+::$\sim$\+Hcal\+Tuple\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_a2bba2f967fd63217177ec8275f4378d1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hcal_tuple_tree_a3c6f115f9de0929d577fd3fee90ab347}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Cut@{Cut}}
+\index{Cut@{Cut}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Cut(\+Long64\+\_\+t entry)}]{\setlength{\rightskip}{0pt plus 5cm}virtual Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Cut (
+\begin{DoxyParamCaption}
+\item[{Long64\+\_\+t}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_a3c6f115f9de0929d577fd3fee90ab347}
+\hypertarget{class_hcal_tuple_tree_a61ac2553042cf88a12bd462a7814c18d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Get\+Entry@{Get\+Entry}}
+\index{Get\+Entry@{Get\+Entry}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Get\+Entry(\+Long64\+\_\+t entry)}]{\setlength{\rightskip}{0pt plus 5cm}virtual Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Get\+Entry (
+\begin{DoxyParamCaption}
+\item[{Long64\+\_\+t}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_a61ac2553042cf88a12bd462a7814c18d}
+
+
+Reimplemented in \hyperlink{class_hcal_data_aa5d32f6b744c860c647e213d4aff9ff4}{Hcal\+Data}.
+
+\hypertarget{class_hcal_tuple_tree_ad624a0b1c545a1aade5b6c1af6f680f9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Init@{Init}}
+\index{Init@{Init}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Init(\+T\+Tree $\ast$tree)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Hcal\+Tuple\+Tree\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{T\+Tree $\ast$}]{tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_ad624a0b1c545a1aade5b6c1af6f680f9}
+\hypertarget{class_hcal_tuple_tree_ae02bb52e1602961c2d50eb112a539ab2}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Load\+Tree@{Load\+Tree}}
+\index{Load\+Tree@{Load\+Tree}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Load\+Tree(\+Long64\+\_\+t entry)}]{\setlength{\rightskip}{0pt plus 5cm}virtual Long64\+\_\+t Hcal\+Tuple\+Tree\+::\+Load\+Tree (
+\begin{DoxyParamCaption}
+\item[{Long64\+\_\+t}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_ae02bb52e1602961c2d50eb112a539ab2}
+\hypertarget{class_hcal_tuple_tree_a2786184220161c1733fe48f6b729ad03}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Loop@{Loop}}
+\index{Loop@{Loop}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Loop()}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\+Tuple\+Tree\+::\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_a2786184220161c1733fe48f6b729ad03}
+\hypertarget{class_hcal_tuple_tree_a96cea8c5f1ff0a479fa1f5f46267fd1d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Notify@{Notify}}
+\index{Notify@{Notify}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Notify()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Bool\+\_\+t Hcal\+Tuple\+Tree\+::\+Notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_a96cea8c5f1ff0a479fa1f5f46267fd1d}
+\hypertarget{class_hcal_tuple_tree_ab48299f2334cd356df44d4d695e4f6c6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Show@{Show}}
+\index{Show@{Show}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Show(\+Long64\+\_\+t entry=-\/1)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Hcal\+Tuple\+Tree\+::\+Show (
+\begin{DoxyParamCaption}
+\item[{Long64\+\_\+t}]{entry = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_tuple_tree_ab48299f2334cd356df44d4d695e4f6c6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hcal_tuple_tree_a0dc79b450e2928bf833003b53dbc84d8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+bx@{b\+\_\+bx}}
+\index{b\+\_\+bx@{b\+\_\+bx}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+bx}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+bx}\label{class_hcal_tuple_tree_a0dc79b450e2928bf833003b53dbc84d8}
+\hypertarget{class_hcal_tuple_tree_a23277666c0cadc1107d47f62c8064a94}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+event@{b\+\_\+event}}
+\index{b\+\_\+event@{b\+\_\+event}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+event}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+event}\label{class_hcal_tuple_tree_a23277666c0cadc1107d47f62c8064a94}
+\hypertarget{class_hcal_tuple_tree_a4e35c984d9da2afb3c7b0931e8197fb6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_a4e35c984d9da2afb3c7b0931e8197fb6}
+\hypertarget{class_hcal_tuple_tree_ab8a9521710e3615a2eafc9e1963dcfcb}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_ab8a9521710e3615a2eafc9e1963dcfcb}
+\hypertarget{class_hcal_tuple_tree_a41fcdaa7b66f5c91a50c2d1fa3092110}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_a41fcdaa7b66f5c91a50c2d1fa3092110}
+\hypertarget{class_hcal_tuple_tree_ac420b6097c743146a82b051576e65664}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Depth@{b\+\_\+\+H\+B\+H\+E\+Digi\+Depth}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Depth@{b\+\_\+\+H\+B\+H\+E\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Depth}\label{class_hcal_tuple_tree_ac420b6097c743146a82b051576e65664}
+\hypertarget{class_hcal_tuple_tree_a0947cb59c0a285f2d10bc40ebbb29294}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V@{b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V@{b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+D\+V}\label{class_hcal_tuple_tree_a0947cb59c0a285f2d10bc40ebbb29294}
+\hypertarget{class_hcal_tuple_tree_a8af2a96cd531a4d20e67945b95752fa3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_a8af2a96cd531a4d20e67945b95752fa3}
+\hypertarget{class_hcal_tuple_tree_a455a310701b9a32463a6b5f2f11d7b6d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Energy@{b\+\_\+\+H\+B\+H\+E\+Digi\+Energy}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Energy@{b\+\_\+\+H\+B\+H\+E\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Energy}\label{class_hcal_tuple_tree_a455a310701b9a32463a6b5f2f11d7b6d}
+\hypertarget{class_hcal_tuple_tree_a5fba315446794d9c897db9be7ac1505e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R@{b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R@{b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+E\+R}\label{class_hcal_tuple_tree_a5fba315446794d9c897db9be7ac1505e}
+\hypertarget{class_hcal_tuple_tree_a2b1691084e9caadecc33e8f11dd954e6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Eta@{b\+\_\+\+H\+B\+H\+E\+Digi\+Eta}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Eta@{b\+\_\+\+H\+B\+H\+E\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Eta}\label{class_hcal_tuple_tree_a2b1691084e9caadecc33e8f11dd954e6}
+\hypertarget{class_hcal_tuple_tree_a39f4fd8c8aa9a5304f3c485818db210a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+F\+C}\label{class_hcal_tuple_tree_a39f4fd8c8aa9a5304f3c485818db210a}
+\hypertarget{class_hcal_tuple_tree_a9ee339ced6939a693a1323e24389a8b3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber}\label{class_hcal_tuple_tree_a9ee339ced6939a693a1323e24389a8b3}
+\hypertarget{class_hcal_tuple_tree_aca05db160fd7f79deb82957d9bfd5f91}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_aca05db160fd7f79deb82957d9bfd5f91}
+\hypertarget{class_hcal_tuple_tree_a70a6887cdb94ac4b2cdf545a6583c6ff}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_a70a6887cdb94ac4b2cdf545a6583c6ff}
+\hypertarget{class_hcal_tuple_tree_a80aa3db0d9955a54ca4714b26de5f7da}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Gain@{b\+\_\+\+H\+B\+H\+E\+Digi\+Gain}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Gain@{b\+\_\+\+H\+B\+H\+E\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Gain}\label{class_hcal_tuple_tree_a80aa3db0d9955a54ca4714b26de5f7da}
+\hypertarget{class_hcal_tuple_tree_ac89b0daae526046d2508a0c71dcd4460}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta@{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta@{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_ac89b0daae526046d2508a0c71dcd4460}
+\hypertarget{class_hcal_tuple_tree_aee36bdefe9815bf0d2ba8fc845cacb76}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi@{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi@{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_aee36bdefe9815bf0d2ba8fc845cacb76}
+\hypertarget{class_hcal_tuple_tree_a00fc378c85700d30e32a89282f562117}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_a00fc378c85700d30e32a89282f562117}
+\hypertarget{class_hcal_tuple_tree_a878cadb80d849757f61a62701ce85909}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_a878cadb80d849757f61a62701ce85909}
+\hypertarget{class_hcal_tuple_tree_a29835761f0be9230cc747e0403ab90a4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_a29835761f0be9230cc747e0403ab90a4}
+\hypertarget{class_hcal_tuple_tree_a2cd86d0c6fe62416a3db3118feb29aa6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Phi@{b\+\_\+\+H\+B\+H\+E\+Digi\+Phi}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Phi@{b\+\_\+\+H\+B\+H\+E\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Phi}\label{class_hcal_tuple_tree_a2cd86d0c6fe62416a3db3118feb29aa6}
+\hypertarget{class_hcal_tuple_tree_a88a9ed5712686cae5b65180be9356464}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples@{b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples@{b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Presamples}\label{class_hcal_tuple_tree_a88a9ed5712686cae5b65180be9356464}
+\hypertarget{class_hcal_tuple_tree_a46080fc785795af416b74b32647f49cb}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Raw@{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw@{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Raw}\label{class_hcal_tuple_tree_a46080fc785795af416b74b32647f49cb}
+\hypertarget{class_hcal_tuple_tree_a17f4f5752a1f30f0d6e6eb2d964204df}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_a17f4f5752a1f30f0d6e6eb2d964204df}
+\hypertarget{class_hcal_tuple_tree_ad2250b5610b205d32db692c9488f703b}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_ad2250b5610b205d32db692c9488f703b}
+\hypertarget{class_hcal_tuple_tree_a6d9dadbb9ea5ffd0bd426c3a210f7c73}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy@{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy@{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_a6d9dadbb9ea5ffd0bd426c3a210f7c73}
+\hypertarget{class_hcal_tuple_tree_ad081f8b42cf7a8f06aadb8bbec1215b0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time@{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time@{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_ad081f8b42cf7a8f06aadb8bbec1215b0}
+\hypertarget{class_hcal_tuple_tree_a8dfa0af54d6583ced45951fca821098a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Size@{b\+\_\+\+H\+B\+H\+E\+Digi\+Size}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Size@{b\+\_\+\+H\+B\+H\+E\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Size}\label{class_hcal_tuple_tree_a8dfa0af54d6583ced45951fca821098a}
+\hypertarget{class_hcal_tuple_tree_a83352cedcad5bab00ff723f05bbd8595}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet@{b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet}}
+\index{b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet@{b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+B\+H\+E\+Digi\+Subdet}\label{class_hcal_tuple_tree_a83352cedcad5bab00ff723f05bbd8595}
+\hypertarget{class_hcal_tuple_tree_a11d179155ff9deacbd3f70f752a3383a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et}\label{class_hcal_tuple_tree_a11d179155ff9deacbd3f70f752a3383a}
+\hypertarget{class_hcal_tuple_tree_a739d95f6bac6fd9c895bbe289a03614c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}\label{class_hcal_tuple_tree_a739d95f6bac6fd9c895bbe289a03614c}
+\hypertarget{class_hcal_tuple_tree_aa5b776930738d5bb3b01bdd6ff8083d1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain}\label{class_hcal_tuple_tree_aa5b776930738d5bb3b01bdd6ff8083d1}
+\hypertarget{class_hcal_tuple_tree_ad36994fe2634944e1e5055aab1d01f06}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}\label{class_hcal_tuple_tree_ad36994fe2634944e1e5055aab1d01f06}
+\hypertarget{class_hcal_tuple_tree_ab86b80f73d1b563d0c26cc1a627f1390}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index@{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index@{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}\label{class_hcal_tuple_tree_ab86b80f73d1b563d0c26cc1a627f1390}
+\hypertarget{class_hcal_tuple_tree_a8878c07329b1274f6ff2aa3ee7748a16}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index@{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index@{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}\label{class_hcal_tuple_tree_a8878c07329b1274f6ff2aa3ee7748a16}
+\hypertarget{class_hcal_tuple_tree_a20ca342b1ff8340f87df92fc043f530a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta@{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta@{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Eta}\label{class_hcal_tuple_tree_a20ca342b1ff8340f87df92fc043f530a}
+\hypertarget{class_hcal_tuple_tree_a013a10f87ec84bdca82f079ea9c5f939}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi@{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi@{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+I\+Phi}\label{class_hcal_tuple_tree_a013a10f87ec84bdca82f079ea9c5f939}
+\hypertarget{class_hcal_tuple_tree_a59d56d4761c890340bc2cd9f842d3a12}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Presamples}\label{class_hcal_tuple_tree_a59d56d4761c890340bc2cd9f842d3a12}
+\hypertarget{class_hcal_tuple_tree_a80e9be60bdf812e122948410b96af74b}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Trigger\+Primitive\+Size@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Size}}
+\index{b\+\_\+\+Hcal\+Trigger\+Primitive\+Size@{b\+\_\+\+Hcal\+Trigger\+Primitive\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Trigger\+Primitive\+Size}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Trigger\+Primitive\+Size}\label{class_hcal_tuple_tree_a80e9be60bdf812e122948410b96af74b}
+\hypertarget{class_hcal_tuple_tree_a60a83ba3b2e47919e7c586143bae5a76}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Any\+Valid@{b\+\_\+\+Hcal\+Unpacker\+Any\+Valid}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Any\+Valid@{b\+\_\+\+Hcal\+Unpacker\+Any\+Valid}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Any\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Any\+Valid}\label{class_hcal_tuple_tree_a60a83ba3b2e47919e7c586143bae5a76}
+\hypertarget{class_hcal_tuple_tree_ad75fffeafb23f44f750e2a8d78613d42}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Depth}\label{class_hcal_tuple_tree_ad75fffeafb23f44f750e2a8d78613d42}
+\hypertarget{class_hcal_tuple_tree_a8d428324f6502ceb9e9e1178e648311f}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_a8d428324f6502ceb9e9e1178e648311f}
+\hypertarget{class_hcal_tuple_tree_aaf07c9ed061f545aefe71bf2caffede0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_aaf07c9ed061f545aefe71bf2caffede0}
+\hypertarget{class_hcal_tuple_tree_a23686b1f311fd4eb95a71ca3dc7b6446}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}\label{class_hcal_tuple_tree_a23686b1f311fd4eb95a71ca3dc7b6446}
+\hypertarget{class_hcal_tuple_tree_aa9bb381f441b7cbbc3556f59fd6f7dc5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Bad\+Quality\+Digis}\label{class_hcal_tuple_tree_aa9bb381f441b7cbbc3556f59fd6f7dc5}
+\hypertarget{class_hcal_tuple_tree_aed84d619963cc98e917ae9fd1c26ca5c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}}
+\index{b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}\label{class_hcal_tuple_tree_aed84d619963cc98e917ae9fd1c26ca5c}
+\hypertarget{class_hcal_tuple_tree_ae8069c5ef49af3ec4175e162b8287259}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Empty\+Spigots}\label{class_hcal_tuple_tree_ae8069c5ef49af3ec4175e162b8287259}
+\hypertarget{class_hcal_tuple_tree_aec204fe1288b01a20b7c5230e2517dbb}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Error\+Free@{b\+\_\+\+Hcal\+Unpacker\+Error\+Free}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Error\+Free@{b\+\_\+\+Hcal\+Unpacker\+Error\+Free}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Error\+Free}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Error\+Free}\label{class_hcal_tuple_tree_aec204fe1288b01a20b7c5230e2517dbb}
+\hypertarget{class_hcal_tuple_tree_a82dd61dd9c6a16f3d38aad1f84265df8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Has\+Calib@{b\+\_\+\+Hcal\+Unpacker\+Has\+Calib}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Has\+Calib@{b\+\_\+\+Hcal\+Unpacker\+Has\+Calib}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Has\+Calib}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Has\+Calib}\label{class_hcal_tuple_tree_a82dd61dd9c6a16f3d38aad1f84265df8}
+\hypertarget{class_hcal_tuple_tree_a462c90b3a97d139de2e785a26663940c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S@{b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S}}
+\index{b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S@{b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+N\+Z\+S}\label{class_hcal_tuple_tree_a462c90b3a97d139de2e785a26663940c}
+\hypertarget{class_hcal_tuple_tree_a489da1a30031418fc546260c3e5e7314}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots}}
+\index{b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots@{b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+O\+F\+W\+Spigots}\label{class_hcal_tuple_tree_a489da1a30031418fc546260c3e5e7314}
+\hypertarget{class_hcal_tuple_tree_a01ade9dbb04c1484cf72f284148df1ae}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors@{b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors@{b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Spigot\+Format\+Errors}\label{class_hcal_tuple_tree_a01ade9dbb04c1484cf72f284148df1ae}
+\hypertarget{class_hcal_tuple_tree_a9f479c6cccde70cd1a3bd71679c686c5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Total\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+Digis}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Total\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Total\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Total\+Digis}\label{class_hcal_tuple_tree_a9f479c6cccde70cd1a3bd71679c686c5}
+\hypertarget{class_hcal_tuple_tree_accf114a01da5500535692994685688af}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}\label{class_hcal_tuple_tree_accf114a01da5500535692994685688af}
+\hypertarget{class_hcal_tuple_tree_a6325dfc7baa69f77cfe6d013d6364924}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis}}
+\index{b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis@{b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+Hcal\+Unpacker\+Total\+T\+P\+Digis}\label{class_hcal_tuple_tree_a6325dfc7baa69f77cfe6d013d6364924}
+\hypertarget{class_hcal_tuple_tree_a144fa5ce350665dbdb0533659d986a8c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+A\+D\+C@{b\+\_\+\+H\+F\+Digi\+A\+D\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+A\+D\+C@{b\+\_\+\+H\+F\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_a144fa5ce350665dbdb0533659d986a8c}
+\hypertarget{class_hcal_tuple_tree_a1e1405537122f4406f16b500edc7c082}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+All\+F\+C@{b\+\_\+\+H\+F\+Digi\+All\+F\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+All\+F\+C@{b\+\_\+\+H\+F\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_a1e1405537122f4406f16b500edc7c082}
+\hypertarget{class_hcal_tuple_tree_a1f5322299c4c92c89806c472b30351f5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+F\+Digi\+Cap\+I\+D}}
+\index{b\+\_\+\+H\+F\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+F\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_a1f5322299c4c92c89806c472b30351f5}
+\hypertarget{class_hcal_tuple_tree_a534f8ded1efb2b122e716b422c0b5c38}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Depth@{b\+\_\+\+H\+F\+Digi\+Depth}}
+\index{b\+\_\+\+H\+F\+Digi\+Depth@{b\+\_\+\+H\+F\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Depth}\label{class_hcal_tuple_tree_a534f8ded1efb2b122e716b422c0b5c38}
+\hypertarget{class_hcal_tuple_tree_ad092ad332ed4dee55d581ce3432844d8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+D\+V@{b\+\_\+\+H\+F\+Digi\+D\+V}}
+\index{b\+\_\+\+H\+F\+Digi\+D\+V@{b\+\_\+\+H\+F\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+D\+V}\label{class_hcal_tuple_tree_ad092ad332ed4dee55d581ce3432844d8}
+\hypertarget{class_hcal_tuple_tree_acfdc42d9d8334fec1ce727a40d0e516c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D}}
+\index{b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_acfdc42d9d8334fec1ce727a40d0e516c}
+\hypertarget{class_hcal_tuple_tree_ab5153b823d5f948228f674de33311f1b}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Energy@{b\+\_\+\+H\+F\+Digi\+Energy}}
+\index{b\+\_\+\+H\+F\+Digi\+Energy@{b\+\_\+\+H\+F\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Energy}\label{class_hcal_tuple_tree_ab5153b823d5f948228f674de33311f1b}
+\hypertarget{class_hcal_tuple_tree_a291fa9ec1c74b753bee69ec5eca9fe52}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+E\+R@{b\+\_\+\+H\+F\+Digi\+E\+R}}
+\index{b\+\_\+\+H\+F\+Digi\+E\+R@{b\+\_\+\+H\+F\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+E\+R}\label{class_hcal_tuple_tree_a291fa9ec1c74b753bee69ec5eca9fe52}
+\hypertarget{class_hcal_tuple_tree_af649d3db8a8480c98e9afa39cc67730f}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Eta@{b\+\_\+\+H\+F\+Digi\+Eta}}
+\index{b\+\_\+\+H\+F\+Digi\+Eta@{b\+\_\+\+H\+F\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Eta}\label{class_hcal_tuple_tree_af649d3db8a8480c98e9afa39cc67730f}
+\hypertarget{class_hcal_tuple_tree_a9fa6148288e48f333d64874b47f75d64}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+F\+C@{b\+\_\+\+H\+F\+Digi\+F\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+F\+C@{b\+\_\+\+H\+F\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+F\+C}\label{class_hcal_tuple_tree_a9fa6148288e48f333d64874b47f75d64}
+\hypertarget{class_hcal_tuple_tree_a532aa2f5870fc18b9395b55b8841e672}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Fiber@{b\+\_\+\+H\+F\+Digi\+Fiber}}
+\index{b\+\_\+\+H\+F\+Digi\+Fiber@{b\+\_\+\+H\+F\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Fiber}\label{class_hcal_tuple_tree_a532aa2f5870fc18b9395b55b8841e672}
+\hypertarget{class_hcal_tuple_tree_ae35065b2245e679b7e62870864abd00d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+F\+Digi\+Fiber\+Chan}}
+\index{b\+\_\+\+H\+F\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+F\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_ae35065b2245e679b7e62870864abd00d}
+\hypertarget{class_hcal_tuple_tree_a304c98fa8ce712bc83f5abcbb0343b6d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset}}
+\index{b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_a304c98fa8ce712bc83f5abcbb0343b6d}
+\hypertarget{class_hcal_tuple_tree_ac98c3d4bd54cc3adbf260f3de541aae6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Gain@{b\+\_\+\+H\+F\+Digi\+Gain}}
+\index{b\+\_\+\+H\+F\+Digi\+Gain@{b\+\_\+\+H\+F\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Gain}\label{class_hcal_tuple_tree_ac98c3d4bd54cc3adbf260f3de541aae6}
+\hypertarget{class_hcal_tuple_tree_a01e0fc502fcc61dd725ef0c4969e07b0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+I\+Eta@{b\+\_\+\+H\+F\+Digi\+I\+Eta}}
+\index{b\+\_\+\+H\+F\+Digi\+I\+Eta@{b\+\_\+\+H\+F\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_a01e0fc502fcc61dd725ef0c4969e07b0}
+\hypertarget{class_hcal_tuple_tree_a3babf2e37148283a58472514e1d1782c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+I\+Phi@{b\+\_\+\+H\+F\+Digi\+I\+Phi}}
+\index{b\+\_\+\+H\+F\+Digi\+I\+Phi@{b\+\_\+\+H\+F\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_a3babf2e37148283a58472514e1d1782c}
+\hypertarget{class_hcal_tuple_tree_aef889b9eca9be9db2cce250b9b2ab113}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_aef889b9eca9be9db2cce250b9b2ab113}
+\hypertarget{class_hcal_tuple_tree_a069ece0b46c846c39a461e5fc69610f9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+F\+Digi\+Nom\+F\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+F\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_a069ece0b46c846c39a461e5fc69610f9}
+\hypertarget{class_hcal_tuple_tree_aec82a6cfa2eaec644874a4a6ad3802b4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+F\+Digi\+Ped\+F\+C}}
+\index{b\+\_\+\+H\+F\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+F\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_aec82a6cfa2eaec644874a4a6ad3802b4}
+\hypertarget{class_hcal_tuple_tree_ad9ebda7de737b7e813582130ec32ba4e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Phi@{b\+\_\+\+H\+F\+Digi\+Phi}}
+\index{b\+\_\+\+H\+F\+Digi\+Phi@{b\+\_\+\+H\+F\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Phi}\label{class_hcal_tuple_tree_ad9ebda7de737b7e813582130ec32ba4e}
+\hypertarget{class_hcal_tuple_tree_aed8d2d48206392ae0327c17a88ec70c3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Presamples@{b\+\_\+\+H\+F\+Digi\+Presamples}}
+\index{b\+\_\+\+H\+F\+Digi\+Presamples@{b\+\_\+\+H\+F\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Presamples}\label{class_hcal_tuple_tree_aed8d2d48206392ae0327c17a88ec70c3}
+\hypertarget{class_hcal_tuple_tree_a985099b927f65ac7f5739d6f0d04775e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Raw@{b\+\_\+\+H\+F\+Digi\+Raw}}
+\index{b\+\_\+\+H\+F\+Digi\+Raw@{b\+\_\+\+H\+F\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Raw}\label{class_hcal_tuple_tree_a985099b927f65ac7f5739d6f0d04775e}
+\hypertarget{class_hcal_tuple_tree_ae5834790911dc72d51600342e0c690b2}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+F\+Digi\+Raw\+I\+D}}
+\index{b\+\_\+\+H\+F\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+F\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_ae5834790911dc72d51600342e0c690b2}
+\hypertarget{class_hcal_tuple_tree_aecaedbcae1b8d7c364f273c6d6223673}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+F\+Digi\+R\+C\+Gain}}
+\index{b\+\_\+\+H\+F\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+F\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_aecaedbcae1b8d7c364f273c6d6223673}
+\hypertarget{class_hcal_tuple_tree_af1721c2512d8f475e07d4840c5554d28}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Rec\+Energy@{b\+\_\+\+H\+F\+Digi\+Rec\+Energy}}
+\index{b\+\_\+\+H\+F\+Digi\+Rec\+Energy@{b\+\_\+\+H\+F\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_af1721c2512d8f475e07d4840c5554d28}
+\hypertarget{class_hcal_tuple_tree_ab4886846d83acb34994f1c419dda7c55}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Rec\+Time@{b\+\_\+\+H\+F\+Digi\+Rec\+Time}}
+\index{b\+\_\+\+H\+F\+Digi\+Rec\+Time@{b\+\_\+\+H\+F\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_ab4886846d83acb34994f1c419dda7c55}
+\hypertarget{class_hcal_tuple_tree_a7dc6644fce711632ef3e307cb787fb1d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Size@{b\+\_\+\+H\+F\+Digi\+Size}}
+\index{b\+\_\+\+H\+F\+Digi\+Size@{b\+\_\+\+H\+F\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Size}\label{class_hcal_tuple_tree_a7dc6644fce711632ef3e307cb787fb1d}
+\hypertarget{class_hcal_tuple_tree_a368b90fe559482c1d29312d50802506b}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+F\+Digi\+Subdet@{b\+\_\+\+H\+F\+Digi\+Subdet}}
+\index{b\+\_\+\+H\+F\+Digi\+Subdet@{b\+\_\+\+H\+F\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+F\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+F\+Digi\+Subdet}\label{class_hcal_tuple_tree_a368b90fe559482c1d29312d50802506b}
+\hypertarget{class_hcal_tuple_tree_a202e751ee660f8199c2af94e4776e289}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+A\+D\+C@{b\+\_\+\+H\+O\+Digi\+A\+D\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+A\+D\+C@{b\+\_\+\+H\+O\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_a202e751ee660f8199c2af94e4776e289}
+\hypertarget{class_hcal_tuple_tree_afd649f5fd77825cd7dd2de84a977130d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+All\+F\+C@{b\+\_\+\+H\+O\+Digi\+All\+F\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+All\+F\+C@{b\+\_\+\+H\+O\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_afd649f5fd77825cd7dd2de84a977130d}
+\hypertarget{class_hcal_tuple_tree_abcff06b7d4d00ef7a68338d5566c65d4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+O\+Digi\+Cap\+I\+D}}
+\index{b\+\_\+\+H\+O\+Digi\+Cap\+I\+D@{b\+\_\+\+H\+O\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_abcff06b7d4d00ef7a68338d5566c65d4}
+\hypertarget{class_hcal_tuple_tree_a2172531cd2c25e3a6dbd462bccada046}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Depth@{b\+\_\+\+H\+O\+Digi\+Depth}}
+\index{b\+\_\+\+H\+O\+Digi\+Depth@{b\+\_\+\+H\+O\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Depth}\label{class_hcal_tuple_tree_a2172531cd2c25e3a6dbd462bccada046}
+\hypertarget{class_hcal_tuple_tree_aab27faf53eac4fa90f51936f3c211a24}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+D\+V@{b\+\_\+\+H\+O\+Digi\+D\+V}}
+\index{b\+\_\+\+H\+O\+Digi\+D\+V@{b\+\_\+\+H\+O\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+D\+V}\label{class_hcal_tuple_tree_aab27faf53eac4fa90f51936f3c211a24}
+\hypertarget{class_hcal_tuple_tree_a3e97d7440c8cafed91eb928ba1b76455}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D}}
+\index{b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D@{b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_a3e97d7440c8cafed91eb928ba1b76455}
+\hypertarget{class_hcal_tuple_tree_ad13314a7fc7995677522e58f39ab07d8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Energy@{b\+\_\+\+H\+O\+Digi\+Energy}}
+\index{b\+\_\+\+H\+O\+Digi\+Energy@{b\+\_\+\+H\+O\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Energy}\label{class_hcal_tuple_tree_ad13314a7fc7995677522e58f39ab07d8}
+\hypertarget{class_hcal_tuple_tree_a8b27ab9d3c09df306d78038c6ec1d095}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+E\+R@{b\+\_\+\+H\+O\+Digi\+E\+R}}
+\index{b\+\_\+\+H\+O\+Digi\+E\+R@{b\+\_\+\+H\+O\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+E\+R}\label{class_hcal_tuple_tree_a8b27ab9d3c09df306d78038c6ec1d095}
+\hypertarget{class_hcal_tuple_tree_a9da16ed42e34f42d6348588f32d261c4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Eta@{b\+\_\+\+H\+O\+Digi\+Eta}}
+\index{b\+\_\+\+H\+O\+Digi\+Eta@{b\+\_\+\+H\+O\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Eta}\label{class_hcal_tuple_tree_a9da16ed42e34f42d6348588f32d261c4}
+\hypertarget{class_hcal_tuple_tree_a0d217752a6b58690c8c3cf356579d9b4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+F\+C@{b\+\_\+\+H\+O\+Digi\+F\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+F\+C@{b\+\_\+\+H\+O\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+F\+C}\label{class_hcal_tuple_tree_a0d217752a6b58690c8c3cf356579d9b4}
+\hypertarget{class_hcal_tuple_tree_af775c7fbf9c4d20a71833176c7ecd379}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Fiber@{b\+\_\+\+H\+O\+Digi\+Fiber}}
+\index{b\+\_\+\+H\+O\+Digi\+Fiber@{b\+\_\+\+H\+O\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Fiber}\label{class_hcal_tuple_tree_af775c7fbf9c4d20a71833176c7ecd379}
+\hypertarget{class_hcal_tuple_tree_a20d9d674656fab8624587f56b796f82d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+O\+Digi\+Fiber\+Chan}}
+\index{b\+\_\+\+H\+O\+Digi\+Fiber\+Chan@{b\+\_\+\+H\+O\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_a20d9d674656fab8624587f56b796f82d}
+\hypertarget{class_hcal_tuple_tree_a5e0d32424ae14cfd4499eeaaaeadf8a0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset}}
+\index{b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset@{b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_a5e0d32424ae14cfd4499eeaaaeadf8a0}
+\hypertarget{class_hcal_tuple_tree_a5f38efe1a6af728b44f4aca3358931a3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Gain@{b\+\_\+\+H\+O\+Digi\+Gain}}
+\index{b\+\_\+\+H\+O\+Digi\+Gain@{b\+\_\+\+H\+O\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Gain}\label{class_hcal_tuple_tree_a5f38efe1a6af728b44f4aca3358931a3}
+\hypertarget{class_hcal_tuple_tree_ab0259ff430dca03ae316aedeaf2870f5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+I\+Eta@{b\+\_\+\+H\+O\+Digi\+I\+Eta}}
+\index{b\+\_\+\+H\+O\+Digi\+I\+Eta@{b\+\_\+\+H\+O\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_ab0259ff430dca03ae316aedeaf2870f5}
+\hypertarget{class_hcal_tuple_tree_a5311dcb724f54bb7398654b1f367aaca}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+I\+Phi@{b\+\_\+\+H\+O\+Digi\+I\+Phi}}
+\index{b\+\_\+\+H\+O\+Digi\+I\+Phi@{b\+\_\+\+H\+O\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_a5311dcb724f54bb7398654b1f367aaca}
+\hypertarget{class_hcal_tuple_tree_a3439baf7f88c8c4ef013bb425905a74a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C@{b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_a3439baf7f88c8c4ef013bb425905a74a}
+\hypertarget{class_hcal_tuple_tree_a63b5ebcaf92cfbd86b742a3d51f8e9c7}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+O\+Digi\+Nom\+F\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+Nom\+F\+C@{b\+\_\+\+H\+O\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_a63b5ebcaf92cfbd86b742a3d51f8e9c7}
+\hypertarget{class_hcal_tuple_tree_a4f3b0c5bb93b68f4fdea80ec2b85ac40}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+O\+Digi\+Ped\+F\+C}}
+\index{b\+\_\+\+H\+O\+Digi\+Ped\+F\+C@{b\+\_\+\+H\+O\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_a4f3b0c5bb93b68f4fdea80ec2b85ac40}
+\hypertarget{class_hcal_tuple_tree_ab6cf295ce3adf6582d95e87cd3d9dfe7}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Phi@{b\+\_\+\+H\+O\+Digi\+Phi}}
+\index{b\+\_\+\+H\+O\+Digi\+Phi@{b\+\_\+\+H\+O\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Phi}\label{class_hcal_tuple_tree_ab6cf295ce3adf6582d95e87cd3d9dfe7}
+\hypertarget{class_hcal_tuple_tree_a04520870887cc734f0a01b82f13256b3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Presamples@{b\+\_\+\+H\+O\+Digi\+Presamples}}
+\index{b\+\_\+\+H\+O\+Digi\+Presamples@{b\+\_\+\+H\+O\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Presamples}\label{class_hcal_tuple_tree_a04520870887cc734f0a01b82f13256b3}
+\hypertarget{class_hcal_tuple_tree_a149e3b2a253d87fccb7884945a4b55b0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Raw@{b\+\_\+\+H\+O\+Digi\+Raw}}
+\index{b\+\_\+\+H\+O\+Digi\+Raw@{b\+\_\+\+H\+O\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Raw}\label{class_hcal_tuple_tree_a149e3b2a253d87fccb7884945a4b55b0}
+\hypertarget{class_hcal_tuple_tree_aa09860c5b5f92fca14aec01d696674f8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+O\+Digi\+Raw\+I\+D}}
+\index{b\+\_\+\+H\+O\+Digi\+Raw\+I\+D@{b\+\_\+\+H\+O\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_aa09860c5b5f92fca14aec01d696674f8}
+\hypertarget{class_hcal_tuple_tree_a2a478dd45a47b02e3892d4ba21ffe8f1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+O\+Digi\+R\+C\+Gain}}
+\index{b\+\_\+\+H\+O\+Digi\+R\+C\+Gain@{b\+\_\+\+H\+O\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_a2a478dd45a47b02e3892d4ba21ffe8f1}
+\hypertarget{class_hcal_tuple_tree_a9c725c8ac0af59bca2f3bf220773a1c9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Rec\+Energy@{b\+\_\+\+H\+O\+Digi\+Rec\+Energy}}
+\index{b\+\_\+\+H\+O\+Digi\+Rec\+Energy@{b\+\_\+\+H\+O\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_a9c725c8ac0af59bca2f3bf220773a1c9}
+\hypertarget{class_hcal_tuple_tree_aa8d0faf24fba30ed1ac024d899aa2918}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Rec\+Time@{b\+\_\+\+H\+O\+Digi\+Rec\+Time}}
+\index{b\+\_\+\+H\+O\+Digi\+Rec\+Time@{b\+\_\+\+H\+O\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_aa8d0faf24fba30ed1ac024d899aa2918}
+\hypertarget{class_hcal_tuple_tree_a80b9b38ae544d61182fa930565e2d517}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Size@{b\+\_\+\+H\+O\+Digi\+Size}}
+\index{b\+\_\+\+H\+O\+Digi\+Size@{b\+\_\+\+H\+O\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Size}\label{class_hcal_tuple_tree_a80b9b38ae544d61182fa930565e2d517}
+\hypertarget{class_hcal_tuple_tree_ad03aeb309f6aebb9f82151259522bf11}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+\+H\+O\+Digi\+Subdet@{b\+\_\+\+H\+O\+Digi\+Subdet}}
+\index{b\+\_\+\+H\+O\+Digi\+Subdet@{b\+\_\+\+H\+O\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+\+H\+O\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+\+H\+O\+Digi\+Subdet}\label{class_hcal_tuple_tree_ad03aeb309f6aebb9f82151259522bf11}
+\hypertarget{class_hcal_tuple_tree_ade006033ab46c1803517ad75d24fa344}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+ls@{b\+\_\+ls}}
+\index{b\+\_\+ls@{b\+\_\+ls}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+ls}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+ls}\label{class_hcal_tuple_tree_ade006033ab46c1803517ad75d24fa344}
+\hypertarget{class_hcal_tuple_tree_a12b2c9703af3dd7246dbbe0ec1f84ee5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!b\+\_\+run@{b\+\_\+run}}
+\index{b\+\_\+run@{b\+\_\+run}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{b\+\_\+run}]{\setlength{\rightskip}{0pt plus 5cm}T\+Branch$\ast$ Hcal\+Tuple\+Tree\+::b\+\_\+run}\label{class_hcal_tuple_tree_a12b2c9703af3dd7246dbbe0ec1f84ee5}
+\hypertarget{class_hcal_tuple_tree_ac8b12f3fd8e1a7f7c17f96de2b7df6d0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!bx@{bx}}
+\index{bx@{bx}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{bx}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::bx}\label{class_hcal_tuple_tree_ac8b12f3fd8e1a7f7c17f96de2b7df6d0}
+\hypertarget{class_hcal_tuple_tree_acf307d3c7425105ab941eaf2b06e5941}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!event@{event}}
+\index{event@{event}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::event}\label{class_hcal_tuple_tree_acf307d3c7425105ab941eaf2b06e5941}
+\hypertarget{class_hcal_tuple_tree_ab2d0b951f1d870277db06338998d359c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!f\+Chain@{f\+Chain}}
+\index{f\+Chain@{f\+Chain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{f\+Chain}]{\setlength{\rightskip}{0pt plus 5cm}T\+Tree$\ast$ Hcal\+Tuple\+Tree\+::f\+Chain}\label{class_hcal_tuple_tree_ab2d0b951f1d870277db06338998d359c}
+\hypertarget{class_hcal_tuple_tree_a08b8ee5bd18d61d595dabae8738f94f0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!f\+Current@{f\+Current}}
+\index{f\+Current@{f\+Current}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{f\+Current}]{\setlength{\rightskip}{0pt plus 5cm}Int\+\_\+t Hcal\+Tuple\+Tree\+::f\+Current}\label{class_hcal_tuple_tree_a08b8ee5bd18d61d595dabae8738f94f0}
+
+
+pointer to the analyzed T\+Tree or T\+Chain 
+
+\hypertarget{class_hcal_tuple_tree_aabfac31abb8a835c19bc571bdd28632d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+A\+D\+C@{H\+B\+H\+E\+Digi\+A\+D\+C}}
+\index{H\+B\+H\+E\+Digi\+A\+D\+C@{H\+B\+H\+E\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_aabfac31abb8a835c19bc571bdd28632d}
+\hypertarget{class_hcal_tuple_tree_a5dc5cdeb59f28eaa2308daa56474c892}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+All\+F\+C@{H\+B\+H\+E\+Digi\+All\+F\+C}}
+\index{H\+B\+H\+E\+Digi\+All\+F\+C@{H\+B\+H\+E\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_a5dc5cdeb59f28eaa2308daa56474c892}
+\hypertarget{class_hcal_tuple_tree_a300d8be67219f5369ac7ce004f95b554}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Cap\+I\+D@{H\+B\+H\+E\+Digi\+Cap\+I\+D}}
+\index{H\+B\+H\+E\+Digi\+Cap\+I\+D@{H\+B\+H\+E\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_a300d8be67219f5369ac7ce004f95b554}
+\hypertarget{class_hcal_tuple_tree_ae5ed39ea705aff8363edefc34423426e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Depth@{H\+B\+H\+E\+Digi\+Depth}}
+\index{H\+B\+H\+E\+Digi\+Depth@{H\+B\+H\+E\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Depth}\label{class_hcal_tuple_tree_ae5ed39ea705aff8363edefc34423426e}
+\hypertarget{class_hcal_tuple_tree_a170d23abeaeed048957ada3b4a15f570}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+D\+V@{H\+B\+H\+E\+Digi\+D\+V}}
+\index{H\+B\+H\+E\+Digi\+D\+V@{H\+B\+H\+E\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+D\+V}\label{class_hcal_tuple_tree_a170d23abeaeed048957ada3b4a15f570}
+\hypertarget{class_hcal_tuple_tree_a030e840a1ceb41ce84181c68926aa948}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Electronics\+I\+D@{H\+B\+H\+E\+Digi\+Electronics\+I\+D}}
+\index{H\+B\+H\+E\+Digi\+Electronics\+I\+D@{H\+B\+H\+E\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_a030e840a1ceb41ce84181c68926aa948}
+\hypertarget{class_hcal_tuple_tree_ae64aeab5ce5b05e5b0e8c140bba901b1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Energy@{H\+B\+H\+E\+Digi\+Energy}}
+\index{H\+B\+H\+E\+Digi\+Energy@{H\+B\+H\+E\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Energy}\label{class_hcal_tuple_tree_ae64aeab5ce5b05e5b0e8c140bba901b1}
+\hypertarget{class_hcal_tuple_tree_a1d61f55b869a51c062b92a71be950b6f}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+E\+R@{H\+B\+H\+E\+Digi\+E\+R}}
+\index{H\+B\+H\+E\+Digi\+E\+R@{H\+B\+H\+E\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+E\+R}\label{class_hcal_tuple_tree_a1d61f55b869a51c062b92a71be950b6f}
+\hypertarget{class_hcal_tuple_tree_abf3ece84d6c5e826fe0afe18259efdf6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Eta@{H\+B\+H\+E\+Digi\+Eta}}
+\index{H\+B\+H\+E\+Digi\+Eta@{H\+B\+H\+E\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Eta}\label{class_hcal_tuple_tree_abf3ece84d6c5e826fe0afe18259efdf6}
+
+
+current Tree number in a T\+Chain 
+
+\hypertarget{class_hcal_tuple_tree_a9146017ce5694aaa1c4616e06218c39c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+F\+C@{H\+B\+H\+E\+Digi\+F\+C}}
+\index{H\+B\+H\+E\+Digi\+F\+C@{H\+B\+H\+E\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+F\+C}\label{class_hcal_tuple_tree_a9146017ce5694aaa1c4616e06218c39c}
+\hypertarget{class_hcal_tuple_tree_ae14f61c3fa4bc10c7ca6bd3da8d35efb}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Fiber@{H\+B\+H\+E\+Digi\+Fiber}}
+\index{H\+B\+H\+E\+Digi\+Fiber@{H\+B\+H\+E\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Fiber}\label{class_hcal_tuple_tree_ae14f61c3fa4bc10c7ca6bd3da8d35efb}
+\hypertarget{class_hcal_tuple_tree_a227e7a0df2915b2349bbfb0b5dc7d9c2}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Fiber\+Chan@{H\+B\+H\+E\+Digi\+Fiber\+Chan}}
+\index{H\+B\+H\+E\+Digi\+Fiber\+Chan@{H\+B\+H\+E\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_a227e7a0df2915b2349bbfb0b5dc7d9c2}
+\hypertarget{class_hcal_tuple_tree_aaf4a8badc474e66b2f2918cfd80b5a2a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset@{H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}}
+\index{H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset@{H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_aaf4a8badc474e66b2f2918cfd80b5a2a}
+\hypertarget{class_hcal_tuple_tree_a2bb6e71cd46bf0e2fdbccce0d141d506}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Gain@{H\+B\+H\+E\+Digi\+Gain}}
+\index{H\+B\+H\+E\+Digi\+Gain@{H\+B\+H\+E\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Gain}\label{class_hcal_tuple_tree_a2bb6e71cd46bf0e2fdbccce0d141d506}
+\hypertarget{class_hcal_tuple_tree_ac80f55cd8338af07ad6e76357e2bdc02}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+I\+Eta@{H\+B\+H\+E\+Digi\+I\+Eta}}
+\index{H\+B\+H\+E\+Digi\+I\+Eta@{H\+B\+H\+E\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_ac80f55cd8338af07ad6e76357e2bdc02}
+\hypertarget{class_hcal_tuple_tree_af201c74f0517d348fcbe767c156139f2}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+I\+Phi@{H\+B\+H\+E\+Digi\+I\+Phi}}
+\index{H\+B\+H\+E\+Digi\+I\+Phi@{H\+B\+H\+E\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_af201c74f0517d348fcbe767c156139f2}
+\hypertarget{class_hcal_tuple_tree_a011228f536f5778b8f97fce17ddbd714}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+L\+A\+D\+C@{H\+B\+H\+E\+Digi\+L\+A\+D\+C}}
+\index{H\+B\+H\+E\+Digi\+L\+A\+D\+C@{H\+B\+H\+E\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_a011228f536f5778b8f97fce17ddbd714}
+\hypertarget{class_hcal_tuple_tree_aa829f8de833074383a9758072440a572}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Nom\+F\+C@{H\+B\+H\+E\+Digi\+Nom\+F\+C}}
+\index{H\+B\+H\+E\+Digi\+Nom\+F\+C@{H\+B\+H\+E\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_aa829f8de833074383a9758072440a572}
+\hypertarget{class_hcal_tuple_tree_a75ddbcd15a6c3c15370257f4e18f93dc}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Ped\+F\+C@{H\+B\+H\+E\+Digi\+Ped\+F\+C}}
+\index{H\+B\+H\+E\+Digi\+Ped\+F\+C@{H\+B\+H\+E\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_a75ddbcd15a6c3c15370257f4e18f93dc}
+\hypertarget{class_hcal_tuple_tree_a4465ac5c76bde5c83e2c0440e94377e6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Phi@{H\+B\+H\+E\+Digi\+Phi}}
+\index{H\+B\+H\+E\+Digi\+Phi@{H\+B\+H\+E\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Phi}\label{class_hcal_tuple_tree_a4465ac5c76bde5c83e2c0440e94377e6}
+\hypertarget{class_hcal_tuple_tree_aa12edf8c843903084ea22da932cea02b}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Presamples@{H\+B\+H\+E\+Digi\+Presamples}}
+\index{H\+B\+H\+E\+Digi\+Presamples@{H\+B\+H\+E\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Presamples}\label{class_hcal_tuple_tree_aa12edf8c843903084ea22da932cea02b}
+\hypertarget{class_hcal_tuple_tree_a7bffd95bc16723e633cfe233e57f21b6}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Raw@{H\+B\+H\+E\+Digi\+Raw}}
+\index{H\+B\+H\+E\+Digi\+Raw@{H\+B\+H\+E\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Raw}\label{class_hcal_tuple_tree_a7bffd95bc16723e633cfe233e57f21b6}
+\hypertarget{class_hcal_tuple_tree_a79e823d5bf62909c8bebc784f6a8ceb9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Raw\+I\+D@{H\+B\+H\+E\+Digi\+Raw\+I\+D}}
+\index{H\+B\+H\+E\+Digi\+Raw\+I\+D@{H\+B\+H\+E\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_a79e823d5bf62909c8bebc784f6a8ceb9}
+\hypertarget{class_hcal_tuple_tree_acbd3f4798c9bd4c991a537d4658eb96e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+R\+C\+Gain@{H\+B\+H\+E\+Digi\+R\+C\+Gain}}
+\index{H\+B\+H\+E\+Digi\+R\+C\+Gain@{H\+B\+H\+E\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_acbd3f4798c9bd4c991a537d4658eb96e}
+\hypertarget{class_hcal_tuple_tree_a71d33dc8870ce67415396153c1c0b8fc}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Rec\+Energy@{H\+B\+H\+E\+Digi\+Rec\+Energy}}
+\index{H\+B\+H\+E\+Digi\+Rec\+Energy@{H\+B\+H\+E\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_a71d33dc8870ce67415396153c1c0b8fc}
+\hypertarget{class_hcal_tuple_tree_a932a5241aeb73633d88a523951bd04b7}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Rec\+Time@{H\+B\+H\+E\+Digi\+Rec\+Time}}
+\index{H\+B\+H\+E\+Digi\+Rec\+Time@{H\+B\+H\+E\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_a932a5241aeb73633d88a523951bd04b7}
+\hypertarget{class_hcal_tuple_tree_a285d80e2b161b7ee52a52e1439db3373}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Size@{H\+B\+H\+E\+Digi\+Size}}
+\index{H\+B\+H\+E\+Digi\+Size@{H\+B\+H\+E\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Size}\label{class_hcal_tuple_tree_a285d80e2b161b7ee52a52e1439db3373}
+\hypertarget{class_hcal_tuple_tree_aba0b417a85be88cc0f21e3d2cc19d80d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+B\+H\+E\+Digi\+Subdet@{H\+B\+H\+E\+Digi\+Subdet}}
+\index{H\+B\+H\+E\+Digi\+Subdet@{H\+B\+H\+E\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+B\+H\+E\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+B\+H\+E\+Digi\+Subdet}\label{class_hcal_tuple_tree_aba0b417a85be88cc0f21e3d2cc19d80d}
+\hypertarget{class_hcal_tuple_tree_a34ce7962d072f721b08f74274f1559e4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Compressed\+Et@{Hcal\+Trigger\+Primitive\+Compressed\+Et}}
+\index{Hcal\+Trigger\+Primitive\+Compressed\+Et@{Hcal\+Trigger\+Primitive\+Compressed\+Et}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Compressed\+Et}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Compressed\+Et}\label{class_hcal_tuple_tree_a34ce7962d072f721b08f74274f1559e4}
+\hypertarget{class_hcal_tuple_tree_aff8eb56b17cec378fb0996f850bacec1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I@{Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}}
+\index{Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I@{Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Compressed\+Et\+S\+O\+I}\label{class_hcal_tuple_tree_aff8eb56b17cec378fb0996f850bacec1}
+\hypertarget{class_hcal_tuple_tree_ab3e76e89779572ff1a02dd94167df44c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Fine\+Grain@{Hcal\+Trigger\+Primitive\+Fine\+Grain}}
+\index{Hcal\+Trigger\+Primitive\+Fine\+Grain@{Hcal\+Trigger\+Primitive\+Fine\+Grain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Fine\+Grain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Fine\+Grain}\label{class_hcal_tuple_tree_ab3e76e89779572ff1a02dd94167df44c}
+\hypertarget{class_hcal_tuple_tree_a39066327f0677ba5edc25eb97d3865aa}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I@{Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}}
+\index{Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I@{Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Fine\+Grain\+S\+O\+I}\label{class_hcal_tuple_tree_a39066327f0677ba5edc25eb97d3865aa}
+\hypertarget{class_hcal_tuple_tree_af6d68e4006a3145f25130b4f5a3fb600}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index@{Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}}
+\index{Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index@{Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+H\+B\+H\+E\+Digi\+Index}\label{class_hcal_tuple_tree_af6d68e4006a3145f25130b4f5a3fb600}
+\hypertarget{class_hcal_tuple_tree_ad552a76a8e3b13e2302f8f8c651170b1}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index@{Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}}
+\index{Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index@{Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+H\+F\+Digi\+Index}\label{class_hcal_tuple_tree_ad552a76a8e3b13e2302f8f8c651170b1}
+\hypertarget{class_hcal_tuple_tree_a702f080483a7152f714355afded4f4f0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+I\+Eta@{Hcal\+Trigger\+Primitive\+I\+Eta}}
+\index{Hcal\+Trigger\+Primitive\+I\+Eta@{Hcal\+Trigger\+Primitive\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+I\+Eta}\label{class_hcal_tuple_tree_a702f080483a7152f714355afded4f4f0}
+\hypertarget{class_hcal_tuple_tree_a2a2a59eb3b63204e75540d5d7c08a3a5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+I\+Phi@{Hcal\+Trigger\+Primitive\+I\+Phi}}
+\index{Hcal\+Trigger\+Primitive\+I\+Phi@{Hcal\+Trigger\+Primitive\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+I\+Phi}\label{class_hcal_tuple_tree_a2a2a59eb3b63204e75540d5d7c08a3a5}
+\hypertarget{class_hcal_tuple_tree_aeaf7e05adf680e56bb139054b889ae08}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Presamples@{Hcal\+Trigger\+Primitive\+Presamples}}
+\index{Hcal\+Trigger\+Primitive\+Presamples@{Hcal\+Trigger\+Primitive\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Presamples}\label{class_hcal_tuple_tree_aeaf7e05adf680e56bb139054b889ae08}
+\hypertarget{class_hcal_tuple_tree_a340bb0e90c7f033c6013c9bfbeb1a6ed}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Trigger\+Primitive\+Size@{Hcal\+Trigger\+Primitive\+Size}}
+\index{Hcal\+Trigger\+Primitive\+Size@{Hcal\+Trigger\+Primitive\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Trigger\+Primitive\+Size}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Trigger\+Primitive\+Size}\label{class_hcal_tuple_tree_a340bb0e90c7f033c6013c9bfbeb1a6ed}
+\hypertarget{class_hcal_tuple_tree_aa5836af17158d1bfe24fb78838c8c641}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Any\+Valid@{Hcal\+Unpacker\+Any\+Valid}}
+\index{Hcal\+Unpacker\+Any\+Valid@{Hcal\+Unpacker\+Any\+Valid}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Any\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Any\+Valid}\label{class_hcal_tuple_tree_aa5836af17158d1bfe24fb78838c8c641}
+\hypertarget{class_hcal_tuple_tree_a82028d16026e71637ce6c8a37fe19fa2}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Bad\+Digi\+Depth@{Hcal\+Unpacker\+Bad\+Digi\+Depth}}
+\index{Hcal\+Unpacker\+Bad\+Digi\+Depth@{Hcal\+Unpacker\+Bad\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Bad\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Bad\+Digi\+Depth}\label{class_hcal_tuple_tree_a82028d16026e71637ce6c8a37fe19fa2}
+\hypertarget{class_hcal_tuple_tree_a48eec514f2d009bfb583c129ed741c34}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Bad\+Digi\+I\+Eta@{Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}}
+\index{Hcal\+Unpacker\+Bad\+Digi\+I\+Eta@{Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Bad\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_a48eec514f2d009bfb583c129ed741c34}
+\hypertarget{class_hcal_tuple_tree_a554c455a205854a1dca3e67222da4003}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Bad\+Digi\+I\+Phi@{Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}}
+\index{Hcal\+Unpacker\+Bad\+Digi\+I\+Phi@{Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Bad\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_a554c455a205854a1dca3e67222da4003}
+\hypertarget{class_hcal_tuple_tree_a7ae78222f2c842d8047c8e4d43bf2db5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Bad\+Digi\+Subdet@{Hcal\+Unpacker\+Bad\+Digi\+Subdet}}
+\index{Hcal\+Unpacker\+Bad\+Digi\+Subdet@{Hcal\+Unpacker\+Bad\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Bad\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Bad\+Digi\+Subdet}\label{class_hcal_tuple_tree_a7ae78222f2c842d8047c8e4d43bf2db5}
+\hypertarget{class_hcal_tuple_tree_a9dba097a78cfc58eec9ab8e149f20155}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Bad\+Quality\+Digis@{Hcal\+Unpacker\+Bad\+Quality\+Digis}}
+\index{Hcal\+Unpacker\+Bad\+Quality\+Digis@{Hcal\+Unpacker\+Bad\+Quality\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Bad\+Quality\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Bad\+Quality\+Digis}\label{class_hcal_tuple_tree_a9dba097a78cfc58eec9ab8e149f20155}
+\hypertarget{class_hcal_tuple_tree_a7c773a60c5bbb4114478451b065c4e07}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+B\+S\+Y\+Spigots@{Hcal\+Unpacker\+B\+S\+Y\+Spigots}}
+\index{Hcal\+Unpacker\+B\+S\+Y\+Spigots@{Hcal\+Unpacker\+B\+S\+Y\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+B\+S\+Y\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+B\+S\+Y\+Spigots}\label{class_hcal_tuple_tree_a7c773a60c5bbb4114478451b065c4e07}
+\hypertarget{class_hcal_tuple_tree_a32c6d9d87a0fc537de1d48c8cb37423a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Empty\+Spigots@{Hcal\+Unpacker\+Empty\+Spigots}}
+\index{Hcal\+Unpacker\+Empty\+Spigots@{Hcal\+Unpacker\+Empty\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Empty\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Empty\+Spigots}\label{class_hcal_tuple_tree_a32c6d9d87a0fc537de1d48c8cb37423a}
+\hypertarget{class_hcal_tuple_tree_ac97729e4a501486a76c030ad3477fd0d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Error\+Free@{Hcal\+Unpacker\+Error\+Free}}
+\index{Hcal\+Unpacker\+Error\+Free@{Hcal\+Unpacker\+Error\+Free}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Error\+Free}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Error\+Free}\label{class_hcal_tuple_tree_ac97729e4a501486a76c030ad3477fd0d}
+\hypertarget{class_hcal_tuple_tree_a4d23f168f9e4948b045b705731d1d45d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Has\+Calib@{Hcal\+Unpacker\+Has\+Calib}}
+\index{Hcal\+Unpacker\+Has\+Calib@{Hcal\+Unpacker\+Has\+Calib}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Has\+Calib}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Has\+Calib}\label{class_hcal_tuple_tree_a4d23f168f9e4948b045b705731d1d45d}
+\hypertarget{class_hcal_tuple_tree_adf6324d2cb40e19a2e5f21f50782b57a}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+N\+Z\+S@{Hcal\+Unpacker\+N\+Z\+S}}
+\index{Hcal\+Unpacker\+N\+Z\+S@{Hcal\+Unpacker\+N\+Z\+S}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+N\+Z\+S}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+N\+Z\+S}\label{class_hcal_tuple_tree_adf6324d2cb40e19a2e5f21f50782b57a}
+\hypertarget{class_hcal_tuple_tree_ac79c12cb05d569a9ff352cd14d43a9a4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+O\+F\+W\+Spigots@{Hcal\+Unpacker\+O\+F\+W\+Spigots}}
+\index{Hcal\+Unpacker\+O\+F\+W\+Spigots@{Hcal\+Unpacker\+O\+F\+W\+Spigots}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+O\+F\+W\+Spigots}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+O\+F\+W\+Spigots}\label{class_hcal_tuple_tree_ac79c12cb05d569a9ff352cd14d43a9a4}
+\hypertarget{class_hcal_tuple_tree_ab4502a1a4a6f7991d0f31037629d97e5}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Spigot\+Format\+Errors@{Hcal\+Unpacker\+Spigot\+Format\+Errors}}
+\index{Hcal\+Unpacker\+Spigot\+Format\+Errors@{Hcal\+Unpacker\+Spigot\+Format\+Errors}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Spigot\+Format\+Errors}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Spigot\+Format\+Errors}\label{class_hcal_tuple_tree_ab4502a1a4a6f7991d0f31037629d97e5}
+\hypertarget{class_hcal_tuple_tree_a242efa87206609b258889647bd7e43a3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Total\+Digis@{Hcal\+Unpacker\+Total\+Digis}}
+\index{Hcal\+Unpacker\+Total\+Digis@{Hcal\+Unpacker\+Total\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Total\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Total\+Digis}\label{class_hcal_tuple_tree_a242efa87206609b258889647bd7e43a3}
+\hypertarget{class_hcal_tuple_tree_a1e0af5cb1807324313c88596f45e2714}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis@{Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}}
+\index{Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis@{Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Total\+H\+O\+T\+P\+Digis}\label{class_hcal_tuple_tree_a1e0af5cb1807324313c88596f45e2714}
+\hypertarget{class_hcal_tuple_tree_a5482217d22a5c536052aad17145cac3d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!Hcal\+Unpacker\+Total\+T\+P\+Digis@{Hcal\+Unpacker\+Total\+T\+P\+Digis}}
+\index{Hcal\+Unpacker\+Total\+T\+P\+Digis@{Hcal\+Unpacker\+Total\+T\+P\+Digis}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{Hcal\+Unpacker\+Total\+T\+P\+Digis}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::\+Hcal\+Unpacker\+Total\+T\+P\+Digis}\label{class_hcal_tuple_tree_a5482217d22a5c536052aad17145cac3d}
+\hypertarget{class_hcal_tuple_tree_a6b10444e0b3e05ebcd322870130dd20e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+A\+D\+C@{H\+F\+Digi\+A\+D\+C}}
+\index{H\+F\+Digi\+A\+D\+C@{H\+F\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_a6b10444e0b3e05ebcd322870130dd20e}
+\hypertarget{class_hcal_tuple_tree_ae9cf3812ae649b0941182c185eb6a721}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+All\+F\+C@{H\+F\+Digi\+All\+F\+C}}
+\index{H\+F\+Digi\+All\+F\+C@{H\+F\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_ae9cf3812ae649b0941182c185eb6a721}
+\hypertarget{class_hcal_tuple_tree_a6257529e73c5059596f204b05bc8d894}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Cap\+I\+D@{H\+F\+Digi\+Cap\+I\+D}}
+\index{H\+F\+Digi\+Cap\+I\+D@{H\+F\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_a6257529e73c5059596f204b05bc8d894}
+\hypertarget{class_hcal_tuple_tree_a0e59299846d8138c04f69fe451511dfa}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Depth@{H\+F\+Digi\+Depth}}
+\index{H\+F\+Digi\+Depth@{H\+F\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Depth}\label{class_hcal_tuple_tree_a0e59299846d8138c04f69fe451511dfa}
+\hypertarget{class_hcal_tuple_tree_adc64a7cf0e29af0c19a864d1ee5541c7}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+D\+V@{H\+F\+Digi\+D\+V}}
+\index{H\+F\+Digi\+D\+V@{H\+F\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+D\+V}\label{class_hcal_tuple_tree_adc64a7cf0e29af0c19a864d1ee5541c7}
+\hypertarget{class_hcal_tuple_tree_a9882d2d652d197b5ccdc03234ca08ca3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Electronics\+I\+D@{H\+F\+Digi\+Electronics\+I\+D}}
+\index{H\+F\+Digi\+Electronics\+I\+D@{H\+F\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_a9882d2d652d197b5ccdc03234ca08ca3}
+\hypertarget{class_hcal_tuple_tree_af4208c69d37152cef6fff1c1dd026155}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Energy@{H\+F\+Digi\+Energy}}
+\index{H\+F\+Digi\+Energy@{H\+F\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Energy}\label{class_hcal_tuple_tree_af4208c69d37152cef6fff1c1dd026155}
+\hypertarget{class_hcal_tuple_tree_a9a2b7882484368d1d4976f6388d306c7}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+E\+R@{H\+F\+Digi\+E\+R}}
+\index{H\+F\+Digi\+E\+R@{H\+F\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+E\+R}\label{class_hcal_tuple_tree_a9a2b7882484368d1d4976f6388d306c7}
+\hypertarget{class_hcal_tuple_tree_a4ee87b23a35d035afec70d98d6c319aa}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Eta@{H\+F\+Digi\+Eta}}
+\index{H\+F\+Digi\+Eta@{H\+F\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Eta}\label{class_hcal_tuple_tree_a4ee87b23a35d035afec70d98d6c319aa}
+\hypertarget{class_hcal_tuple_tree_ac47c0113b05b20cdee0a28017cd08724}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+F\+C@{H\+F\+Digi\+F\+C}}
+\index{H\+F\+Digi\+F\+C@{H\+F\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+F\+C}\label{class_hcal_tuple_tree_ac47c0113b05b20cdee0a28017cd08724}
+\hypertarget{class_hcal_tuple_tree_afa91f65c9740c7625235ef9da5adefc3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Fiber@{H\+F\+Digi\+Fiber}}
+\index{H\+F\+Digi\+Fiber@{H\+F\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Fiber}\label{class_hcal_tuple_tree_afa91f65c9740c7625235ef9da5adefc3}
+\hypertarget{class_hcal_tuple_tree_a739afd6b2bb92d5fd58d345333531cc9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Fiber\+Chan@{H\+F\+Digi\+Fiber\+Chan}}
+\index{H\+F\+Digi\+Fiber\+Chan@{H\+F\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_a739afd6b2bb92d5fd58d345333531cc9}
+\hypertarget{class_hcal_tuple_tree_a06e52ec27931ef2fc92bcc0efc8901ba}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Fiber\+Idle\+Offset@{H\+F\+Digi\+Fiber\+Idle\+Offset}}
+\index{H\+F\+Digi\+Fiber\+Idle\+Offset@{H\+F\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_a06e52ec27931ef2fc92bcc0efc8901ba}
+\hypertarget{class_hcal_tuple_tree_abc594e1718c4ca609859b9c5da187ce9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Gain@{H\+F\+Digi\+Gain}}
+\index{H\+F\+Digi\+Gain@{H\+F\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Gain}\label{class_hcal_tuple_tree_abc594e1718c4ca609859b9c5da187ce9}
+\hypertarget{class_hcal_tuple_tree_add1b36acb835d09d747c682fb65ce7c9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+I\+Eta@{H\+F\+Digi\+I\+Eta}}
+\index{H\+F\+Digi\+I\+Eta@{H\+F\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_add1b36acb835d09d747c682fb65ce7c9}
+\hypertarget{class_hcal_tuple_tree_aaba8842e7e41699165e52a3345e36221}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+I\+Phi@{H\+F\+Digi\+I\+Phi}}
+\index{H\+F\+Digi\+I\+Phi@{H\+F\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_aaba8842e7e41699165e52a3345e36221}
+\hypertarget{class_hcal_tuple_tree_aba96a4641a9750ed5bcc626abbe44c3c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+L\+A\+D\+C@{H\+F\+Digi\+L\+A\+D\+C}}
+\index{H\+F\+Digi\+L\+A\+D\+C@{H\+F\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_aba96a4641a9750ed5bcc626abbe44c3c}
+\hypertarget{class_hcal_tuple_tree_a237a14d107a2090e46f21ffe7500123d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Nom\+F\+C@{H\+F\+Digi\+Nom\+F\+C}}
+\index{H\+F\+Digi\+Nom\+F\+C@{H\+F\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_a237a14d107a2090e46f21ffe7500123d}
+\hypertarget{class_hcal_tuple_tree_a66aa7dc7b2ca36a103449a29aa6af319}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Ped\+F\+C@{H\+F\+Digi\+Ped\+F\+C}}
+\index{H\+F\+Digi\+Ped\+F\+C@{H\+F\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_a66aa7dc7b2ca36a103449a29aa6af319}
+\hypertarget{class_hcal_tuple_tree_a778805ed9ac0fb9bd7c0ada3adfb05ef}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Phi@{H\+F\+Digi\+Phi}}
+\index{H\+F\+Digi\+Phi@{H\+F\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Phi}\label{class_hcal_tuple_tree_a778805ed9ac0fb9bd7c0ada3adfb05ef}
+\hypertarget{class_hcal_tuple_tree_ad7090a8222127b46bd6c6b4cafc79d43}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Presamples@{H\+F\+Digi\+Presamples}}
+\index{H\+F\+Digi\+Presamples@{H\+F\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Presamples}\label{class_hcal_tuple_tree_ad7090a8222127b46bd6c6b4cafc79d43}
+\hypertarget{class_hcal_tuple_tree_ae3043c51037d009294ec7567b8c9ce01}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Raw@{H\+F\+Digi\+Raw}}
+\index{H\+F\+Digi\+Raw@{H\+F\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Raw}\label{class_hcal_tuple_tree_ae3043c51037d009294ec7567b8c9ce01}
+\hypertarget{class_hcal_tuple_tree_a55519617ad78d9e9ec81e88aaa2f7e60}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Raw\+I\+D@{H\+F\+Digi\+Raw\+I\+D}}
+\index{H\+F\+Digi\+Raw\+I\+D@{H\+F\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_a55519617ad78d9e9ec81e88aaa2f7e60}
+\hypertarget{class_hcal_tuple_tree_a9cc44ef6fd299d20874e0b07eb68b94c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+R\+C\+Gain@{H\+F\+Digi\+R\+C\+Gain}}
+\index{H\+F\+Digi\+R\+C\+Gain@{H\+F\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_a9cc44ef6fd299d20874e0b07eb68b94c}
+\hypertarget{class_hcal_tuple_tree_a3e26e7151e6cbba42bee136f6e46e07e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Rec\+Energy@{H\+F\+Digi\+Rec\+Energy}}
+\index{H\+F\+Digi\+Rec\+Energy@{H\+F\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_a3e26e7151e6cbba42bee136f6e46e07e}
+\hypertarget{class_hcal_tuple_tree_af95d1984176d950add73dc9d411cda04}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Rec\+Time@{H\+F\+Digi\+Rec\+Time}}
+\index{H\+F\+Digi\+Rec\+Time@{H\+F\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_af95d1984176d950add73dc9d411cda04}
+\hypertarget{class_hcal_tuple_tree_a49bb2b44d538e77e9d13793881c53d97}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Size@{H\+F\+Digi\+Size}}
+\index{H\+F\+Digi\+Size@{H\+F\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Size}\label{class_hcal_tuple_tree_a49bb2b44d538e77e9d13793881c53d97}
+\hypertarget{class_hcal_tuple_tree_a7e6e32f123dcbd48805db8f63c17698e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+F\+Digi\+Subdet@{H\+F\+Digi\+Subdet}}
+\index{H\+F\+Digi\+Subdet@{H\+F\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+F\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+F\+Digi\+Subdet}\label{class_hcal_tuple_tree_a7e6e32f123dcbd48805db8f63c17698e}
+\hypertarget{class_hcal_tuple_tree_a66f1270b14c4fcf3c3c2152414aa867d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+A\+D\+C@{H\+O\+Digi\+A\+D\+C}}
+\index{H\+O\+Digi\+A\+D\+C@{H\+O\+Digi\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+A\+D\+C}\label{class_hcal_tuple_tree_a66f1270b14c4fcf3c3c2152414aa867d}
+\hypertarget{class_hcal_tuple_tree_afe37a056626eef4c965a339b420171a9}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+All\+F\+C@{H\+O\+Digi\+All\+F\+C}}
+\index{H\+O\+Digi\+All\+F\+C@{H\+O\+Digi\+All\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+All\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+All\+F\+C}\label{class_hcal_tuple_tree_afe37a056626eef4c965a339b420171a9}
+\hypertarget{class_hcal_tuple_tree_a81df879ffcc93b380edb13aaea8eb689}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Cap\+I\+D@{H\+O\+Digi\+Cap\+I\+D}}
+\index{H\+O\+Digi\+Cap\+I\+D@{H\+O\+Digi\+Cap\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Cap\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Cap\+I\+D}\label{class_hcal_tuple_tree_a81df879ffcc93b380edb13aaea8eb689}
+\hypertarget{class_hcal_tuple_tree_a0de64b4e4a03a43dd7bd54afe6b91121}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Depth@{H\+O\+Digi\+Depth}}
+\index{H\+O\+Digi\+Depth@{H\+O\+Digi\+Depth}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Depth}\label{class_hcal_tuple_tree_a0de64b4e4a03a43dd7bd54afe6b91121}
+\hypertarget{class_hcal_tuple_tree_a12d79c1f523b7762cba3fb3e7f9a6290}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+D\+V@{H\+O\+Digi\+D\+V}}
+\index{H\+O\+Digi\+D\+V@{H\+O\+Digi\+D\+V}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+D\+V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+D\+V}\label{class_hcal_tuple_tree_a12d79c1f523b7762cba3fb3e7f9a6290}
+\hypertarget{class_hcal_tuple_tree_af1e174814a68ab2f6d4d38208388b769}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Electronics\+I\+D@{H\+O\+Digi\+Electronics\+I\+D}}
+\index{H\+O\+Digi\+Electronics\+I\+D@{H\+O\+Digi\+Electronics\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Electronics\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Electronics\+I\+D}\label{class_hcal_tuple_tree_af1e174814a68ab2f6d4d38208388b769}
+\hypertarget{class_hcal_tuple_tree_a379a809505a4af9fbdd8ed073cdadebf}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Energy@{H\+O\+Digi\+Energy}}
+\index{H\+O\+Digi\+Energy@{H\+O\+Digi\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Energy}\label{class_hcal_tuple_tree_a379a809505a4af9fbdd8ed073cdadebf}
+\hypertarget{class_hcal_tuple_tree_a541ae5ada795a82a8309b0d3e06a53a3}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+E\+R@{H\+O\+Digi\+E\+R}}
+\index{H\+O\+Digi\+E\+R@{H\+O\+Digi\+E\+R}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+E\+R}\label{class_hcal_tuple_tree_a541ae5ada795a82a8309b0d3e06a53a3}
+\hypertarget{class_hcal_tuple_tree_af4c462a15fc5e42100dc88e4eaa16f1e}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Eta@{H\+O\+Digi\+Eta}}
+\index{H\+O\+Digi\+Eta@{H\+O\+Digi\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Eta}\label{class_hcal_tuple_tree_af4c462a15fc5e42100dc88e4eaa16f1e}
+\hypertarget{class_hcal_tuple_tree_a285842d23b6b8d21ebed868753ee1e68}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+F\+C@{H\+O\+Digi\+F\+C}}
+\index{H\+O\+Digi\+F\+C@{H\+O\+Digi\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+F\+C}\label{class_hcal_tuple_tree_a285842d23b6b8d21ebed868753ee1e68}
+\hypertarget{class_hcal_tuple_tree_af0fe6322bab84267ca6092eef461829f}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Fiber@{H\+O\+Digi\+Fiber}}
+\index{H\+O\+Digi\+Fiber@{H\+O\+Digi\+Fiber}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Fiber}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Fiber}\label{class_hcal_tuple_tree_af0fe6322bab84267ca6092eef461829f}
+\hypertarget{class_hcal_tuple_tree_a558b32faee67ce93024ef6b65d39eea8}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Fiber\+Chan@{H\+O\+Digi\+Fiber\+Chan}}
+\index{H\+O\+Digi\+Fiber\+Chan@{H\+O\+Digi\+Fiber\+Chan}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Fiber\+Chan}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Fiber\+Chan}\label{class_hcal_tuple_tree_a558b32faee67ce93024ef6b65d39eea8}
+\hypertarget{class_hcal_tuple_tree_aaff952a6b231321e8ff459a7be299b89}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Fiber\+Idle\+Offset@{H\+O\+Digi\+Fiber\+Idle\+Offset}}
+\index{H\+O\+Digi\+Fiber\+Idle\+Offset@{H\+O\+Digi\+Fiber\+Idle\+Offset}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Fiber\+Idle\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Fiber\+Idle\+Offset}\label{class_hcal_tuple_tree_aaff952a6b231321e8ff459a7be299b89}
+\hypertarget{class_hcal_tuple_tree_ab3d383dc83018d2bc4e468a40af05787}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Gain@{H\+O\+Digi\+Gain}}
+\index{H\+O\+Digi\+Gain@{H\+O\+Digi\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Gain}\label{class_hcal_tuple_tree_ab3d383dc83018d2bc4e468a40af05787}
+\hypertarget{class_hcal_tuple_tree_a5f25a69ba6f14ae239054b745cc2f19c}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+I\+Eta@{H\+O\+Digi\+I\+Eta}}
+\index{H\+O\+Digi\+I\+Eta@{H\+O\+Digi\+I\+Eta}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+I\+Eta}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+I\+Eta}\label{class_hcal_tuple_tree_a5f25a69ba6f14ae239054b745cc2f19c}
+\hypertarget{class_hcal_tuple_tree_a4c609f165405dd9d65e93d84b7b2b08d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+I\+Phi@{H\+O\+Digi\+I\+Phi}}
+\index{H\+O\+Digi\+I\+Phi@{H\+O\+Digi\+I\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+I\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+I\+Phi}\label{class_hcal_tuple_tree_a4c609f165405dd9d65e93d84b7b2b08d}
+\hypertarget{class_hcal_tuple_tree_af5bd84878d749154d56e72a85ea99291}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+L\+A\+D\+C@{H\+O\+Digi\+L\+A\+D\+C}}
+\index{H\+O\+Digi\+L\+A\+D\+C@{H\+O\+Digi\+L\+A\+D\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+L\+A\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+L\+A\+D\+C}\label{class_hcal_tuple_tree_af5bd84878d749154d56e72a85ea99291}
+\hypertarget{class_hcal_tuple_tree_a56ee5bb65a6e34d5b0934fad381f2015}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Nom\+F\+C@{H\+O\+Digi\+Nom\+F\+C}}
+\index{H\+O\+Digi\+Nom\+F\+C@{H\+O\+Digi\+Nom\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Nom\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Nom\+F\+C}\label{class_hcal_tuple_tree_a56ee5bb65a6e34d5b0934fad381f2015}
+\hypertarget{class_hcal_tuple_tree_af4ae835aebd4b9754cde9868afed4d7d}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Ped\+F\+C@{H\+O\+Digi\+Ped\+F\+C}}
+\index{H\+O\+Digi\+Ped\+F\+C@{H\+O\+Digi\+Ped\+F\+C}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Ped\+F\+C}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Ped\+F\+C}\label{class_hcal_tuple_tree_af4ae835aebd4b9754cde9868afed4d7d}
+\hypertarget{class_hcal_tuple_tree_a31ee04dc7198ca962dfaf857a6e19339}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Phi@{H\+O\+Digi\+Phi}}
+\index{H\+O\+Digi\+Phi@{H\+O\+Digi\+Phi}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Phi}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Phi}\label{class_hcal_tuple_tree_a31ee04dc7198ca962dfaf857a6e19339}
+\hypertarget{class_hcal_tuple_tree_a419defccb7894e4a204632feef490ccf}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Presamples@{H\+O\+Digi\+Presamples}}
+\index{H\+O\+Digi\+Presamples@{H\+O\+Digi\+Presamples}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Presamples}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Presamples}\label{class_hcal_tuple_tree_a419defccb7894e4a204632feef490ccf}
+\hypertarget{class_hcal_tuple_tree_ad1871cbc92384941dfc7824c9d3066ea}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Raw@{H\+O\+Digi\+Raw}}
+\index{H\+O\+Digi\+Raw@{H\+O\+Digi\+Raw}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Raw}\label{class_hcal_tuple_tree_ad1871cbc92384941dfc7824c9d3066ea}
+\hypertarget{class_hcal_tuple_tree_aa5b1adb6d1e454dbaa1c2ea8c6d1ce17}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Raw\+I\+D@{H\+O\+Digi\+Raw\+I\+D}}
+\index{H\+O\+Digi\+Raw\+I\+D@{H\+O\+Digi\+Raw\+I\+D}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Raw\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Raw\+I\+D}\label{class_hcal_tuple_tree_aa5b1adb6d1e454dbaa1c2ea8c6d1ce17}
+\hypertarget{class_hcal_tuple_tree_a760900f2eccc37b9c8efc78b6af457fa}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+R\+C\+Gain@{H\+O\+Digi\+R\+C\+Gain}}
+\index{H\+O\+Digi\+R\+C\+Gain@{H\+O\+Digi\+R\+C\+Gain}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+R\+C\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$float$>$ $>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+R\+C\+Gain}\label{class_hcal_tuple_tree_a760900f2eccc37b9c8efc78b6af457fa}
+\hypertarget{class_hcal_tuple_tree_a74256e07cba2a77b6d96c50e5dbcab2f}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Rec\+Energy@{H\+O\+Digi\+Rec\+Energy}}
+\index{H\+O\+Digi\+Rec\+Energy@{H\+O\+Digi\+Rec\+Energy}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Rec\+Energy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Rec\+Energy}\label{class_hcal_tuple_tree_a74256e07cba2a77b6d96c50e5dbcab2f}
+\hypertarget{class_hcal_tuple_tree_a518d0a94b9cc0ca05a72210dd907a932}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Rec\+Time@{H\+O\+Digi\+Rec\+Time}}
+\index{H\+O\+Digi\+Rec\+Time@{H\+O\+Digi\+Rec\+Time}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Rec\+Time}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$float$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Rec\+Time}\label{class_hcal_tuple_tree_a518d0a94b9cc0ca05a72210dd907a932}
+\hypertarget{class_hcal_tuple_tree_a474c798a52945bf3edef9637b3577e75}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Size@{H\+O\+Digi\+Size}}
+\index{H\+O\+Digi\+Size@{H\+O\+Digi\+Size}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Size}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Size}\label{class_hcal_tuple_tree_a474c798a52945bf3edef9637b3577e75}
+\hypertarget{class_hcal_tuple_tree_a19e6167120f3b6e5d9a93340ed80d334}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!H\+O\+Digi\+Subdet@{H\+O\+Digi\+Subdet}}
+\index{H\+O\+Digi\+Subdet@{H\+O\+Digi\+Subdet}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{H\+O\+Digi\+Subdet}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ Hcal\+Tuple\+Tree\+::\+H\+O\+Digi\+Subdet}\label{class_hcal_tuple_tree_a19e6167120f3b6e5d9a93340ed80d334}
+\hypertarget{class_hcal_tuple_tree_a6a440ac41ccfdf350de9344c160cd2d4}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!ls@{ls}}
+\index{ls@{ls}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{ls}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::ls}\label{class_hcal_tuple_tree_a6a440ac41ccfdf350de9344c160cd2d4}
+\hypertarget{class_hcal_tuple_tree_a387c336e6d042e9b98d4a7552b42daf0}{}\index{Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}!run@{run}}
+\index{run@{run}!Hcal\+Tuple\+Tree@{Hcal\+Tuple\+Tree}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}U\+Int\+\_\+t Hcal\+Tuple\+Tree\+::run}\label{class_hcal_tuple_tree_a387c336e6d042e9b98d4a7552b42daf0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_hcal_tuple_tree_8h}{Hcal\+Tuple\+Tree.\+h}\item 
+src/\hyperlink{_hcal_tuple_tree_8cc}{Hcal\+Tuple\+Tree.\+cc}\end{DoxyCompactItemize}

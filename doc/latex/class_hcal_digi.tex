@@ -1,0 +1,420 @@
+\hypertarget{class_hcal_digi}{}\section{Hcal\+Digi Class Reference}
+\label{class_hcal_digi}\index{Hcal\+Digi@{Hcal\+Digi}}
+
+
+{\ttfamily \#include $<$Hcal\+Digi.\+h$>$}
+
+Inheritance diagram for Hcal\+Digi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hcal_digi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hcal_digi_a0577e9f390ff911e083f7465cb0e8f1d}{Hcal\+Digi} ()
+\item 
+\hyperlink{class_hcal_digi_a5f4c54b1683c340b0256aa35efb951ca}{Hcal\+Digi} (\hyperlink{class_collection}{Collection} \&c, unsigned short i, short j=0)
+\item 
+virtual float \hyperlink{class_hcal_digi_a665c0fa940132fafc6dce9fd75f18cea}{energy} ()=0
+\item 
+virtual float \hyperlink{class_hcal_digi_a3936cda623fc7535ed35d8d1c6abb350}{rec\+Hit\+Time} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a65fc605c5c3bca7f78d961400d145c94}{ieta} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a979dec4585c9d07a7dc4060dfb97f089}{iphi} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a916a582b044a64e041ba38e545349f7f}{depth} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a054f6f17539c8042d2900144d06eb4fc}{size} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_aad0fc232379d8bdd40d6be32b3c980c4}{presamples} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_afc95a09767a731b098cb2e22b89cc4e0}{electronics\+Id} ()=0
+\item 
+virtual int \hyperlink{class_hcal_digi_aba55732d16499ad510091c769807f8e1}{raw\+Id} ()=0
+\item 
+virtual float \hyperlink{class_hcal_digi_a4a5e45ca390ee81fe384bf4a7d05f1e0}{fc} (int i)=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a737b46ab9bc5439f32232ee6911ed516}{adc} (int i)=0
+\item 
+virtual int \hyperlink{class_hcal_digi_aa758519b70ab24ac4bb7635052cfa174}{dv} (int i)=0
+\item 
+virtual int \hyperlink{class_hcal_digi_a04b02a86692bcdff2fb8fa8c50cc0c34}{er} (int i)=0
+\item 
+virtual int \hyperlink{class_hcal_digi_ad6e205312dda117af660b9391d502155}{capid} (int i)=0
+\item 
+float \hyperlink{class_hcal_digi_a138d4ee8f433530dd2ed391cf036f233}{fc\+Total} ()
+\item 
+int \hyperlink{class_hcal_digi_a24ca24cbc2ea356627ddcff20c308846}{adc\+Total} ()
+\item 
+double \hyperlink{class_hcal_digi_a11e29234e593020716fea46884cdb850}{time} ()
+\item 
+double \hyperlink{class_hcal_digi_a9d7d21b996bfffcac0543d43d167c5ea}{time12} ()
+\item 
+double \hyperlink{class_hcal_digi_a298c1a07be693c4b7eb575ff73986d3a}{time34} ()
+\item 
+double \hyperlink{class_hcal_digi_ab6a0cbf1a35a0fb01eb91e8cd90f4cb2}{charge12} ()
+\item 
+double \hyperlink{class_hcal_digi_aee6d8c5093f2a13ea727f9582893bfa0}{charge34} ()
+\item 
+bool \hyperlink{class_hcal_digi_a533e89804901926f571c8bf5ab3a28d9}{is\+Signal} ()
+\item 
+int \hyperlink{class_hcal_digi_a1b0ece60d015d716a91cde135caefb34}{max\+A\+D\+C} ()
+\item 
+double \& \hyperlink{class_hcal_digi_a97f21992c1e45b427ce09dcca581e0f5}{Pt} ()
+\item 
+double \& \hyperlink{class_hcal_digi_a84be4fe4f387b7b67da4161b70e6254a}{Eta} ()
+\item 
+double \& \hyperlink{class_hcal_digi_a3cc5e61af592f544a573f2bd8d0292f7}{Phi} ()
+\item 
+bool \hyperlink{class_hcal_digi_aff5580b98a1dc9155ee316ea30c52701}{Pass\+User\+I\+D} (\hyperlink{_i_d_types_8h_a094c367727273b4da2b960ca3b3edc06}{I\+D} id, bool verbose=false)
+\item 
+bool \hyperlink{class_hcal_digi_ad46ecbe02799bfd4f955d16d6cc8a634}{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V} (bool verbose)
+\item 
+bool \hyperlink{class_hcal_digi_a37f77ef16bee597453274322be29b9d3}{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R} (bool verbose)
+\item 
+bool \hyperlink{class_hcal_digi_ad67d910037f433d03888ab45d12cbe1b}{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err} (bool verbose)
+\item 
+bool \hyperlink{class_hcal_digi_a2a05f5e8ab79e930d4eb421c4569d374}{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size} (bool verbose)
+\item 
+bool \hyperlink{class_hcal_digi_a515c743373f90bdfe0a43297cb7e957b}{Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal} (bool verbose)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_hcal_digi_a4829a0f328a240dd236569a3cf717c4f}{m\+\_\+null\+\_\+value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hcal_digi_a0577e9f390ff911e083f7465cb0e8f1d}{}\index{Hcal\+Digi@{Hcal\+Digi}!Hcal\+Digi@{Hcal\+Digi}}
+\index{Hcal\+Digi@{Hcal\+Digi}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Hcal\+Digi()}]{\setlength{\rightskip}{0pt plus 5cm}Hcal\+Digi\+::\+Hcal\+Digi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a0577e9f390ff911e083f7465cb0e8f1d}
+\hypertarget{class_hcal_digi_a5f4c54b1683c340b0256aa35efb951ca}{}\index{Hcal\+Digi@{Hcal\+Digi}!Hcal\+Digi@{Hcal\+Digi}}
+\index{Hcal\+Digi@{Hcal\+Digi}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Hcal\+Digi(\+Collection \&c, unsigned short i, short j=0)}]{\setlength{\rightskip}{0pt plus 5cm}Hcal\+Digi\+::\+Hcal\+Digi (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{c, }
+\item[{unsigned short}]{i, }
+\item[{short}]{j = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a5f4c54b1683c340b0256aa35efb951ca}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hcal_digi_a737b46ab9bc5439f32232ee6911ed516}{}\index{Hcal\+Digi@{Hcal\+Digi}!adc@{adc}}
+\index{adc@{adc}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{adc(int i)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::adc (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a737b46ab9bc5439f32232ee6911ed516}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a13245b123aa2a7b9a77783ef063a2e9e}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_abeffd6ef4e4023b16b3e34b4ee08946a}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_afd736e6e2a6292cd2e88cac49b7e919d}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_ad7540b3f782bf6fecc3d00ffd8432337}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a3e6b23ebca7eb32e5bc88176714e70c0}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a24ca24cbc2ea356627ddcff20c308846}{}\index{Hcal\+Digi@{Hcal\+Digi}!adc\+Total@{adc\+Total}}
+\index{adc\+Total@{adc\+Total}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{adc\+Total()}]{\setlength{\rightskip}{0pt plus 5cm}int Hcal\+Digi\+::adc\+Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a24ca24cbc2ea356627ddcff20c308846}
+\hypertarget{class_hcal_digi_ad6e205312dda117af660b9391d502155}{}\index{Hcal\+Digi@{Hcal\+Digi}!capid@{capid}}
+\index{capid@{capid}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{capid(int i)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::capid (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_ad6e205312dda117af660b9391d502155}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_ab1ae8ad47951f6368763a4c29cbf2412}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_ae7aa759c1fa1e23d7afe5f7041232cf0}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a05be32bba8288c2041f49d379b66922d}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a8e7fc84c98fbce60f4a5fd5a94087ba3}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a8058b129b0df409e8055506caae9b6e4}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_ab6a0cbf1a35a0fb01eb91e8cd90f4cb2}{}\index{Hcal\+Digi@{Hcal\+Digi}!charge12@{charge12}}
+\index{charge12@{charge12}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{charge12()}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::charge12 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_ab6a0cbf1a35a0fb01eb91e8cd90f4cb2}
+\hypertarget{class_hcal_digi_aee6d8c5093f2a13ea727f9582893bfa0}{}\index{Hcal\+Digi@{Hcal\+Digi}!charge34@{charge34}}
+\index{charge34@{charge34}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{charge34()}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::charge34 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_aee6d8c5093f2a13ea727f9582893bfa0}
+\hypertarget{class_hcal_digi_a916a582b044a64e041ba38e545349f7f}{}\index{Hcal\+Digi@{Hcal\+Digi}!depth@{depth}}
+\index{depth@{depth}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{depth()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a916a582b044a64e041ba38e545349f7f}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_adb9be00df4f0020f7cd1fc40c3a84b3c}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_aeaf0cb6c915c4eb6ff434d8958a89dcb}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_aa4f363ba278423a85893306778880db5}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a91cb1d88b08224209e156740b916ebf1}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a9c7b71e89e76c571f222af1a994738f9}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_aa758519b70ab24ac4bb7635052cfa174}{}\index{Hcal\+Digi@{Hcal\+Digi}!dv@{dv}}
+\index{dv@{dv}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{dv(int i)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::dv (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_aa758519b70ab24ac4bb7635052cfa174}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a1dad223a353a80ebf729ece94d4a40ed}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a73c8777b58168a278e6232ade243feb5}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_ac3e816c077f8a09a482c624352123196}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a4f9ae85d537a4642d5a378c9993967c0}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_aa4ec10e56cab21dc97f357a613c6ac37}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_afc95a09767a731b098cb2e22b89cc4e0}{}\index{Hcal\+Digi@{Hcal\+Digi}!electronics\+Id@{electronics\+Id}}
+\index{electronics\+Id@{electronics\+Id}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{electronics\+Id()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::electronics\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_afc95a09767a731b098cb2e22b89cc4e0}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a2a7ab522d25e2441b7e9f42a14c8a28e}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a38a9cae6397668a3193f94ec7b7228e7}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_u_t_c_a_abce0c33f0953b586c40e60741f8abf18}{H\+F\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a2d689c4c53b74e67e7a62f3a43a4f665}{H\+F\+Digi}, and \hyperlink{class_h_o_digi_ac26e1e5c799189bf1b75ab7d84693f04}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a665c0fa940132fafc6dce9fd75f18cea}{}\index{Hcal\+Digi@{Hcal\+Digi}!energy@{energy}}
+\index{energy@{energy}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{energy()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual float Hcal\+Digi\+::energy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a665c0fa940132fafc6dce9fd75f18cea}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a0f5025749bcd77805e199893f22a3e68}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a90f3f6a187dfc4a7daab1eec62403a11}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a63778060b11696ec97f17205ea36bdb4}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_adf5d3f041e1e3a43e5576b6ddcf2ad48}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a35507a821e8d2c511366d8ace55498e8}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a04b02a86692bcdff2fb8fa8c50cc0c34}{}\index{Hcal\+Digi@{Hcal\+Digi}!er@{er}}
+\index{er@{er}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{er(int i)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::er (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a04b02a86692bcdff2fb8fa8c50cc0c34}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a4a0513d9ad713c7043c532bdd806fb1e}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a43349b34a4d3fd699feb4b794b47edd8}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_ac648135daf87c2f957430ee50ff27fae}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_aac6d122fbe8df975f2e4bf2dea3c4490}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a7049efa78a9b03d356f0e25493c48de5}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a84be4fe4f387b7b67da4161b70e6254a}{}\index{Hcal\+Digi@{Hcal\+Digi}!Eta@{Eta}}
+\index{Eta@{Eta}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Eta()}]{\setlength{\rightskip}{0pt plus 5cm}double\& Hcal\+Digi\+::\+Eta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_hcal_digi_a84be4fe4f387b7b67da4161b70e6254a}
+
+
+Implements \hyperlink{class_object_a3760d2b4b0723118234370675654d46a}{Object}.
+
+\hypertarget{class_hcal_digi_a4a5e45ca390ee81fe384bf4a7d05f1e0}{}\index{Hcal\+Digi@{Hcal\+Digi}!fc@{fc}}
+\index{fc@{fc}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{fc(int i)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual float Hcal\+Digi\+::fc (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a4a5e45ca390ee81fe384bf4a7d05f1e0}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a6048dac0f0c0267c52355a5284cef7e4}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_ab20263c255cc955b2011c38fb0e65463}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_aad37bf192b33e5f3e8dc0d3d1be73348}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a71dcf59339d2814e52df6236f99d8a8c}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a56032f0b01bee6c79b9e22ff442b1226}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a138d4ee8f433530dd2ed391cf036f233}{}\index{Hcal\+Digi@{Hcal\+Digi}!fc\+Total@{fc\+Total}}
+\index{fc\+Total@{fc\+Total}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{fc\+Total()}]{\setlength{\rightskip}{0pt plus 5cm}float Hcal\+Digi\+::fc\+Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a138d4ee8f433530dd2ed391cf036f233}
+\hypertarget{class_hcal_digi_a65fc605c5c3bca7f78d961400d145c94}{}\index{Hcal\+Digi@{Hcal\+Digi}!ieta@{ieta}}
+\index{ieta@{ieta}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{ieta()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::ieta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a65fc605c5c3bca7f78d961400d145c94}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_af21f90b00a2f6426b1a9fcdb9dc6df19}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a58e2f67223522ef6b3722e05cd9f27e2}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a33b1576f22f6d8e4495944e486c6c365}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a8a767e2e7844a50f4865041e77fbbfe1}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_ade1d1693acbf00a041202f4077bc1b01}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a979dec4585c9d07a7dc4060dfb97f089}{}\index{Hcal\+Digi@{Hcal\+Digi}!iphi@{iphi}}
+\index{iphi@{iphi}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{iphi()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::iphi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a979dec4585c9d07a7dc4060dfb97f089}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a298eb50c54fa265c3b54da98273582e8}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a8a18a62e86b585d657450032fd4a364b}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_ac9d87c43f47810ff7103c51619b88cbf}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_ab2685221ef4d3dacbff49b066d23c662}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a45538b8564e47fdfb4fa1f7b7b3638aa}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a533e89804901926f571c8bf5ab3a28d9}{}\index{Hcal\+Digi@{Hcal\+Digi}!is\+Signal@{is\+Signal}}
+\index{is\+Signal@{is\+Signal}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{is\+Signal()}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::is\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a533e89804901926f571c8bf5ab3a28d9}
+\hypertarget{class_hcal_digi_a1b0ece60d015d716a91cde135caefb34}{}\index{Hcal\+Digi@{Hcal\+Digi}!max\+A\+D\+C@{max\+A\+D\+C}}
+\index{max\+A\+D\+C@{max\+A\+D\+C}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{max\+A\+D\+C()}]{\setlength{\rightskip}{0pt plus 5cm}int Hcal\+Digi\+::max\+A\+D\+C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a1b0ece60d015d716a91cde135caefb34}
+\hypertarget{class_hcal_digi_aff5580b98a1dc9155ee316ea30c52701}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D@{Pass\+User\+I\+D}}
+\index{Pass\+User\+I\+D@{Pass\+User\+I\+D}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D(\+I\+D id, bool verbose=false)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+D}}]{id, }
+\item[{bool}]{verbose = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_digi_aff5580b98a1dc9155ee316ea30c52701}
+
+
+Implements \hyperlink{class_object_ae28bc9879447dad23f10ebd1971e81f5}{Object}.
+
+\hypertarget{class_hcal_digi_a2a05f5e8ab79e930d4eb421c4569d374}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size}}
+\index{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size(bool verbose)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Bad\+Size (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a2a05f5e8ab79e930d4eb421c4569d374}
+\hypertarget{class_hcal_digi_ad67d910037f433d03888ab45d12cbe1b}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err}}
+\index{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err(bool verbose)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D\+\_\+\+Digi\+Has\+Cap\+I\+D\+Err (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_ad67d910037f433d03888ab45d12cbe1b}
+\hypertarget{class_hcal_digi_a37f77ef16bee597453274322be29b9d3}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R}}
+\index{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R(bool verbose)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D\+\_\+\+Digi\+Has\+E\+R (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a37f77ef16bee597453274322be29b9d3}
+\hypertarget{class_hcal_digi_ad46ecbe02799bfd4f955d16d6cc8a634}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V}}
+\index{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V@{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V(bool verbose)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D\+\_\+\+Digi\+Has\+N\+D\+V (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_ad46ecbe02799bfd4f955d16d6cc8a634}
+\hypertarget{class_hcal_digi_a515c743373f90bdfe0a43297cb7e957b}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal@{Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal}}
+\index{Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal@{Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal(bool verbose)}]{\setlength{\rightskip}{0pt plus 5cm}bool Hcal\+Digi\+::\+Pass\+User\+I\+D\+\_\+\+Digi\+Is\+Signal (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a515c743373f90bdfe0a43297cb7e957b}
+\hypertarget{class_hcal_digi_a3cc5e61af592f544a573f2bd8d0292f7}{}\index{Hcal\+Digi@{Hcal\+Digi}!Phi@{Phi}}
+\index{Phi@{Phi}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Phi()}]{\setlength{\rightskip}{0pt plus 5cm}double\& Hcal\+Digi\+::\+Phi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_hcal_digi_a3cc5e61af592f544a573f2bd8d0292f7}
+
+
+Implements \hyperlink{class_object_ab8fa3bfbd16c2b6c420ec113fbc2a0e4}{Object}.
+
+\hypertarget{class_hcal_digi_aad0fc232379d8bdd40d6be32b3c980c4}{}\index{Hcal\+Digi@{Hcal\+Digi}!presamples@{presamples}}
+\index{presamples@{presamples}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{presamples()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::presamples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_aad0fc232379d8bdd40d6be32b3c980c4}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a8b5ebee824decc29577614aba1b1a6cf}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a4a4e3c399d97f65a0039fa564d03de06}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a33992d4a75b4545c1be9f50a6e243710}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a013df46d2ee37fde04c3e57fb769c248}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a3f43041b8f83de05dd047a1174aef8c9}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a97f21992c1e45b427ce09dcca581e0f5}{}\index{Hcal\+Digi@{Hcal\+Digi}!Pt@{Pt}}
+\index{Pt@{Pt}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{Pt()}]{\setlength{\rightskip}{0pt plus 5cm}double\& Hcal\+Digi\+::\+Pt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_hcal_digi_a97f21992c1e45b427ce09dcca581e0f5}
+
+
+Implements \hyperlink{class_object_ac280f2330a4bd359404841431bd46f2e}{Object}.
+
+\hypertarget{class_hcal_digi_aba55732d16499ad510091c769807f8e1}{}\index{Hcal\+Digi@{Hcal\+Digi}!raw\+Id@{raw\+Id}}
+\index{raw\+Id@{raw\+Id}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{raw\+Id()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::raw\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_aba55732d16499ad510091c769807f8e1}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_a09aaedd7443322629a9acb7bff896a50}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_f_digi_a702fadfdc85d5cc5a787d9593165fb9d}{H\+F\+Digi}, \hyperlink{class_h_o_digi_ad4db205e282e97906270b2277619431d}{H\+O\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_a6a8cf86fb45a78134eb0a050760c40a1}{H\+B\+H\+E\+U\+T\+C\+A}, and \hyperlink{class_h_f_u_t_c_a_a205ccadc5b455b7944b1a76d7da32d09}{H\+F\+U\+T\+C\+A}.
+
+\hypertarget{class_hcal_digi_a3936cda623fc7535ed35d8d1c6abb350}{}\index{Hcal\+Digi@{Hcal\+Digi}!rec\+Hit\+Time@{rec\+Hit\+Time}}
+\index{rec\+Hit\+Time@{rec\+Hit\+Time}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{rec\+Hit\+Time()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual float Hcal\+Digi\+::rec\+Hit\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a3936cda623fc7535ed35d8d1c6abb350}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_aecd2a59dcb215797ba559c75da4cd2f4}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_aff798ca66309c09608573f0c4a0deaff}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_a04265763dd24d24360d45fa8f77ae49f}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_a7279e3a34a60e5da92e280c4f3870cb1}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a838e14ae5420e4e8dc3666e1db6e88e4}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a054f6f17539c8042d2900144d06eb4fc}{}\index{Hcal\+Digi@{Hcal\+Digi}!size@{size}}
+\index{size@{size}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{size()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Hcal\+Digi\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_hcal_digi_a054f6f17539c8042d2900144d06eb4fc}
+
+
+Implemented in \hyperlink{class_h_b_h_e_digi_ae86275760fadb4c34a6a2371b71c7c99}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_b_h_e_u_t_c_a_aa7a56c86797c67add0f34999e3d7b69d}{H\+B\+H\+E\+U\+T\+C\+A}, \hyperlink{class_h_f_digi_ad29e817757e158c1f50e4510dd31df92}{H\+F\+Digi}, \hyperlink{class_h_f_u_t_c_a_aaecaeda5eb484331c5c8fe90fd1e94ac}{H\+F\+U\+T\+C\+A}, and \hyperlink{class_h_o_digi_a4d7d71ce07087f9dcca70ef861ba1695}{H\+O\+Digi}.
+
+\hypertarget{class_hcal_digi_a11e29234e593020716fea46884cdb850}{}\index{Hcal\+Digi@{Hcal\+Digi}!time@{time}}
+\index{time@{time}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{time()}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a11e29234e593020716fea46884cdb850}
+\hypertarget{class_hcal_digi_a9d7d21b996bfffcac0543d43d167c5ea}{}\index{Hcal\+Digi@{Hcal\+Digi}!time12@{time12}}
+\index{time12@{time12}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{time12()}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::time12 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a9d7d21b996bfffcac0543d43d167c5ea}
+\hypertarget{class_hcal_digi_a298c1a07be693c4b7eb575ff73986d3a}{}\index{Hcal\+Digi@{Hcal\+Digi}!time34@{time34}}
+\index{time34@{time34}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{time34()}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::time34 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_digi_a298c1a07be693c4b7eb575ff73986d3a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hcal_digi_a4829a0f328a240dd236569a3cf717c4f}{}\index{Hcal\+Digi@{Hcal\+Digi}!m\+\_\+null\+\_\+value@{m\+\_\+null\+\_\+value}}
+\index{m\+\_\+null\+\_\+value@{m\+\_\+null\+\_\+value}!Hcal\+Digi@{Hcal\+Digi}}
+\subsubsection[{m\+\_\+null\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}double Hcal\+Digi\+::m\+\_\+null\+\_\+value\hspace{0.3cm}{\ttfamily [protected]}}\label{class_hcal_digi_a4829a0f328a240dd236569a3cf717c4f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_hcal_digi_8h}{Hcal\+Digi.\+h}\item 
+src/\hyperlink{_hcal_digi_8cc}{Hcal\+Digi.\+cc}\item 
+src/\hyperlink{_hcal_digi_i_ds_8cc}{Hcal\+Digi\+I\+Ds.\+cc}\end{DoxyCompactItemize}

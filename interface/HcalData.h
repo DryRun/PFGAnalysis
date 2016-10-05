@@ -11,6 +11,12 @@
 #include "HCALPFG/PFGAnalysis/interface/HODigi.h"
 #include "HCALPFG/PFGAnalysis/interface/Object.h"
 
+
+ /**
+  * @brief      Class for exposing HCAL data from HcalTupleTree (github.com/HCALPFG/HcalTupleMaker) in pyroot. Digi data is available through the various Digi objects. Data can also be directly accessed in the usual TTree::MakeSelector way.
+  */
+ 
+
 class HcalData : public HcalTupleTree {
 public:
 
@@ -20,6 +26,10 @@ public:
 
 	Int_t GetEntry(Long64_t entry);
 
+	/**
+	 * @brief      Returns a collection of digis based on the template class (HBHEDigi, HFDigi, or HODigi).
+	 * @return     Collection of digis.
+	 */
 	template <class T>
 	Collection* Digis() {
 		Collection* collection = 0;
@@ -33,12 +43,21 @@ public:
 		return collection;
 	}
 
+	/**
+	 * Returns a single digi. Type is determined from the template class.	
+	 * @param  i Index of digi
+	 * @return   Digi
+	 */
 	template <class T>
 	T Digi(int i) {
 		Collection* collection = Digis<T>();
 		return collection->GetConstituent<T>(i);
 	}
 
+	/**
+	 * Make a detector's data available through HcalData::Digi and HcalData::Digis.
+	 * @param detector pfg::kHBHE, pfg::kHF, or pfg::kHO. 
+	 */
 	inline void AddDetector(pfg::Detector_t detector) {
 		detectors_.push_back(detector);
 	}

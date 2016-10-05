@@ -1,0 +1,122 @@
+\hypertarget{class_hcal_data}{}\section{Hcal\+Data Class Reference}
+\label{class_hcal_data}\index{Hcal\+Data@{Hcal\+Data}}
+
+
+Class for exposing H\+C\+A\+L data from \hyperlink{class_hcal_tuple_tree}{Hcal\+Tuple\+Tree} (github.\+com/\+H\+C\+A\+L\+P\+F\+G/\+Hcal\+Tuple\+Maker) in pyroot. Digi data is available through the various Digi objects. Data can also be directly accessed in the usual T\+Tree\+::\+Make\+Selector way.  
+
+
+
+
+{\ttfamily \#include $<$Hcal\+Data.\+h$>$}
+
+Inheritance diagram for Hcal\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hcal_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hcal_data_a03e8c0684f3121d68944cd71d0c02817}{Hcal\+Data} (T\+Tree $\ast$tree=0)
+\item 
+\hyperlink{class_hcal_data_a6a6311896ad7d9aa300f01572cf2c9f5}{$\sim$\+Hcal\+Data} ()
+\item 
+Int\+\_\+t \hyperlink{class_hcal_data_aa5d32f6b744c860c647e213d4aff9ff4}{Get\+Entry} (Long64\+\_\+t entry)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{class_collection}{Collection} $\ast$ \hyperlink{class_hcal_data_a620712e779255411ccd8aedf375f430d}{Digis} ()
+\begin{DoxyCompactList}\small\item\em Returns a collection of digis based on the template class (\hyperlink{class_h_b_h_e_digi}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_f_digi}{H\+F\+Digi}, or \hyperlink{class_h_o_digi}{H\+O\+Digi}). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{class_hcal_data_a36161d851fde7fb81c4d1b616ff09680}{Digi} (int i)
+\begin{DoxyCompactList}\small\item\em Returns a single digi. Type is determined from the template class. \end{DoxyCompactList}\item 
+void \hyperlink{class_hcal_data_ac2257a06065a51a4c23d4007beb8ad64}{Add\+Detector} (\hyperlink{namespacepfg_a90b6d47b5ff56bc3ebabb0f6b6088d60}{pfg\+::\+Detector\+\_\+t} detector)
+\begin{DoxyCompactList}\small\item\em Make a detector\textquotesingle{}s data available through \hyperlink{class_hcal_data_a36161d851fde7fb81c4d1b616ff09680}{Hcal\+Data\+::\+Digi} and \hyperlink{class_hcal_data_a620712e779255411ccd8aedf375f430d}{Hcal\+Data\+::\+Digis}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for exposing H\+C\+A\+L data from \hyperlink{class_hcal_tuple_tree}{Hcal\+Tuple\+Tree} (github.\+com/\+H\+C\+A\+L\+P\+F\+G/\+Hcal\+Tuple\+Maker) in pyroot. Digi data is available through the various Digi objects. Data can also be directly accessed in the usual T\+Tree\+::\+Make\+Selector way. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hcal_data_a03e8c0684f3121d68944cd71d0c02817}{}\index{Hcal\+Data@{Hcal\+Data}!Hcal\+Data@{Hcal\+Data}}
+\index{Hcal\+Data@{Hcal\+Data}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{Hcal\+Data(\+T\+Tree $\ast$tree=0)}]{\setlength{\rightskip}{0pt plus 5cm}Hcal\+Data\+::\+Hcal\+Data (
+\begin{DoxyParamCaption}
+\item[{T\+Tree $\ast$}]{tree = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_hcal_data_a03e8c0684f3121d68944cd71d0c02817}
+\hypertarget{class_hcal_data_a6a6311896ad7d9aa300f01572cf2c9f5}{}\index{Hcal\+Data@{Hcal\+Data}!````~Hcal\+Data@{$\sim$\+Hcal\+Data}}
+\index{````~Hcal\+Data@{$\sim$\+Hcal\+Data}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{$\sim$\+Hcal\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}Hcal\+Data\+::$\sim$\+Hcal\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hcal_data_a6a6311896ad7d9aa300f01572cf2c9f5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hcal_data_ac2257a06065a51a4c23d4007beb8ad64}{}\index{Hcal\+Data@{Hcal\+Data}!Add\+Detector@{Add\+Detector}}
+\index{Add\+Detector@{Add\+Detector}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{Add\+Detector(pfg\+::\+Detector\+\_\+t detector)}]{\setlength{\rightskip}{0pt plus 5cm}void Hcal\+Data\+::\+Add\+Detector (
+\begin{DoxyParamCaption}
+\item[{{\bf pfg\+::\+Detector\+\_\+t}}]{detector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_hcal_data_ac2257a06065a51a4c23d4007beb8ad64}
+
+
+Make a detector\textquotesingle{}s data available through \hyperlink{class_hcal_data_a36161d851fde7fb81c4d1b616ff09680}{Hcal\+Data\+::\+Digi} and \hyperlink{class_hcal_data_a620712e779255411ccd8aedf375f430d}{Hcal\+Data\+::\+Digis}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em detector} & \hyperlink{namespacepfg_a90b6d47b5ff56bc3ebabb0f6b6088d60a6dd4ec12d707ea8f3768d5ce35598ef7}{pfg\+::k\+H\+B\+H\+E}, \hyperlink{namespacepfg_a90b6d47b5ff56bc3ebabb0f6b6088d60af0455c45bb2be69b625695b04157afab}{pfg\+::k\+H\+F}, or \hyperlink{namespacepfg_a90b6d47b5ff56bc3ebabb0f6b6088d60a438afa76c58d2c9c8df4e1b8f90f4789}{pfg\+::k\+H\+O}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_hcal_data_a36161d851fde7fb81c4d1b616ff09680}{}\index{Hcal\+Data@{Hcal\+Data}!Digi@{Digi}}
+\index{Digi@{Digi}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{Digi(int i)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T Hcal\+Data\+::\+Digi (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_hcal_data_a36161d851fde7fb81c4d1b616ff09680}
+
+
+Returns a single digi. Type is determined from the template class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}int\mbox{]}} & i Index of digi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Digi 
+\end{DoxyReturn}
+\hypertarget{class_hcal_data_a620712e779255411ccd8aedf375f430d}{}\index{Hcal\+Data@{Hcal\+Data}!Digis@{Digis}}
+\index{Digis@{Digis}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{Digis()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Collection}$\ast$ Hcal\+Data\+::\+Digis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_hcal_data_a620712e779255411ccd8aedf375f430d}
+
+
+Returns a collection of digis based on the template class (\hyperlink{class_h_b_h_e_digi}{H\+B\+H\+E\+Digi}, \hyperlink{class_h_f_digi}{H\+F\+Digi}, or \hyperlink{class_h_o_digi}{H\+O\+Digi}). 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_collection}{Collection} of digis. 
+\end{DoxyReturn}
+\hypertarget{class_hcal_data_aa5d32f6b744c860c647e213d4aff9ff4}{}\index{Hcal\+Data@{Hcal\+Data}!Get\+Entry@{Get\+Entry}}
+\index{Get\+Entry@{Get\+Entry}!Hcal\+Data@{Hcal\+Data}}
+\subsubsection[{Get\+Entry(\+Long64\+\_\+t entry)}]{\setlength{\rightskip}{0pt plus 5cm}Int\+\_\+t Hcal\+Data\+::\+Get\+Entry (
+\begin{DoxyParamCaption}
+\item[{Long64\+\_\+t}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_hcal_data_aa5d32f6b744c860c647e213d4aff9ff4}
+
+
+Reimplemented from \hyperlink{class_hcal_tuple_tree_a61ac2553042cf88a12bd462a7814c18d}{Hcal\+Tuple\+Tree}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_hcal_data_8h}{Hcal\+Data.\+h}\item 
+src/\hyperlink{_hcal_data_8cc}{Hcal\+Data.\+cc}\end{DoxyCompactItemize}

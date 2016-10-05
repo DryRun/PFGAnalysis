@@ -1,0 +1,289 @@
+\hypertarget{class_collection}{}\section{Collection Class Reference}
+\label{class_collection}\index{Collection@{Collection}}
+
+
+{\ttfamily \#include $<$Collection.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collection_aa21fbf1d352d860cc21d84eecd403654}{Collection} (\hyperlink{class_hcal_tuple_tree}{Hcal\+Tuple\+Tree} \&d, size\+\_\+t size)
+\item 
+\hyperlink{class_collection_a82ba2751d054a1dc20fe500b8a8043d4}{Collection} (\hyperlink{class_collection}{Collection} \&c)
+\item 
+void \hyperlink{class_collection_a199dd3f773ec714ad40748265de535e2}{Set\+H\+L\+T\+Filter\+Object\+Index} (short i)
+\item 
+void \hyperlink{class_collection_ac404569056596990e420a8640a217cb8}{Set\+Raw\+Indices} (std\+::vector$<$ unsigned short $>$ \&i)
+\item 
+void \hyperlink{class_collection_ae97a73b7e9a5f60fde5ce13ee1bb9b97}{Set\+Lead\+N\+Constituents} (unsigned short n)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\Object1 \hyperlink{class_collection_a89d0e41fed060e724ce4c219faa1e3fe}{Get\+Constituent} (unsigned short i)
+\item 
+std\+::vector$<$ unsigned short $>$ $\ast$ \hyperlink{class_collection_a6670bf82e20e49baddc03d39309bb8bd}{Get\+Raw\+Indices} ()
+\item 
+unsigned short \hyperlink{class_collection_a4dc8cd466f0ed9816d16f861117d8614}{Get\+Size} ()
+\item 
+\hyperlink{class_hcal_tuple_tree}{Hcal\+Tuple\+Tree} $\ast$ \hyperlink{class_collection_aec8babe811fce42f7cdbfa9204bb53d3}{Get\+Data} ()
+\item 
+short \hyperlink{class_collection_a7f4a06a68e1f4d159490cd7620e0f12c}{Get\+H\+L\+T\+Filter\+Index} ()
+\item 
+void \hyperlink{class_collection_aa70c30a22816d44da087195e9c3245f9}{Clear} ()
+\item 
+void \hyperlink{class_collection_a512ec1402a91a4af0ba696cc66f6f6fc}{Append} (unsigned short i)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\bool \hyperlink{class_collection_a91f8f35f3a94dc82013a979c52ab7e42}{Has} (const Object1 \&o)
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\int \hyperlink{class_collection_ad01ea641d18de312338c07ce9ff1c109}{Has\+How\+Many} (const \hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} other\+\_\+collection)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a1747c3817ab4fcf378c7cb90f4be59ca}{Skim\+By\+I\+D} (\hyperlink{_i_d_types_8h_a094c367727273b4da2b960ca3b3edc06}{I\+D} id, bool verbose=false)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a5bcdc6dda7ac3de1789a93c9f7779883}{Skim\+By\+Min\+Pt} (double min\+\_\+pt)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a5f1b6cfa200f5c288505983a678b5a96}{Skim\+By\+Eta\+Range} (double min\+\_\+eta, double max\+\_\+eta)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_aa9e4e2eb09a5a42dadb09c24f6ac22a9}{Skim\+By\+Abs\+Eta\+Range} (double min\+\_\+abs\+\_\+eta, double max\+\_\+abs\+\_\+eta)
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_aae28a34d3dea752c6ca9c9ca01761226}{Skim\+By\+Veto\+D\+R\+Match} (const \hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} other\+\_\+collection, double min\+\_\+dr)
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a70e65cca2101cee209172af86a90e536}{Skim\+By\+Veto\+D\+R\+Match} (Object2 \&other\+\_\+object, double min\+\_\+dr)
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a54e900d55c4ac8031405cf47d9057cf2}{Skim\+By\+Require\+D\+R\+Match} (const \hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} other\+\_\+collection, double max\+\_\+dr)
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\Object1 \hyperlink{class_collection_ae44c2ce07ad035fa796bd2c9b84f55dd}{Get\+Closest\+In\+D\+R} (Object2 \&other\+\_\+object)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} \hyperlink{class_collection_a49f4130580bee8e31bea180059ab6fc4}{Remove\+Duplicates} ()
+\item 
+{\footnotesize template$<$class Object1 , class Object2 $>$ }\\void \hyperlink{class_collection_af2614a9b9632132334040e925900774d}{Match\+And\+Smear\+Energy} (const \hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} matching\+\_\+collection, double max\+\_\+dr, T\+Random3 $\ast$engine, T\+Lorentz\+Vector \&v\+\_\+delta\+\_\+met)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\void \hyperlink{class_collection_a2d8d04525e4b5ad9fdb0e561ab407ed0}{Scale\+Energy} (int scale\+\_\+sign, T\+Lorentz\+Vector \&v\+\_\+delta\+\_\+met)
+\item 
+{\footnotesize template$<$class Object1 $>$ }\\void \hyperlink{class_collection_a597be8599a7546094dc33a2dcaadca74}{examine} (const char $\ast$name, \hyperlink{_i_d_types_8h_a094c367727273b4da2b960ca3b3edc06}{I\+D} id=\hyperlink{_i_d_types_8h_a094c367727273b4da2b960ca3b3edc06a67c41dfcde5626af9e05ef5a416e2294}{N\+U\+L\+L\+\_\+\+I\+D}, bool verbose=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hcal_tuple_tree}{Hcal\+Tuple\+Tree} $\ast$ \hyperlink{class_collection_a856900f84bfbbddaea6610b6c3dc079a}{m\+\_\+data}
+\item 
+std\+::vector$<$ unsigned short $>$ \hyperlink{class_collection_ac03c12ac003f01bcde775591f5fdba01}{m\+\_\+raw\+\_\+indices}
+\item 
+short \hyperlink{class_collection_a0cc67f7dee886333510eefb4774d1731}{m\+\_\+hlt\+\_\+filter\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_collection_aa21fbf1d352d860cc21d84eecd403654}{}\index{Collection@{Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Collection@{Collection}}
+\subsubsection[{Collection(\+Hcal\+Tuple\+Tree \&d, size\+\_\+t size)}]{\setlength{\rightskip}{0pt plus 5cm}Collection\+::\+Collection (
+\begin{DoxyParamCaption}
+\item[{{\bf Hcal\+Tuple\+Tree} \&}]{d, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)}\label{class_collection_aa21fbf1d352d860cc21d84eecd403654}
+\hypertarget{class_collection_a82ba2751d054a1dc20fe500b8a8043d4}{}\index{Collection@{Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Collection@{Collection}}
+\subsubsection[{Collection(\+Collection \&c)}]{\setlength{\rightskip}{0pt plus 5cm}Collection\+::\+Collection (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{c}
+\end{DoxyParamCaption}
+)}\label{class_collection_a82ba2751d054a1dc20fe500b8a8043d4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_collection_a512ec1402a91a4af0ba696cc66f6f6fc}{}\index{Collection@{Collection}!Append@{Append}}
+\index{Append@{Append}!Collection@{Collection}}
+\subsubsection[{Append(unsigned short i)}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::\+Append (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a512ec1402a91a4af0ba696cc66f6f6fc}
+\hypertarget{class_collection_aa70c30a22816d44da087195e9c3245f9}{}\index{Collection@{Collection}!Clear@{Clear}}
+\index{Clear@{Clear}!Collection@{Collection}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_aa70c30a22816d44da087195e9c3245f9}
+\hypertarget{class_collection_a597be8599a7546094dc33a2dcaadca74}{}\index{Collection@{Collection}!examine@{examine}}
+\index{examine@{examine}!Collection@{Collection}}
+\subsubsection[{examine(const char $\ast$name, I\+D id=\+N\+U\+L\+L\+\_\+\+I\+D, bool verbose=false)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ void Collection\+::examine (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf I\+D}}]{id = {\ttfamily {\bf N\+U\+L\+L\+\_\+\+I\+D}}, }
+\item[{bool}]{verbose = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a597be8599a7546094dc33a2dcaadca74}
+\hypertarget{class_collection_ae44c2ce07ad035fa796bd2c9b84f55dd}{}\index{Collection@{Collection}!Get\+Closest\+In\+D\+R@{Get\+Closest\+In\+D\+R}}
+\index{Get\+Closest\+In\+D\+R@{Get\+Closest\+In\+D\+R}!Collection@{Collection}}
+\subsubsection[{Get\+Closest\+In\+D\+R(\+Object2 \&other\+\_\+object)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ Object1 Collection\+::\+Get\+Closest\+In\+D\+R (
+\begin{DoxyParamCaption}
+\item[{Object2 \&}]{other\+\_\+object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_ae44c2ce07ad035fa796bd2c9b84f55dd}
+\hypertarget{class_collection_a89d0e41fed060e724ce4c219faa1e3fe}{}\index{Collection@{Collection}!Get\+Constituent@{Get\+Constituent}}
+\index{Get\+Constituent@{Get\+Constituent}!Collection@{Collection}}
+\subsubsection[{Get\+Constituent(unsigned short i)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ Object1 Collection\+::\+Get\+Constituent (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a89d0e41fed060e724ce4c219faa1e3fe}
+\hypertarget{class_collection_aec8babe811fce42f7cdbfa9204bb53d3}{}\index{Collection@{Collection}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!Collection@{Collection}}
+\subsubsection[{Get\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hcal\+Tuple\+Tree}$\ast$ Collection\+::\+Get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_aec8babe811fce42f7cdbfa9204bb53d3}
+\hypertarget{class_collection_a7f4a06a68e1f4d159490cd7620e0f12c}{}\index{Collection@{Collection}!Get\+H\+L\+T\+Filter\+Index@{Get\+H\+L\+T\+Filter\+Index}}
+\index{Get\+H\+L\+T\+Filter\+Index@{Get\+H\+L\+T\+Filter\+Index}!Collection@{Collection}}
+\subsubsection[{Get\+H\+L\+T\+Filter\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}short Collection\+::\+Get\+H\+L\+T\+Filter\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a7f4a06a68e1f4d159490cd7620e0f12c}
+\hypertarget{class_collection_a6670bf82e20e49baddc03d39309bb8bd}{}\index{Collection@{Collection}!Get\+Raw\+Indices@{Get\+Raw\+Indices}}
+\index{Get\+Raw\+Indices@{Get\+Raw\+Indices}!Collection@{Collection}}
+\subsubsection[{Get\+Raw\+Indices()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned short$>$$\ast$ Collection\+::\+Get\+Raw\+Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a6670bf82e20e49baddc03d39309bb8bd}
+\hypertarget{class_collection_a4dc8cd466f0ed9816d16f861117d8614}{}\index{Collection@{Collection}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!Collection@{Collection}}
+\subsubsection[{Get\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short Collection\+::\+Get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a4dc8cd466f0ed9816d16f861117d8614}
+\hypertarget{class_collection_a91f8f35f3a94dc82013a979c52ab7e42}{}\index{Collection@{Collection}!Has@{Has}}
+\index{Has@{Has}!Collection@{Collection}}
+\subsubsection[{Has(const Object1 \&o)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ bool Collection\+::\+Has (
+\begin{DoxyParamCaption}
+\item[{const Object1 \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a91f8f35f3a94dc82013a979c52ab7e42}
+\hypertarget{class_collection_ad01ea641d18de312338c07ce9ff1c109}{}\index{Collection@{Collection}!Has\+How\+Many@{Has\+How\+Many}}
+\index{Has\+How\+Many@{Has\+How\+Many}!Collection@{Collection}}
+\subsubsection[{Has\+How\+Many(const Collection\+Ptr other\+\_\+collection)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ int Collection\+::\+Has\+How\+Many (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collection\+Ptr}}]{other\+\_\+collection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_ad01ea641d18de312338c07ce9ff1c109}
+\hypertarget{class_collection_af2614a9b9632132334040e925900774d}{}\index{Collection@{Collection}!Match\+And\+Smear\+Energy@{Match\+And\+Smear\+Energy}}
+\index{Match\+And\+Smear\+Energy@{Match\+And\+Smear\+Energy}!Collection@{Collection}}
+\subsubsection[{Match\+And\+Smear\+Energy(const Collection\+Ptr matching\+\_\+collection, double max\+\_\+dr, T\+Random3 $\ast$engine, T\+Lorentz\+Vector \&v\+\_\+delta\+\_\+met)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ void Collection\+::\+Match\+And\+Smear\+Energy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collection\+Ptr}}]{matching\+\_\+collection, }
+\item[{double}]{max\+\_\+dr, }
+\item[{T\+Random3 $\ast$}]{engine, }
+\item[{T\+Lorentz\+Vector \&}]{v\+\_\+delta\+\_\+met}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_af2614a9b9632132334040e925900774d}
+\hypertarget{class_collection_a49f4130580bee8e31bea180059ab6fc4}{}\index{Collection@{Collection}!Remove\+Duplicates@{Remove\+Duplicates}}
+\index{Remove\+Duplicates@{Remove\+Duplicates}!Collection@{Collection}}
+\subsubsection[{Remove\+Duplicates()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ {\bf Collection\+Ptr} Collection\+::\+Remove\+Duplicates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a49f4130580bee8e31bea180059ab6fc4}
+\hypertarget{class_collection_a2d8d04525e4b5ad9fdb0e561ab407ed0}{}\index{Collection@{Collection}!Scale\+Energy@{Scale\+Energy}}
+\index{Scale\+Energy@{Scale\+Energy}!Collection@{Collection}}
+\subsubsection[{Scale\+Energy(int scale\+\_\+sign, T\+Lorentz\+Vector \&v\+\_\+delta\+\_\+met)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ void Collection\+::\+Scale\+Energy (
+\begin{DoxyParamCaption}
+\item[{int}]{scale\+\_\+sign, }
+\item[{T\+Lorentz\+Vector \&}]{v\+\_\+delta\+\_\+met}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a2d8d04525e4b5ad9fdb0e561ab407ed0}
+\hypertarget{class_collection_a199dd3f773ec714ad40748265de535e2}{}\index{Collection@{Collection}!Set\+H\+L\+T\+Filter\+Object\+Index@{Set\+H\+L\+T\+Filter\+Object\+Index}}
+\index{Set\+H\+L\+T\+Filter\+Object\+Index@{Set\+H\+L\+T\+Filter\+Object\+Index}!Collection@{Collection}}
+\subsubsection[{Set\+H\+L\+T\+Filter\+Object\+Index(short i)}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::\+Set\+H\+L\+T\+Filter\+Object\+Index (
+\begin{DoxyParamCaption}
+\item[{short}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a199dd3f773ec714ad40748265de535e2}
+\hypertarget{class_collection_ae97a73b7e9a5f60fde5ce13ee1bb9b97}{}\index{Collection@{Collection}!Set\+Lead\+N\+Constituents@{Set\+Lead\+N\+Constituents}}
+\index{Set\+Lead\+N\+Constituents@{Set\+Lead\+N\+Constituents}!Collection@{Collection}}
+\subsubsection[{Set\+Lead\+N\+Constituents(unsigned short n)}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::\+Set\+Lead\+N\+Constituents (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_ae97a73b7e9a5f60fde5ce13ee1bb9b97}
+\hypertarget{class_collection_ac404569056596990e420a8640a217cb8}{}\index{Collection@{Collection}!Set\+Raw\+Indices@{Set\+Raw\+Indices}}
+\index{Set\+Raw\+Indices@{Set\+Raw\+Indices}!Collection@{Collection}}
+\subsubsection[{Set\+Raw\+Indices(std\+::vector$<$ unsigned short $>$ \&i)}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::\+Set\+Raw\+Indices (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ unsigned short $>$ \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_ac404569056596990e420a8640a217cb8}
+\hypertarget{class_collection_aa9e4e2eb09a5a42dadb09c24f6ac22a9}{}\index{Collection@{Collection}!Skim\+By\+Abs\+Eta\+Range@{Skim\+By\+Abs\+Eta\+Range}}
+\index{Skim\+By\+Abs\+Eta\+Range@{Skim\+By\+Abs\+Eta\+Range}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Abs\+Eta\+Range(double min\+\_\+abs\+\_\+eta, double max\+\_\+abs\+\_\+eta)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Abs\+Eta\+Range (
+\begin{DoxyParamCaption}
+\item[{double}]{min\+\_\+abs\+\_\+eta, }
+\item[{double}]{max\+\_\+abs\+\_\+eta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_aa9e4e2eb09a5a42dadb09c24f6ac22a9}
+\hypertarget{class_collection_a5f1b6cfa200f5c288505983a678b5a96}{}\index{Collection@{Collection}!Skim\+By\+Eta\+Range@{Skim\+By\+Eta\+Range}}
+\index{Skim\+By\+Eta\+Range@{Skim\+By\+Eta\+Range}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Eta\+Range(double min\+\_\+eta, double max\+\_\+eta)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Eta\+Range (
+\begin{DoxyParamCaption}
+\item[{double}]{min\+\_\+eta, }
+\item[{double}]{max\+\_\+eta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a5f1b6cfa200f5c288505983a678b5a96}
+\hypertarget{class_collection_a1747c3817ab4fcf378c7cb90f4be59ca}{}\index{Collection@{Collection}!Skim\+By\+I\+D@{Skim\+By\+I\+D}}
+\index{Skim\+By\+I\+D@{Skim\+By\+I\+D}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+I\+D(\+I\+D id, bool verbose=false)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+D}}]{id, }
+\item[{bool}]{verbose = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a1747c3817ab4fcf378c7cb90f4be59ca}
+\hypertarget{class_collection_a5bcdc6dda7ac3de1789a93c9f7779883}{}\index{Collection@{Collection}!Skim\+By\+Min\+Pt@{Skim\+By\+Min\+Pt}}
+\index{Skim\+By\+Min\+Pt@{Skim\+By\+Min\+Pt}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Min\+Pt(double min\+\_\+pt)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Min\+Pt (
+\begin{DoxyParamCaption}
+\item[{double}]{min\+\_\+pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a5bcdc6dda7ac3de1789a93c9f7779883}
+\hypertarget{class_collection_a54e900d55c4ac8031405cf47d9057cf2}{}\index{Collection@{Collection}!Skim\+By\+Require\+D\+R\+Match@{Skim\+By\+Require\+D\+R\+Match}}
+\index{Skim\+By\+Require\+D\+R\+Match@{Skim\+By\+Require\+D\+R\+Match}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Require\+D\+R\+Match(const Collection\+Ptr other\+\_\+collection, double max\+\_\+dr)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Require\+D\+R\+Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collection\+Ptr}}]{other\+\_\+collection, }
+\item[{double}]{max\+\_\+dr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a54e900d55c4ac8031405cf47d9057cf2}
+\hypertarget{class_collection_aae28a34d3dea752c6ca9c9ca01761226}{}\index{Collection@{Collection}!Skim\+By\+Veto\+D\+R\+Match@{Skim\+By\+Veto\+D\+R\+Match}}
+\index{Skim\+By\+Veto\+D\+R\+Match@{Skim\+By\+Veto\+D\+R\+Match}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Veto\+D\+R\+Match(const Collection\+Ptr other\+\_\+collection, double min\+\_\+dr)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Veto\+D\+R\+Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collection\+Ptr}}]{other\+\_\+collection, }
+\item[{double}]{min\+\_\+dr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_aae28a34d3dea752c6ca9c9ca01761226}
+\hypertarget{class_collection_a70e65cca2101cee209172af86a90e536}{}\index{Collection@{Collection}!Skim\+By\+Veto\+D\+R\+Match@{Skim\+By\+Veto\+D\+R\+Match}}
+\index{Skim\+By\+Veto\+D\+R\+Match@{Skim\+By\+Veto\+D\+R\+Match}!Collection@{Collection}}
+\subsubsection[{Skim\+By\+Veto\+D\+R\+Match(\+Object2 \&other\+\_\+object, double min\+\_\+dr)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Object1 , class Object2 $>$ {\bf Collection\+Ptr} Collection\+::\+Skim\+By\+Veto\+D\+R\+Match (
+\begin{DoxyParamCaption}
+\item[{Object2 \&}]{other\+\_\+object, }
+\item[{double}]{min\+\_\+dr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_collection_a70e65cca2101cee209172af86a90e536}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_collection_a856900f84bfbbddaea6610b6c3dc079a}{}\index{Collection@{Collection}!m\+\_\+data@{m\+\_\+data}}
+\index{m\+\_\+data@{m\+\_\+data}!Collection@{Collection}}
+\subsubsection[{m\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hcal\+Tuple\+Tree}$\ast$ Collection\+::m\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}\label{class_collection_a856900f84bfbbddaea6610b6c3dc079a}
+\hypertarget{class_collection_a0cc67f7dee886333510eefb4774d1731}{}\index{Collection@{Collection}!m\+\_\+hlt\+\_\+filter\+\_\+index@{m\+\_\+hlt\+\_\+filter\+\_\+index}}
+\index{m\+\_\+hlt\+\_\+filter\+\_\+index@{m\+\_\+hlt\+\_\+filter\+\_\+index}!Collection@{Collection}}
+\subsubsection[{m\+\_\+hlt\+\_\+filter\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}short Collection\+::m\+\_\+hlt\+\_\+filter\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}\label{class_collection_a0cc67f7dee886333510eefb4774d1731}
+\hypertarget{class_collection_ac03c12ac003f01bcde775591f5fdba01}{}\index{Collection@{Collection}!m\+\_\+raw\+\_\+indices@{m\+\_\+raw\+\_\+indices}}
+\index{m\+\_\+raw\+\_\+indices@{m\+\_\+raw\+\_\+indices}!Collection@{Collection}}
+\subsubsection[{m\+\_\+raw\+\_\+indices}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$unsigned short$>$ Collection\+::m\+\_\+raw\+\_\+indices\hspace{0.3cm}{\ttfamily [protected]}}\label{class_collection_ac03c12ac003f01bcde775591f5fdba01}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_collection_8h}{Collection.\+h}\item 
+src/\hyperlink{_collection_8cc}{Collection.\+cc}\end{DoxyCompactItemize}

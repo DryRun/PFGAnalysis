@@ -45,18 +45,19 @@ class ChannelAnalysis(hcal_analysis.HcalAnalysis):
 
 			# Make histograms specific to this event
 			for depth in xrange(self._detector_volumes["HBHE"]["depth"][0], self._detector_volumes["HBHE"]["depth"][1] + 1):
-				self._histograms.AddTH2F("adcTotal_d{}_event_{}".format(depth, self._data.event), "Average adcTotal, depth {}, event {}".format(depth, self._data.event), 
+				self._histograms.AddTH2F("adcTotal_d{}_event_{}_bx_{}_ls_{}".format(depth, self._data.event, self._data.bx, self._data.ls), 
+					"Average adcTotal, depth {}, event {}, bx {}".format(depth, self._data.event, self._data.bx), 
 					"IEta", self._detector_volumes["HBHE"]["ieta"][1] - self._detector_volumes["HBHE"]["ieta"][0] + 1, self._detector_volumes["HBHE"]["ieta"][0] - 0.5, self._detector_volumes["HBHE"]["ieta"][1] + 0.5,
 					"IPhi", self._detector_volumes["HBHE"]["iphi"][1] - self._detector_volumes["HBHE"]["iphi"][0] + 1, self._detector_volumes["HBHE"]["iphi"][0] - 0.5, self._detector_volumes["HBHE"]["iphi"][1] + 0.5
 				)
 
 			# Loop over digis
 			for i in xrange(self._data.Digis("HBHEDigi")().GetSize()):
-				ieta = self._data.Digi("HBHEDigi")(i).ieta()
-				iphi = self._data.Digi("HBHEDigi")(i).iphi()
+				ieta  = self._data.Digi("HBHEDigi")(i).ieta()
+				iphi  = self._data.Digi("HBHEDigi")(i).iphi()
 				depth = self._data.Digi("HBHEDigi")(i).depth()
 				self._histograms.GetTH2F("avg_adcTotal_d{}".format(depth)).Fill(ieta, iphi, self._data.Digi("HBHEDigi")(i).adcTotal())
-				self._histograms.GetTH2F("adcTotal_d{}_event_{}".format(depth, self._data.event)).Fill(ieta, iphi, self._data.Digi("HBHEDigi")(i).adcTotal())
+				self._histograms.GetTH2F("adcTotal_d{}_event_{}_bx_{}_ls_{}".format(depth, self._data.event, self._data.bx, self._data.ls)).Fill(ieta, iphi, self._data.Digi("HBHEDigi")(i).adcTotal())
 
 
 	def finish(self):
@@ -71,12 +72,13 @@ def make_plots(filename):
 	f = ROOT.TFile(filename)
 	dir_list = ROOT.gDirectory.GetListOfKeys()
 	for key in dir_list:
-		obj = key.ReadObj()
 		if key.GetClassName() == "TH2F":
-			hist_name = obj.GetName()
+			hist = key.ReadObj()
+			hist_name = hist.GetName()
 			canvas_name = hist_name.replace("h_", "c_")
 			c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
-			obj.Draw("colz")
+			hist.SetMaximum(128*10);
+			hist.Draw("colz")
 			c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
 
 
@@ -89,7 +91,7 @@ if __name__ == "__main__":
 
 	if args.hist:
 		analysis = ChannelAnalysis()
-		analysis.add_file("/home/dryu/HCAL/data/HCALPFG/LaserTag/hcalTupleTree.root ")
+		analysis.add_file("/home/dryu/HCAL/data/HCALPFG/LaserTag/hcalTupleTree_big.root ")
 		analysis.start()
 		analysis.run()
 		analysis.finish()

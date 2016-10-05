@@ -1,0 +1,305 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_a40860402e64d8008fb42329df7097cdb}{Object} ()
+\item 
+\hyperlink{class_object_af3b5cd7a9a24ddde484344200cf83281}{Object} (const \hyperlink{class_object}{Object} \&)
+\item 
+\hyperlink{class_object_a4cab32d7c391abd44858b62a291a63af}{Object} (\hyperlink{class_collection}{Collection} \&collection, short raw\+\_\+index)
+\item 
+\hyperlink{class_object_ab53a90984c2f5ce5c56844729e2a9423}{Object} (\hyperlink{class_collection}{Collection} \&collection, short raw\+\_\+index, const char $\ast$name)
+\item 
+\hyperlink{class_object_a0e5c30a0657fe9466ac0929bc9460a01}{Object} (\hyperlink{class_collection}{Collection} \&collection, short raw\+\_\+index, short hlt\+\_\+filter\+\_\+index)
+\item 
+\hyperlink{class_object_ae50594e498a111e905387e0313c801f4}{Object} (\hyperlink{class_collection}{Collection} \&collection, short raw\+\_\+index, short hlt\+\_\+filter\+\_\+index, const char $\ast$name)
+\item 
+\hyperlink{class_object_ae8f5483f459e46687bd01e6f9977afd3}{$\sim$\+Object} ()
+\item 
+const char $\ast$ \hyperlink{class_object_a57442be9a5695f873a22787a107ec01b}{Name} () const 
+\item 
+virtual short \hyperlink{class_object_a6c5f158e839949047e4cb14489aae4ca}{Get\+Raw\+Index} ()
+\item 
+virtual double \& \hyperlink{class_object_ac280f2330a4bd359404841431bd46f2e}{Pt} ()=0
+\item 
+virtual double \& \hyperlink{class_object_ab8fa3bfbd16c2b6c420ec113fbc2a0e4}{Phi} ()=0
+\item 
+virtual double \& \hyperlink{class_object_a3760d2b4b0723118234370675654d46a}{Eta} ()=0
+\item 
+virtual double \hyperlink{class_object_abf0816d94dbf5512710b160f54779c98}{Energy\+Res\+Scale\+Factor} ()
+\item 
+virtual double \hyperlink{class_object_ae1afc1bad2f56db046023a9776eba93f}{Energy\+Scale\+Factor} ()
+\item 
+virtual double \hyperlink{class_object_a492c12bfcde7d1a7c36722cfc7977e92}{Energy\+Res\+Scale\+Error} ()
+\item 
+virtual bool \hyperlink{class_object_ae28bc9879447dad23f10ebd1971e81f5}{Pass\+User\+I\+D} (\hyperlink{_i_d_types_8h_a094c367727273b4da2b960ca3b3edc06}{I\+D} id, bool verbose)=0
+\item 
+double \hyperlink{class_object_a5f825f0cdc0f45ec3efbea0bd1bc4c6a}{Delta\+R} (\hyperlink{class_object}{Object} $\ast$other\+\_\+object)
+\item 
+double \hyperlink{class_object_aaa50373e27e16bf086e0a2a24ae8a37b}{Delta\+Phi} (\hyperlink{class_object}{Object} $\ast$other\+\_\+object)
+\item 
+double \hyperlink{class_object_aaa45210cbaa92c8bb0e010c11a83c58c}{Phi\+\_\+mpi\+\_\+pi} (double x)
+\item 
+bool \hyperlink{class_object_a6b0f2caacff9cac58cae48f859546715}{Is\+Gen\+E\+B\+Fiducial} ()
+\item 
+bool \hyperlink{class_object_ac0980938e66610abc54ddbd4548410cf}{Is\+Gen\+E\+E\+Fiducial} ()
+\item 
+bool \hyperlink{class_object_ac29c9d8a48d0369ac06e921b578c0478}{Is\+Gen\+Electron\+Fiducial} ()
+\item 
+bool \hyperlink{class_object_a4f86f3820ed2571046d520047d2db7ae}{Is\+Muon\+Fiducial} ()
+\item 
+bool \hyperlink{class_object_afcf15ef137aabe615be23f6db585a779}{Is\+N\+U\+L\+L} ()
+\item 
+{\footnotesize template$<$class Another\+Object $>$ }\\bool \hyperlink{class_object_a1a01cc0958c3b491c26c2a066314481c}{Match\+By\+D\+R} (\hyperlink{_collection_8h_a64ea9217513944abee0afcb2ee82d787}{Collection\+Ptr} c, Another\+Object \&best\+\_\+match, double max\+\_\+dr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{class_object_a90fd7f91e8f0f3eea7bc1eeed71ec3d6}{m\+\_\+name}
+\item 
+\hyperlink{class_collection}{Collection} $\ast$ \hyperlink{class_object_af66cc1db553fa91b451c7855a8d09ec0}{m\+\_\+collection}
+\item 
+short \hyperlink{class_object_a75e13245ae926f83a29ce9b25b8e4aa5}{m\+\_\+raw\+\_\+index}
+\item 
+short \hyperlink{class_object_ac1f71ac949f9d66cdeabca5dc7385a03}{m\+\_\+hlt\+\_\+filter\+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_object_a40860402e64d8008fb42329df7097cdb}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object()}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_a40860402e64d8008fb42329df7097cdb}
+\hypertarget{class_object_af3b5cd7a9a24ddde484344200cf83281}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object(const Object \&)}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{o}
+\end{DoxyParamCaption}
+)}\label{class_object_af3b5cd7a9a24ddde484344200cf83281}
+\hypertarget{class_object_a4cab32d7c391abd44858b62a291a63af}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object(\+Collection \&collection, short raw\+\_\+index)}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{collection, }
+\item[{short}]{raw\+\_\+index}
+\end{DoxyParamCaption}
+)}\label{class_object_a4cab32d7c391abd44858b62a291a63af}
+\hypertarget{class_object_ab53a90984c2f5ce5c56844729e2a9423}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object(\+Collection \&collection, short raw\+\_\+index, const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{collection, }
+\item[{short}]{raw\+\_\+index, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{class_object_ab53a90984c2f5ce5c56844729e2a9423}
+\hypertarget{class_object_a0e5c30a0657fe9466ac0929bc9460a01}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object(\+Collection \&collection, short raw\+\_\+index, short hlt\+\_\+filter\+\_\+index)}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{collection, }
+\item[{short}]{raw\+\_\+index, }
+\item[{short}]{hlt\+\_\+filter\+\_\+index}
+\end{DoxyParamCaption}
+)}\label{class_object_a0e5c30a0657fe9466ac0929bc9460a01}
+\hypertarget{class_object_ae50594e498a111e905387e0313c801f4}{}\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object(\+Collection \&collection, short raw\+\_\+index, short hlt\+\_\+filter\+\_\+index, const char $\ast$name)}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection} \&}]{collection, }
+\item[{short}]{raw\+\_\+index, }
+\item[{short}]{hlt\+\_\+filter\+\_\+index, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{class_object_ae50594e498a111e905387e0313c801f4}
+\hypertarget{class_object_ae8f5483f459e46687bd01e6f9977afd3}{}\index{Object@{Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!Object@{Object}}
+\subsubsection[{$\sim$\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::$\sim$\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_ae8f5483f459e46687bd01e6f9977afd3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_object_aaa50373e27e16bf086e0a2a24ae8a37b}{}\index{Object@{Object}!Delta\+Phi@{Delta\+Phi}}
+\index{Delta\+Phi@{Delta\+Phi}!Object@{Object}}
+\subsubsection[{Delta\+Phi(\+Object $\ast$other\+\_\+object)}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::\+Delta\+Phi (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other\+\_\+object}
+\end{DoxyParamCaption}
+)}\label{class_object_aaa50373e27e16bf086e0a2a24ae8a37b}
+\hypertarget{class_object_a5f825f0cdc0f45ec3efbea0bd1bc4c6a}{}\index{Object@{Object}!Delta\+R@{Delta\+R}}
+\index{Delta\+R@{Delta\+R}!Object@{Object}}
+\subsubsection[{Delta\+R(\+Object $\ast$other\+\_\+object)}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::\+Delta\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{other\+\_\+object}
+\end{DoxyParamCaption}
+)}\label{class_object_a5f825f0cdc0f45ec3efbea0bd1bc4c6a}
+\hypertarget{class_object_a492c12bfcde7d1a7c36722cfc7977e92}{}\index{Object@{Object}!Energy\+Res\+Scale\+Error@{Energy\+Res\+Scale\+Error}}
+\index{Energy\+Res\+Scale\+Error@{Energy\+Res\+Scale\+Error}!Object@{Object}}
+\subsubsection[{Energy\+Res\+Scale\+Error()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Object\+::\+Energy\+Res\+Scale\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_object_a492c12bfcde7d1a7c36722cfc7977e92}
+\hypertarget{class_object_abf0816d94dbf5512710b160f54779c98}{}\index{Object@{Object}!Energy\+Res\+Scale\+Factor@{Energy\+Res\+Scale\+Factor}}
+\index{Energy\+Res\+Scale\+Factor@{Energy\+Res\+Scale\+Factor}!Object@{Object}}
+\subsubsection[{Energy\+Res\+Scale\+Factor()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Object\+::\+Energy\+Res\+Scale\+Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_object_abf0816d94dbf5512710b160f54779c98}
+\hypertarget{class_object_ae1afc1bad2f56db046023a9776eba93f}{}\index{Object@{Object}!Energy\+Scale\+Factor@{Energy\+Scale\+Factor}}
+\index{Energy\+Scale\+Factor@{Energy\+Scale\+Factor}!Object@{Object}}
+\subsubsection[{Energy\+Scale\+Factor()}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Object\+::\+Energy\+Scale\+Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_object_ae1afc1bad2f56db046023a9776eba93f}
+\hypertarget{class_object_a3760d2b4b0723118234370675654d46a}{}\index{Object@{Object}!Eta@{Eta}}
+\index{Eta@{Eta}!Object@{Object}}
+\subsubsection[{Eta()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual double\& Object\+::\+Eta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_object_a3760d2b4b0723118234370675654d46a}
+
+
+Implemented in \hyperlink{class_hcal_digi_a84be4fe4f387b7b67da4161b70e6254a}{Hcal\+Digi}, \hyperlink{class_hcal_sample_abf85f43fdc3f12861443834c97e3d3eb}{Hcal\+Sample}, and \hyperlink{class_h_l_t_filter_object_ade8858903109a380c3283b6e4203630b}{H\+L\+T\+Filter\+Object}.
+
+\hypertarget{class_object_a6c5f158e839949047e4cb14489aae4ca}{}\index{Object@{Object}!Get\+Raw\+Index@{Get\+Raw\+Index}}
+\index{Get\+Raw\+Index@{Get\+Raw\+Index}!Object@{Object}}
+\subsubsection[{Get\+Raw\+Index()}]{\setlength{\rightskip}{0pt plus 5cm}virtual short Object\+::\+Get\+Raw\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_object_a6c5f158e839949047e4cb14489aae4ca}
+\hypertarget{class_object_a6b0f2caacff9cac58cae48f859546715}{}\index{Object@{Object}!Is\+Gen\+E\+B\+Fiducial@{Is\+Gen\+E\+B\+Fiducial}}
+\index{Is\+Gen\+E\+B\+Fiducial@{Is\+Gen\+E\+B\+Fiducial}!Object@{Object}}
+\subsubsection[{Is\+Gen\+E\+B\+Fiducial()}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::\+Is\+Gen\+E\+B\+Fiducial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_a6b0f2caacff9cac58cae48f859546715}
+\hypertarget{class_object_ac0980938e66610abc54ddbd4548410cf}{}\index{Object@{Object}!Is\+Gen\+E\+E\+Fiducial@{Is\+Gen\+E\+E\+Fiducial}}
+\index{Is\+Gen\+E\+E\+Fiducial@{Is\+Gen\+E\+E\+Fiducial}!Object@{Object}}
+\subsubsection[{Is\+Gen\+E\+E\+Fiducial()}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::\+Is\+Gen\+E\+E\+Fiducial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_ac0980938e66610abc54ddbd4548410cf}
+\hypertarget{class_object_ac29c9d8a48d0369ac06e921b578c0478}{}\index{Object@{Object}!Is\+Gen\+Electron\+Fiducial@{Is\+Gen\+Electron\+Fiducial}}
+\index{Is\+Gen\+Electron\+Fiducial@{Is\+Gen\+Electron\+Fiducial}!Object@{Object}}
+\subsubsection[{Is\+Gen\+Electron\+Fiducial()}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::\+Is\+Gen\+Electron\+Fiducial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_ac29c9d8a48d0369ac06e921b578c0478}
+\hypertarget{class_object_a4f86f3820ed2571046d520047d2db7ae}{}\index{Object@{Object}!Is\+Muon\+Fiducial@{Is\+Muon\+Fiducial}}
+\index{Is\+Muon\+Fiducial@{Is\+Muon\+Fiducial}!Object@{Object}}
+\subsubsection[{Is\+Muon\+Fiducial()}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::\+Is\+Muon\+Fiducial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_a4f86f3820ed2571046d520047d2db7ae}
+\hypertarget{class_object_afcf15ef137aabe615be23f6db585a779}{}\index{Object@{Object}!Is\+N\+U\+L\+L@{Is\+N\+U\+L\+L}}
+\index{Is\+N\+U\+L\+L@{Is\+N\+U\+L\+L}!Object@{Object}}
+\subsubsection[{Is\+N\+U\+L\+L()}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\+::\+Is\+N\+U\+L\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_object_afcf15ef137aabe615be23f6db585a779}
+\hypertarget{class_object_a1a01cc0958c3b491c26c2a066314481c}{}\index{Object@{Object}!Match\+By\+D\+R@{Match\+By\+D\+R}}
+\index{Match\+By\+D\+R@{Match\+By\+D\+R}!Object@{Object}}
+\subsubsection[{Match\+By\+D\+R(\+Collection\+Ptr c, Another\+Object \&best\+\_\+match, double max\+\_\+dr)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Another\+Object $>$ bool Object\+::\+Match\+By\+D\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Collection\+Ptr}}]{c, }
+\item[{Another\+Object \&}]{best\+\_\+match, }
+\item[{double}]{max\+\_\+dr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_object_a1a01cc0958c3b491c26c2a066314481c}
+\hypertarget{class_object_a57442be9a5695f873a22787a107ec01b}{}\index{Object@{Object}!Name@{Name}}
+\index{Name@{Name}!Object@{Object}}
+\subsubsection[{Name() const }]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Object\+::\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_object_a57442be9a5695f873a22787a107ec01b}
+\hypertarget{class_object_ae28bc9879447dad23f10ebd1971e81f5}{}\index{Object@{Object}!Pass\+User\+I\+D@{Pass\+User\+I\+D}}
+\index{Pass\+User\+I\+D@{Pass\+User\+I\+D}!Object@{Object}}
+\subsubsection[{Pass\+User\+I\+D(\+I\+D id, bool verbose)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Object\+::\+Pass\+User\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+D}}]{id, }
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_object_ae28bc9879447dad23f10ebd1971e81f5}
+
+
+Implemented in \hyperlink{class_hcal_digi_aff5580b98a1dc9155ee316ea30c52701}{Hcal\+Digi}, \hyperlink{class_hcal_sample_a46c1dc16f0be38259e07a93f26cccd73}{Hcal\+Sample}, and \hyperlink{class_h_l_t_filter_object_a19346504ef5d039ff4032581ccccf604}{H\+L\+T\+Filter\+Object}.
+
+\hypertarget{class_object_ab8fa3bfbd16c2b6c420ec113fbc2a0e4}{}\index{Object@{Object}!Phi@{Phi}}
+\index{Phi@{Phi}!Object@{Object}}
+\subsubsection[{Phi()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual double\& Object\+::\+Phi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_object_ab8fa3bfbd16c2b6c420ec113fbc2a0e4}
+
+
+Implemented in \hyperlink{class_hcal_digi_a3cc5e61af592f544a573f2bd8d0292f7}{Hcal\+Digi}, \hyperlink{class_hcal_sample_a39d0dd1ee5a627691cfefd92a05f7a2e}{Hcal\+Sample}, and \hyperlink{class_h_l_t_filter_object_ae0928b247a39fa2b238312696704e370}{H\+L\+T\+Filter\+Object}.
+
+\hypertarget{class_object_aaa45210cbaa92c8bb0e010c11a83c58c}{}\index{Object@{Object}!Phi\+\_\+mpi\+\_\+pi@{Phi\+\_\+mpi\+\_\+pi}}
+\index{Phi\+\_\+mpi\+\_\+pi@{Phi\+\_\+mpi\+\_\+pi}!Object@{Object}}
+\subsubsection[{Phi\+\_\+mpi\+\_\+pi(double x)}]{\setlength{\rightskip}{0pt plus 5cm}double Object\+::\+Phi\+\_\+mpi\+\_\+pi (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\label{class_object_aaa45210cbaa92c8bb0e010c11a83c58c}
+\hypertarget{class_object_ac280f2330a4bd359404841431bd46f2e}{}\index{Object@{Object}!Pt@{Pt}}
+\index{Pt@{Pt}!Object@{Object}}
+\subsubsection[{Pt()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual double\& Object\+::\+Pt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_object_ac280f2330a4bd359404841431bd46f2e}
+
+
+Implemented in \hyperlink{class_hcal_digi_a97f21992c1e45b427ce09dcca581e0f5}{Hcal\+Digi}, \hyperlink{class_hcal_sample_a06504eff6a267228754fead92c9e4955}{Hcal\+Sample}, and \hyperlink{class_h_l_t_filter_object_a29c406ea1c2dba2eca9faf17d0bb5f4e}{H\+L\+T\+Filter\+Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_object_af66cc1db553fa91b451c7855a8d09ec0}{}\index{Object@{Object}!m\+\_\+collection@{m\+\_\+collection}}
+\index{m\+\_\+collection@{m\+\_\+collection}!Object@{Object}}
+\subsubsection[{m\+\_\+collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Collection}$\ast$ Object\+::m\+\_\+collection\hspace{0.3cm}{\ttfamily [protected]}}\label{class_object_af66cc1db553fa91b451c7855a8d09ec0}
+\hypertarget{class_object_ac1f71ac949f9d66cdeabca5dc7385a03}{}\index{Object@{Object}!m\+\_\+hlt\+\_\+filter\+\_\+index@{m\+\_\+hlt\+\_\+filter\+\_\+index}}
+\index{m\+\_\+hlt\+\_\+filter\+\_\+index@{m\+\_\+hlt\+\_\+filter\+\_\+index}!Object@{Object}}
+\subsubsection[{m\+\_\+hlt\+\_\+filter\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}short Object\+::m\+\_\+hlt\+\_\+filter\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}\label{class_object_ac1f71ac949f9d66cdeabca5dc7385a03}
+\hypertarget{class_object_a90fd7f91e8f0f3eea7bc1eeed71ec3d6}{}\index{Object@{Object}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!Object@{Object}}
+\subsubsection[{m\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Object\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}\label{class_object_a90fd7f91e8f0f3eea7bc1eeed71ec3d6}
+\hypertarget{class_object_a75e13245ae926f83a29ce9b25b8e4aa5}{}\index{Object@{Object}!m\+\_\+raw\+\_\+index@{m\+\_\+raw\+\_\+index}}
+\index{m\+\_\+raw\+\_\+index@{m\+\_\+raw\+\_\+index}!Object@{Object}}
+\subsubsection[{m\+\_\+raw\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}short Object\+::m\+\_\+raw\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}\label{class_object_a75e13245ae926f83a29ce9b25b8e4aa5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_object_8h}{Object.\+h}\item 
+src/\hyperlink{_object_8cc}{Object.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{class_r_b_x_map}{}\section{R\+B\+X\+Map Class Reference}
+\label{class_r_b_x_map}\index{R\+B\+X\+Map@{R\+B\+X\+Map}}
+
+
+{\ttfamily \#include $<$R\+B\+X\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_b_x_map_a7822668f9a21e2558ea64811dd118c23}{R\+B\+X\+Map} ()
+\item 
+\hyperlink{class_r_b_x_map_aedfc4123299d8fccdcfca471292c6987}{$\sim$\+R\+B\+X\+Map} ()
+\item 
+void \hyperlink{class_r_b_x_map_af3fdf4894114ad2d6c57daa583cb0b90}{Load\+File} (const char $\ast$file\+\_\+name)
+\item 
+std\+::string \hyperlink{class_r_b_x_map_a6b154cd399964d4c0dc8489e7b375bde}{get\+R\+B\+X\+String} (const std\+::string \&det, int side, int ieta, int iphi, int depth)
+\item 
+std\+::string \hyperlink{class_r_b_x_map_ae9384033134e77cd97274be8aaeb3354}{get\+R\+B\+X\+String} (int det\+\_\+int, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_a237829f569097abc76e08397e3af6779}{get\+R\+B\+X\+Number} (const std\+::string \&det, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_af2628ea187064667916e4689bbdb21be}{get\+R\+B\+X\+Number} (int det\+\_\+int, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_abd16cb8cdd63b73027c7a64f4b5054eb}{get\+Index} (const std\+::string \&det, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_a949c3c95750273116bccc9357da974b1}{get\+Index} (int det\+\_\+int, int side, int ieta, int iphi, int depth)
+\item 
+void \hyperlink{class_r_b_x_map_ab4e7c2bea4f53e9d6d1176e81042876c}{get\+Coordinates} (int index, int det\+\_\+int, int \&side, int \&ieta, int \&iphi, int \&depth)
+\item 
+int \hyperlink{class_r_b_x_map_af90edec96f81c29f20efa329db28eefe}{get\+R\+B\+X\+Side} (const std\+::string \&det, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_a4fc1d13cc8094a473ba1ddda177ff66a}{get\+R\+B\+X\+Side} (int det\+\_\+int, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_aeae8bdb8e265c9aa55363b55818d81ec}{get\+F\+E\+D\+Number} (const std\+::string \&det, int side, int ieta, int iphi, int depth)
+\item 
+int \hyperlink{class_r_b_x_map_af3c8e6181549daeec5eeac1266959a99}{get\+F\+E\+D\+Number} (int det\+\_\+int, int side, int ieta, int iphi, int depth)
+\item 
+void \hyperlink{class_r_b_x_map_a5dd3aae8fd97ef4b57b5889972ffc65a}{Print\+All\+R\+B\+Xs} ()
+\item 
+void \hyperlink{class_r_b_x_map_a70cba2e0de23c4e73fddbe271a1d8df3}{Print\+R\+B\+Xs} (int det\+\_\+int)
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_r_b_x_map_a1376435e17dbaf2c2a27956cf050caea}{get\+H\+B\+R\+B\+X\+Names} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_r_b_x_map_adbbd03515ee1e18d931e32379575a21e}{get\+H\+E\+R\+B\+X\+Names} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_r_b_x_map_a602d4db76a070528a15bb05c3e010884}{get\+H\+O\+R\+B\+X\+Names} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_r_b_x_map_a8870d58ee0a2061fb379a79ac03af1c4}{get\+H\+F\+R\+B\+X\+Names} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_r_b_x_map_a7822668f9a21e2558ea64811dd118c23}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\index{R\+B\+X\+Map@{R\+B\+X\+Map}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{R\+B\+X\+Map()}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+X\+Map\+::\+R\+B\+X\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a7822668f9a21e2558ea64811dd118c23}
+\hypertarget{class_r_b_x_map_aedfc4123299d8fccdcfca471292c6987}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!````~R\+B\+X\+Map@{$\sim$\+R\+B\+X\+Map}}
+\index{````~R\+B\+X\+Map@{$\sim$\+R\+B\+X\+Map}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{$\sim$\+R\+B\+X\+Map()}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+X\+Map\+::$\sim$\+R\+B\+X\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_aedfc4123299d8fccdcfca471292c6987}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_b_x_map_ab4e7c2bea4f53e9d6d1176e81042876c}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+Coordinates@{get\+Coordinates}}
+\index{get\+Coordinates@{get\+Coordinates}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+Coordinates(int index, int det\+\_\+int, int \&side, int \&ieta, int \&iphi, int \&depth)}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+X\+Map\+::get\+Coordinates (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{det\+\_\+int, }
+\item[{int \&}]{side, }
+\item[{int \&}]{ieta, }
+\item[{int \&}]{iphi, }
+\item[{int \&}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_ab4e7c2bea4f53e9d6d1176e81042876c}
+\hypertarget{class_r_b_x_map_aeae8bdb8e265c9aa55363b55818d81ec}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+F\+E\+D\+Number@{get\+F\+E\+D\+Number}}
+\index{get\+F\+E\+D\+Number@{get\+F\+E\+D\+Number}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+F\+E\+D\+Number(const std\+::string \&det, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+F\+E\+D\+Number (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{det, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_aeae8bdb8e265c9aa55363b55818d81ec}
+\hypertarget{class_r_b_x_map_af3c8e6181549daeec5eeac1266959a99}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+F\+E\+D\+Number@{get\+F\+E\+D\+Number}}
+\index{get\+F\+E\+D\+Number@{get\+F\+E\+D\+Number}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+F\+E\+D\+Number(int det\+\_\+int, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+F\+E\+D\+Number (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_af3c8e6181549daeec5eeac1266959a99}
+\hypertarget{class_r_b_x_map_a1376435e17dbaf2c2a27956cf050caea}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+H\+B\+R\+B\+X\+Names@{get\+H\+B\+R\+B\+X\+Names}}
+\index{get\+H\+B\+R\+B\+X\+Names@{get\+H\+B\+R\+B\+X\+Names}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+H\+B\+R\+B\+X\+Names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ R\+B\+X\+Map\+::get\+H\+B\+R\+B\+X\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_r_b_x_map_a1376435e17dbaf2c2a27956cf050caea}
+\hypertarget{class_r_b_x_map_adbbd03515ee1e18d931e32379575a21e}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+H\+E\+R\+B\+X\+Names@{get\+H\+E\+R\+B\+X\+Names}}
+\index{get\+H\+E\+R\+B\+X\+Names@{get\+H\+E\+R\+B\+X\+Names}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+H\+E\+R\+B\+X\+Names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ R\+B\+X\+Map\+::get\+H\+E\+R\+B\+X\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_r_b_x_map_adbbd03515ee1e18d931e32379575a21e}
+\hypertarget{class_r_b_x_map_a8870d58ee0a2061fb379a79ac03af1c4}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+H\+F\+R\+B\+X\+Names@{get\+H\+F\+R\+B\+X\+Names}}
+\index{get\+H\+F\+R\+B\+X\+Names@{get\+H\+F\+R\+B\+X\+Names}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+H\+F\+R\+B\+X\+Names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ R\+B\+X\+Map\+::get\+H\+F\+R\+B\+X\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_r_b_x_map_a8870d58ee0a2061fb379a79ac03af1c4}
+\hypertarget{class_r_b_x_map_a602d4db76a070528a15bb05c3e010884}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+H\+O\+R\+B\+X\+Names@{get\+H\+O\+R\+B\+X\+Names}}
+\index{get\+H\+O\+R\+B\+X\+Names@{get\+H\+O\+R\+B\+X\+Names}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+H\+O\+R\+B\+X\+Names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ R\+B\+X\+Map\+::get\+H\+O\+R\+B\+X\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_r_b_x_map_a602d4db76a070528a15bb05c3e010884}
+\hypertarget{class_r_b_x_map_abd16cb8cdd63b73027c7a64f4b5054eb}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+Index(const std\+::string \&det, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{det, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_abd16cb8cdd63b73027c7a64f4b5054eb}
+\hypertarget{class_r_b_x_map_a949c3c95750273116bccc9357da974b1}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+Index(int det\+\_\+int, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a949c3c95750273116bccc9357da974b1}
+\hypertarget{class_r_b_x_map_a237829f569097abc76e08397e3af6779}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+Number@{get\+R\+B\+X\+Number}}
+\index{get\+R\+B\+X\+Number@{get\+R\+B\+X\+Number}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+Number(const std\+::string \&det, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+R\+B\+X\+Number (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{det, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a237829f569097abc76e08397e3af6779}
+\hypertarget{class_r_b_x_map_af2628ea187064667916e4689bbdb21be}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+Number@{get\+R\+B\+X\+Number}}
+\index{get\+R\+B\+X\+Number@{get\+R\+B\+X\+Number}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+Number(int det\+\_\+int, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+R\+B\+X\+Number (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_af2628ea187064667916e4689bbdb21be}
+\hypertarget{class_r_b_x_map_af90edec96f81c29f20efa329db28eefe}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+Side@{get\+R\+B\+X\+Side}}
+\index{get\+R\+B\+X\+Side@{get\+R\+B\+X\+Side}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+Side(const std\+::string \&det, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+R\+B\+X\+Side (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{det, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_af90edec96f81c29f20efa329db28eefe}
+\hypertarget{class_r_b_x_map_a4fc1d13cc8094a473ba1ddda177ff66a}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+Side@{get\+R\+B\+X\+Side}}
+\index{get\+R\+B\+X\+Side@{get\+R\+B\+X\+Side}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+Side(int det\+\_\+int, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+X\+Map\+::get\+R\+B\+X\+Side (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a4fc1d13cc8094a473ba1ddda177ff66a}
+\hypertarget{class_r_b_x_map_a6b154cd399964d4c0dc8489e7b375bde}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+String@{get\+R\+B\+X\+String}}
+\index{get\+R\+B\+X\+String@{get\+R\+B\+X\+String}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+String(const std\+::string \&det, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string R\+B\+X\+Map\+::get\+R\+B\+X\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{det, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a6b154cd399964d4c0dc8489e7b375bde}
+\hypertarget{class_r_b_x_map_ae9384033134e77cd97274be8aaeb3354}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!get\+R\+B\+X\+String@{get\+R\+B\+X\+String}}
+\index{get\+R\+B\+X\+String@{get\+R\+B\+X\+String}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{get\+R\+B\+X\+String(int det\+\_\+int, int side, int ieta, int iphi, int depth)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string R\+B\+X\+Map\+::get\+R\+B\+X\+String (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int, }
+\item[{int}]{side, }
+\item[{int}]{ieta, }
+\item[{int}]{iphi, }
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_ae9384033134e77cd97274be8aaeb3354}
+\hypertarget{class_r_b_x_map_af3fdf4894114ad2d6c57daa583cb0b90}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!Load\+File@{Load\+File}}
+\index{Load\+File@{Load\+File}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{Load\+File(const char $\ast$file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+X\+Map\+::\+Load\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_af3fdf4894114ad2d6c57daa583cb0b90}
+\hypertarget{class_r_b_x_map_a5dd3aae8fd97ef4b57b5889972ffc65a}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!Print\+All\+R\+B\+Xs@{Print\+All\+R\+B\+Xs}}
+\index{Print\+All\+R\+B\+Xs@{Print\+All\+R\+B\+Xs}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{Print\+All\+R\+B\+Xs()}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+X\+Map\+::\+Print\+All\+R\+B\+Xs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a5dd3aae8fd97ef4b57b5889972ffc65a}
+\hypertarget{class_r_b_x_map_a70cba2e0de23c4e73fddbe271a1d8df3}{}\index{R\+B\+X\+Map@{R\+B\+X\+Map}!Print\+R\+B\+Xs@{Print\+R\+B\+Xs}}
+\index{Print\+R\+B\+Xs@{Print\+R\+B\+Xs}!R\+B\+X\+Map@{R\+B\+X\+Map}}
+\subsubsection[{Print\+R\+B\+Xs(int det\+\_\+int)}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+X\+Map\+::\+Print\+R\+B\+Xs (
+\begin{DoxyParamCaption}
+\item[{int}]{det\+\_\+int}
+\end{DoxyParamCaption}
+)}\label{class_r_b_x_map_a70cba2e0de23c4e73fddbe271a1d8df3}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interface/\hyperlink{_r_b_x_map_8h}{R\+B\+X\+Map.\+h}\item 
+src/\hyperlink{_r_b_x_map_8cc}{R\+B\+X\+Map.\+cc}\end{DoxyCompactItemize}
