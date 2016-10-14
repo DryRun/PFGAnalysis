@@ -3,6 +3,7 @@ This package performs a framework for analyzing HcalTupleTrees (https://github.c
 
 The idea is to have an analysis specified in a single file, rather than having a .C macro, a .txt file specifying the inputs, and another .txt file specifying the TTree names as in HcalTupleAnalyzer. An full example analysis is at scripts/ChannelAnalysis.py. Here's a quick example:
 
+```
 import HCALPFG.PFGAnalysis.hcal_analysis as hcal_analysis
 def MyAnalysis(hcal_analysis.HcalAnalysis):
 	def __init__(self):
@@ -36,3 +37,4 @@ if __name__ == "__main__":
 	analysis.start()
 	analysis.run()
 	analysis.finish()
+```
