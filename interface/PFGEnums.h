@@ -21,6 +21,7 @@ namespace pfg {
 		int ieta;
 		int iphi;
 		int depth;
+		ChannelIndex(int p_ieta, int p_iphi, int p_depth) : ieta(p_ieta), iphi(p_iphi), depth(p_depth) {};
 	};
 
 	struct DetectorVolume {

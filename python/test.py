@@ -28,6 +28,7 @@ for i in xrange(t.GetEntriesFast()):
 	for i in xrange(data.Digis("HBHEDigi")().GetSize()):
 		histograms["HBHE"].GetTH2F("avg_adcTotal").Fill(data.Digi("HBHEDigi")(i).ieta(), data.Digi("HBHEDigi")(i).iphi(), data.Digi("HBHEDigi")(i).adcTotal())
 f_in.Close()
+
 histograms["HBHE"].GetTH2F("avg_adcTotal").Scale(1. / nevents)
 f_out = TFile("/home/dryu/data/HCAL/HCALPFG/LaserTag/histograms.root", "RECREATE")
 histograms["HBHE"].GetTH2F("avg_adcTotal").Write()

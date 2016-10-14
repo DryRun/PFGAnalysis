@@ -25,6 +25,20 @@ class ChannelAnalysis(hcal_analysis.HcalAnalysis):
 			)
 		self._processed_events = 0
 
+		self._interesting_events = []
+		self._interesting_events.append(7572462) # Laser event
+		self._interesting_events.append(7574778) # Last laser event before it turned off
+		self._interesting_events.append(7572594) # Weird whole-HBHE event
+
+		self._interesting_channels = []
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(20, 20, 1))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(-20, 20, 1))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(20, 20, 2))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(-20, 20, 2))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(20, 20, 3))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(-20, 20, 3))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(20, 20, 4))
+		self._interesting_channels.append(ROOT.pfg.ChannelIndex(-20, 20, 4))
 
 	def run(self, max_nevents=-1, first_event=0):
 		if max_nevents > 0:
@@ -59,6 +73,14 @@ class ChannelAnalysis(hcal_analysis.HcalAnalysis):
 				self._histograms.GetTH2F("avg_adcTotal_d{}".format(depth)).Fill(ieta, iphi, self._data.Digi("HBHEDigi")(i).adcTotal())
 				self._histograms.GetTH2F("adcTotal_d{}_event_{}_bx_{}_ls_{}".format(depth, self._data.event, self._data.bx, self._data.ls)).Fill(ieta, iphi, self._data.Digi("HBHEDigi")(i).adcTotal())
 
+				# Interesting events and channels
+				if self._data.event in self._interesting_events:
+					for channel in self._interesting_channels:
+						if channel.ieta == ieta and channel.iphi == iphi and channel.depth == depth:
+							hname = "adc_ts_event_{}_ieta_{}_iphi_{}_depth_{}".format(self._data.event, ieta, iphi, depth)
+							self._histograms.AddTH1F(hname, hname, "TS", 11, -0.5, 10.5)
+							for ts in xrange(self._data.Digi("HBHEDigi")(i).size()):
+								self._histograms.GetTH1F(hname).SetBinContent(ts, self._data.Digi("HBHEDigi")(i).adc(ts))
 
 	def finish(self):
 		for depth in xrange(self._detector_volumes["HBHE"]["depth"][0], self._detector_volumes["HBHE"]["depth"][1] + 1):
@@ -75,11 +97,25 @@ def make_plots(filename):
 		if key.GetClassName() == "TH2F":
 			hist = key.ReadObj()
 			hist_name = hist.GetName()
-			canvas_name = hist_name.replace("h_", "c_")
-			c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
-			hist.SetMaximum(128*10);
-			hist.Draw("colz")
-			c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
+			if "adcTotal" in hist_name:
+				canvas_name = "c_" + hist_name[2:]
+				c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
+				c.SetLogz()
+				hist.SetMaximum(128*10);
+				hist.Draw("colz")
+				c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
+
+		elif key.GetClassName() == "TH1F":
+			hist = key.ReadObj()
+			hist_name = hist.GetName()
+			if "adc_ts" in hist_name:
+				canvas_name = "c_" + hist_name[2:]
+				c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
+				hist.SetMaximum(128);
+				hist.GetYaxis().SetTitle("ADC")
+				hist.Draw()
+				c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
+
 
 
 if __name__ == "__main__":
