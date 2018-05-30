@@ -6,13 +6,15 @@
 
 namespace pfg {
 	enum Detector_t {
-		kHBHE,
+		kHB,
+		kHE,
 		kHF,
 		kHO
 	};
 
 	static const std::map<Detector_t, std::string> detector_strings= {
-		{kHBHE, "HBHE"},
+		{kHB, "HB"},
+		{kHE, "HE"},
 		{kHF, "HF"},
 		{kHO, "HO"},
 	};
@@ -36,7 +38,8 @@ namespace pfg {
 	};
 
 	static const std::map<Detector_t, DetectorVolume> detector_volumes = {
-		{kHBHE, DetectorVolume(-29, 29, 1, 72, 1, 4)},
+		{kHB, DetectorVolume(-14, 14, 1, 72, 1, 4)},
+		{kHE, DetectorVolume(-29, 29, 1, 72, 1, 4)},
 		{kHF, DetectorVolume(-41, 41, 1, 72, 1, 2)},
 		{kHO, DetectorVolume(-29, 29, 1, 72, 4, 4)}
 	};

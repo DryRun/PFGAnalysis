@@ -28,10 +28,6 @@ public :
    vector<float>   *HBHEDigiPhi;
    vector<float>   *HBHEDigiRecEnergy;
    vector<float>   *HBHEDigiRecTime;
-   vector<float>   *HFDigiEta;
-   vector<float>   *HFDigiPhi;
-   vector<float>   *HFDigiRecEnergy;
-   vector<float>   *HFDigiRecTime;
    vector<float>   *HODigiEta;
    vector<float>   *HODigiPhi;
    vector<float>   *HODigiRecEnergy;
@@ -43,13 +39,6 @@ public :
    vector<vector<float> > *HBHEDigiNomFC;
    vector<vector<float> > *HBHEDigiPedFC;
    vector<vector<float> > *HBHEDigiRCGain;
-   vector<vector<float> > *HFDigiAllFC;
-   vector<vector<float> > *HFDigiEnergy;
-   vector<vector<float> > *HFDigiFC;
-   vector<vector<float> > *HFDigiGain;
-   vector<vector<float> > *HFDigiNomFC;
-   vector<vector<float> > *HFDigiPedFC;
-   vector<vector<float> > *HFDigiRCGain;
    vector<vector<float> > *HODigiAllFC;
    vector<vector<float> > *HODigiEnergy;
    vector<vector<float> > *HODigiFC;
@@ -62,27 +51,18 @@ public :
    vector<int>     *HBHEDigiFiberIdleOffset;
    vector<int>     *HBHEDigiIEta;
    vector<int>     *HBHEDigiIPhi;
-   vector<int>     *HBHEDigiPresamples;
+   int     HBHEDigiPresamples;
    vector<int>     *HBHEDigiRawID;
-   vector<int>     *HBHEDigiSize;
+   int     HBHEDigiSize;
    vector<int>     *HBHEDigiSubdet;
-   vector<int>     *HFDigiDepth;
-   vector<int>     *HFDigiElectronicsID;
-   vector<int>     *HFDigiFiberIdleOffset;
-   vector<int>     *HFDigiIEta;
-   vector<int>     *HFDigiIPhi;
-   vector<int>     *HFDigiPresamples;
-   vector<int>     *HFDigiRawID;
-   vector<int>     *HFDigiSize;
-   vector<int>     *HFDigiSubdet;
    vector<int>     *HODigiDepth;
    vector<int>     *HODigiElectronicsID;
    vector<int>     *HODigiFiberIdleOffset;
    vector<int>     *HODigiIEta;
    vector<int>     *HODigiIPhi;
-   vector<int>     *HODigiPresamples;
+   int     HODigiPresamples;
    vector<int>     *HODigiRawID;
-   vector<int>     *HODigiSize;
+   int     HODigiSize;
    vector<int>     *HODigiSubdet;
    vector<int>     *HcalTriggerPrimitiveCompressedEtSOI;
    vector<int>     *HcalTriggerPrimitiveFineGrainSOI;
@@ -102,14 +82,6 @@ public :
    vector<vector<int> > *HBHEDigiFiberChan;
    vector<vector<int> > *HBHEDigiLADC;
    vector<vector<int> > *HBHEDigiRaw;
-   vector<vector<int> > *HFDigiADC;
-   vector<vector<int> > *HFDigiCapID;
-   vector<vector<int> > *HFDigiDV;
-   vector<vector<int> > *HFDigiER;
-   vector<vector<int> > *HFDigiFiber;
-   vector<vector<int> > *HFDigiFiberChan;
-   vector<vector<int> > *HFDigiLADC;
-   vector<vector<int> > *HFDigiRaw;
    vector<vector<int> > *HODigiADC;
    vector<vector<int> > *HODigiCapID;
    vector<vector<int> > *HODigiDV;
@@ -122,6 +94,61 @@ public :
    vector<vector<int> > *HcalTriggerPrimitiveFineGrain;
    vector<vector<int> > *HcalTriggerPrimitiveHBHEDigiIndex;
    vector<vector<int> > *HcalTriggerPrimitiveHFDigiIndex;
+   vector<double>  *QIE10DigiTimeFC;
+   vector<double>  *QIE10DigiTimeTDC;
+   vector<double>  *QIE11DigiTimeFC;
+   vector<double>  *QIE11DigiTimeTDC;
+   vector<vector<double> > *QIE10DigiFC;
+   vector<vector<double> > *QIE10DigiPedFC;
+   vector<vector<double> > *QIE11DigiFC;
+   vector<vector<double> > *QIE11DigiPedFC;
+   int     QIE10DigiPresamples;
+   int     QIE10DigiSize;
+   int     QIE11DigiPresamples;
+   int     QIE11DigiSize;
+   vector<float>   *QIE10DigiEta;
+   vector<float>   *QIE10DigiPhi;
+   vector<float>   *QIE11DigiEta;
+   vector<float>   *QIE11DigiPhi;
+   vector<int>     *QIE10DigiDepth;
+   vector<int>     *QIE10DigiFlags;
+   vector<int>     *QIE10DigiIEta;
+   vector<int>     *QIE10DigiIPhi;
+   vector<int>     *QIE10DigiLinkError;
+   vector<int>     *QIE10DigiRawID;
+   vector<int>     *QIE10DigiSubdet;
+   //vector<int>     *QIE10DigiCapIDError;
+   vector<int>     *QIE11DigiCapIDError;
+   vector<int>     *QIE11DigiDepth;
+   vector<int>     *QIE11DigiFlags;
+   vector<int>     *QIE11DigiIEta;
+   vector<int>     *QIE11DigiIPhi;
+   vector<int>     *QIE11DigiLinkError;
+   vector<int>     *QIE10DigiNTDC;
+   vector<int>     *QIE11DigiNTDC;
+   vector<int>     *QIE11DigiRawID;
+   vector<int>     *QIE11DigiSubdet;
+   vector<vector<int> > *QIE10DigiADC;
+   vector<vector<int> > *QIE10DigiCapID;
+   vector<vector<int> > *QIE10DigiOK;
+   vector<vector<int> > *QIE10DigiSOI;
+   vector<vector<int> > *QIE10DigiTDC;
+   vector<vector<int> > *QIE11DigiADC;
+   vector<vector<int> > *QIE11DigiCapID;
+   vector<vector<int> > *QIE11DigiSOI;
+   vector<vector<int> > *QIE11DigiTDC;
+   vector<float>   *HFPhase1RecHitCharge;
+   vector<float>   *HFPhase1RecHitEnergy;
+   vector<float>   *HFPhase1RecHitEta;
+   vector<float>   *HFPhase1RecHitPhi;
+   vector<vector<float> > *HFPhase1RecHitQie10Charge;
+   vector<vector<float> > *HFPhase1RecHitQie10Energy;
+   vector<vector<float> > *HFPhase1RecHitQie10Time;
+   vector<int>     *HFPhase1RecHitDepth;
+   vector<int>     *HFPhase1RecHitIEta;
+   vector<int>     *HFPhase1RecHitIPhi;
+   vector<vector<int> > *HFPhase1RecHitQie10Soi;
+   
    UInt_t          bx;
    UInt_t          event;
    UInt_t          ls;
@@ -182,15 +209,6 @@ public :
    TBranch        *b_HBHEDigiRawID;   //!
    TBranch        *b_HBHEDigiSize;   //!
    TBranch        *b_HBHEDigiSubdet;   //!
-   TBranch        *b_HFDigiDepth;   //!
-   TBranch        *b_HFDigiElectronicsID;   //!
-   TBranch        *b_HFDigiFiberIdleOffset;   //!
-   TBranch        *b_HFDigiIEta;   //!
-   TBranch        *b_HFDigiIPhi;   //!
-   TBranch        *b_HFDigiPresamples;   //!
-   TBranch        *b_HFDigiRawID;   //!
-   TBranch        *b_HFDigiSize;   //!
-   TBranch        *b_HFDigiSubdet;   //!
    TBranch        *b_HODigiDepth;   //!
    TBranch        *b_HODigiElectronicsID;   //!
    TBranch        *b_HODigiFiberIdleOffset;   //!
@@ -218,14 +236,6 @@ public :
    TBranch        *b_HBHEDigiFiberChan;   //!
    TBranch        *b_HBHEDigiLADC;   //!
    TBranch        *b_HBHEDigiRaw;   //!
-   TBranch        *b_HFDigiADC;   //!
-   TBranch        *b_HFDigiCapID;   //!
-   TBranch        *b_HFDigiDV;   //!
-   TBranch        *b_HFDigiER;   //!
-   TBranch        *b_HFDigiFiber;   //!
-   TBranch        *b_HFDigiFiberChan;   //!
-   TBranch        *b_HFDigiLADC;   //!
-   TBranch        *b_HFDigiRaw;   //!
    TBranch        *b_HODigiADC;   //!
    TBranch        *b_HODigiCapID;   //!
    TBranch        *b_HODigiDV;   //!
@@ -254,6 +264,60 @@ public :
    TBranch        *b_HcalUnpackerTotalDigis;   //!
    TBranch        *b_HcalUnpackerTotalHOTPDigis;   //!
    TBranch        *b_HcalUnpackerTotalTPDigis;   //!
+   TBranch *b_QIE10DigiSize; //!
+   TBranch *b_QIE10DigiPresamples; //!
+   TBranch *b_QIE11DigiSize; //!
+   TBranch *b_QIE11DigiPresamples; //!
+   TBranch        *b_QIE10DigiTimeFC;   //!
+   TBranch        *b_QIE10DigiTimeTDC;   //!
+   TBranch        *b_QIE11DigiTimeFC;   //!
+   TBranch        *b_QIE11DigiTimeTDC;   //!
+   TBranch        *b_QIE10DigiFC;   //!
+   TBranch        *b_QIE10DigiPedFC;   //!
+   TBranch        *b_QIE11DigiFC;   //!
+   TBranch        *b_QIE11DigiPedFC;   //!
+   TBranch        *b_QIE10DigiEta;   //!
+   TBranch        *b_QIE10DigiPhi;   //!
+   TBranch        *b_QIE11DigiEta;   //!
+   TBranch        *b_QIE11DigiPhi;   //!
+   TBranch        *b_QIE10DigiDepth;   //!
+   TBranch        *b_QIE10DigiFlags;   //!
+   TBranch        *b_QIE10DigiIEta;   //!
+   TBranch        *b_QIE10DigiIPhi;   //!
+   TBranch        *b_QIE10DigiLinkError;   //!
+   TBranch        *b_QIE10DigiRawID;   //!
+   TBranch        *b_QIE10DigiSubdet;   //!
+   //TBranch        *b_QIE10DigiCapIDError;   //!
+   TBranch        *b_QIE11DigiCapIDError;   //!
+   TBranch        *b_QIE11DigiDepth;   //!
+   TBranch        *b_QIE11DigiFlags;   //!
+   TBranch        *b_QIE11DigiIEta;   //!
+   TBranch        *b_QIE11DigiIPhi;   //!
+   TBranch        *b_QIE11DigiLinkError;   //!
+   TBranch        *b_QIE10DigiNTDC;   //!
+   TBranch        *b_QIE11DigiNTDC;   //!
+   TBranch        *b_QIE11DigiRawID;   //!
+   TBranch        *b_QIE11DigiSubdet;   //!
+   TBranch        *b_QIE10DigiADC;   //!
+   TBranch        *b_QIE10DigiCapID;   //!
+   TBranch        *b_QIE10DigiOK;   //!
+   TBranch        *b_QIE10DigiSOI;   //!
+   TBranch        *b_QIE10DigiTDC;   //!
+   TBranch        *b_QIE11DigiADC;   //!
+   TBranch        *b_QIE11DigiCapID;   //!
+   TBranch        *b_QIE11DigiSOI;   //!
+   TBranch        *b_QIE11DigiTDC;   //!
+   TBranch        *b_HFPhase1RecHitCharge;   //!
+   TBranch        *b_HFPhase1RecHitEnergy;   //!
+   TBranch        *b_HFPhase1RecHitEta;   //!
+   TBranch        *b_HFPhase1RecHitPhi;   //!
+   TBranch        *b_HFPhase1RecHitQie10Charge;   //!
+   TBranch        *b_HFPhase1RecHitQie10Energy;   //!
+   TBranch        *b_HFPhase1RecHitQie10Time;   //!
+   TBranch        *b_HFPhase1RecHitDepth;   //!
+   TBranch        *b_HFPhase1RecHitIEta;   //!
+   TBranch        *b_HFPhase1RecHitIPhi;   //!
+   TBranch        *b_HFPhase1RecHitQie10Soi;   //!
 
    HcalTupleTree(TTree *tree=0);
    virtual ~HcalTupleTree();
@@ -325,10 +389,6 @@ void HcalTupleTree::Init(TTree *tree)
    HBHEDigiPhi = 0;
    HBHEDigiRecEnergy = 0;
    HBHEDigiRecTime = 0;
-   HFDigiEta = 0;
-   HFDigiPhi = 0;
-   HFDigiRecEnergy = 0;
-   HFDigiRecTime = 0;
    HODigiEta = 0;
    HODigiPhi = 0;
    HODigiRecEnergy = 0;
@@ -340,13 +400,6 @@ void HcalTupleTree::Init(TTree *tree)
    HBHEDigiNomFC = 0;
    HBHEDigiPedFC = 0;
    HBHEDigiRCGain = 0;
-   HFDigiAllFC = 0;
-   HFDigiEnergy = 0;
-   HFDigiFC = 0;
-   HFDigiGain = 0;
-   HFDigiNomFC = 0;
-   HFDigiPedFC = 0;
-   HFDigiRCGain = 0;
    HODigiAllFC = 0;
    HODigiEnergy = 0;
    HODigiFC = 0;
@@ -363,15 +416,6 @@ void HcalTupleTree::Init(TTree *tree)
    HBHEDigiRawID = 0;
    HBHEDigiSize = 0;
    HBHEDigiSubdet = 0;
-   HFDigiDepth = 0;
-   HFDigiElectronicsID = 0;
-   HFDigiFiberIdleOffset = 0;
-   HFDigiIEta = 0;
-   HFDigiIPhi = 0;
-   HFDigiPresamples = 0;
-   HFDigiRawID = 0;
-   HFDigiSize = 0;
-   HFDigiSubdet = 0;
    HODigiDepth = 0;
    HODigiElectronicsID = 0;
    HODigiFiberIdleOffset = 0;
@@ -399,14 +443,6 @@ void HcalTupleTree::Init(TTree *tree)
    HBHEDigiFiberChan = 0;
    HBHEDigiLADC = 0;
    HBHEDigiRaw = 0;
-   HFDigiADC = 0;
-   HFDigiCapID = 0;
-   HFDigiDV = 0;
-   HFDigiER = 0;
-   HFDigiFiber = 0;
-   HFDigiFiberChan = 0;
-   HFDigiLADC = 0;
-   HFDigiRaw = 0;
    HODigiADC = 0;
    HODigiCapID = 0;
    HODigiDV = 0;
@@ -419,6 +455,61 @@ void HcalTupleTree::Init(TTree *tree)
    HcalTriggerPrimitiveFineGrain = 0;
    HcalTriggerPrimitiveHBHEDigiIndex = 0;
    HcalTriggerPrimitiveHFDigiIndex = 0;
+   QIE10DigiSize = 0;
+   QIE10DigiPresamples = 0;
+   QIE11DigiSize = 0;
+   QIE11DigiPresamples = 0;
+   QIE10DigiTimeFC = 0;
+   QIE10DigiTimeTDC = 0;
+   QIE11DigiTimeFC = 0;
+   QIE11DigiTimeTDC = 0;
+   QIE10DigiFC = 0;
+   QIE10DigiPedFC = 0;
+   QIE11DigiFC = 0;
+   QIE11DigiPedFC = 0;
+   QIE10DigiEta = 0;
+   QIE10DigiPhi = 0;
+   QIE11DigiEta = 0;
+   QIE11DigiPhi = 0;
+   QIE10DigiDepth = 0;
+   QIE10DigiFlags = 0;
+   QIE10DigiIEta = 0;
+   QIE10DigiIPhi = 0;
+   QIE10DigiLinkError = 0;
+   QIE10DigiRawID = 0;
+   QIE10DigiSubdet = 0;
+   //QIE10DigiCapIDError = 0;
+   QIE11DigiCapIDError = 0;
+   QIE11DigiDepth = 0;
+   QIE11DigiFlags = 0;
+   QIE11DigiIEta = 0;
+   QIE11DigiIPhi = 0;
+   QIE11DigiLinkError = 0;
+   QIE10DigiNTDC = 0;
+   QIE11DigiNTDC = 0;
+   QIE11DigiRawID = 0;
+   QIE11DigiSubdet = 0;
+   QIE10DigiADC = 0;
+   QIE10DigiCapID = 0;
+   QIE10DigiOK = 0;
+   QIE10DigiSOI = 0;
+   QIE10DigiTDC = 0;
+   QIE11DigiADC = 0;
+   QIE11DigiCapID = 0;
+   QIE11DigiSOI = 0;
+   QIE11DigiTDC = 0;
+   HFPhase1RecHitCharge = 0;
+   HFPhase1RecHitEnergy = 0;
+   HFPhase1RecHitEta = 0;
+   HFPhase1RecHitPhi = 0;
+   HFPhase1RecHitQie10Charge = 0;
+   HFPhase1RecHitQie10Energy = 0;
+   HFPhase1RecHitQie10Time = 0;
+   HFPhase1RecHitDepth = 0;
+   HFPhase1RecHitIEta = 0;
+   HFPhase1RecHitIPhi = 0;
+   HFPhase1RecHitQie10Soi = 0;
+   
    // Set branch addresses and branch pointers
    if (!tree) return;
    fChain = tree;
@@ -429,10 +520,6 @@ void HcalTupleTree::Init(TTree *tree)
    fChain->SetBranchAddress("HBHEDigiPhi", &HBHEDigiPhi, &b_HBHEDigiPhi);
    fChain->SetBranchAddress("HBHEDigiRecEnergy", &HBHEDigiRecEnergy, &b_HBHEDigiRecEnergy);
    fChain->SetBranchAddress("HBHEDigiRecTime", &HBHEDigiRecTime, &b_HBHEDigiRecTime);
-   fChain->SetBranchAddress("HFDigiEta", &HFDigiEta, &b_HFDigiEta);
-   fChain->SetBranchAddress("HFDigiPhi", &HFDigiPhi, &b_HFDigiPhi);
-   fChain->SetBranchAddress("HFDigiRecEnergy", &HFDigiRecEnergy, &b_HFDigiRecEnergy);
-   fChain->SetBranchAddress("HFDigiRecTime", &HFDigiRecTime, &b_HFDigiRecTime);
    fChain->SetBranchAddress("HODigiEta", &HODigiEta, &b_HODigiEta);
    fChain->SetBranchAddress("HODigiPhi", &HODigiPhi, &b_HODigiPhi);
    fChain->SetBranchAddress("HODigiRecEnergy", &HODigiRecEnergy, &b_HODigiRecEnergy);
@@ -444,13 +531,6 @@ void HcalTupleTree::Init(TTree *tree)
    fChain->SetBranchAddress("HBHEDigiNomFC", &HBHEDigiNomFC, &b_HBHEDigiNomFC);
    fChain->SetBranchAddress("HBHEDigiPedFC", &HBHEDigiPedFC, &b_HBHEDigiPedFC);
    fChain->SetBranchAddress("HBHEDigiRCGain", &HBHEDigiRCGain, &b_HBHEDigiRCGain);
-   fChain->SetBranchAddress("HFDigiAllFC", &HFDigiAllFC, &b_HFDigiAllFC);
-   fChain->SetBranchAddress("HFDigiEnergy", &HFDigiEnergy, &b_HFDigiEnergy);
-   fChain->SetBranchAddress("HFDigiFC", &HFDigiFC, &b_HFDigiFC);
-   fChain->SetBranchAddress("HFDigiGain", &HFDigiGain, &b_HFDigiGain);
-   fChain->SetBranchAddress("HFDigiNomFC", &HFDigiNomFC, &b_HFDigiNomFC);
-   fChain->SetBranchAddress("HFDigiPedFC", &HFDigiPedFC, &b_HFDigiPedFC);
-   fChain->SetBranchAddress("HFDigiRCGain", &HFDigiRCGain, &b_HFDigiRCGain);
    fChain->SetBranchAddress("HODigiAllFC", &HODigiAllFC, &b_HODigiAllFC);
    fChain->SetBranchAddress("HODigiEnergy", &HODigiEnergy, &b_HODigiEnergy);
    fChain->SetBranchAddress("HODigiFC", &HODigiFC, &b_HODigiFC);
@@ -467,15 +547,6 @@ void HcalTupleTree::Init(TTree *tree)
    fChain->SetBranchAddress("HBHEDigiRawID", &HBHEDigiRawID, &b_HBHEDigiRawID);
    fChain->SetBranchAddress("HBHEDigiSize", &HBHEDigiSize, &b_HBHEDigiSize);
    fChain->SetBranchAddress("HBHEDigiSubdet", &HBHEDigiSubdet, &b_HBHEDigiSubdet);
-   fChain->SetBranchAddress("HFDigiDepth", &HFDigiDepth, &b_HFDigiDepth);
-   fChain->SetBranchAddress("HFDigiElectronicsID", &HFDigiElectronicsID, &b_HFDigiElectronicsID);
-   fChain->SetBranchAddress("HFDigiFiberIdleOffset", &HFDigiFiberIdleOffset, &b_HFDigiFiberIdleOffset);
-   fChain->SetBranchAddress("HFDigiIEta", &HFDigiIEta, &b_HFDigiIEta);
-   fChain->SetBranchAddress("HFDigiIPhi", &HFDigiIPhi, &b_HFDigiIPhi);
-   fChain->SetBranchAddress("HFDigiPresamples", &HFDigiPresamples, &b_HFDigiPresamples);
-   fChain->SetBranchAddress("HFDigiRawID", &HFDigiRawID, &b_HFDigiRawID);
-   fChain->SetBranchAddress("HFDigiSize", &HFDigiSize, &b_HFDigiSize);
-   fChain->SetBranchAddress("HFDigiSubdet", &HFDigiSubdet, &b_HFDigiSubdet);
    fChain->SetBranchAddress("HODigiDepth", &HODigiDepth, &b_HODigiDepth);
    fChain->SetBranchAddress("HODigiElectronicsID", &HODigiElectronicsID, &b_HODigiElectronicsID);
    fChain->SetBranchAddress("HODigiFiberIdleOffset", &HODigiFiberIdleOffset, &b_HODigiFiberIdleOffset);
@@ -503,14 +574,6 @@ void HcalTupleTree::Init(TTree *tree)
    fChain->SetBranchAddress("HBHEDigiFiberChan", &HBHEDigiFiberChan, &b_HBHEDigiFiberChan);
    fChain->SetBranchAddress("HBHEDigiLADC", &HBHEDigiLADC, &b_HBHEDigiLADC);
    fChain->SetBranchAddress("HBHEDigiRaw", &HBHEDigiRaw, &b_HBHEDigiRaw);
-   fChain->SetBranchAddress("HFDigiADC", &HFDigiADC, &b_HFDigiADC);
-   fChain->SetBranchAddress("HFDigiCapID", &HFDigiCapID, &b_HFDigiCapID);
-   fChain->SetBranchAddress("HFDigiDV", &HFDigiDV, &b_HFDigiDV);
-   fChain->SetBranchAddress("HFDigiER", &HFDigiER, &b_HFDigiER);
-   fChain->SetBranchAddress("HFDigiFiber", &HFDigiFiber, &b_HFDigiFiber);
-   fChain->SetBranchAddress("HFDigiFiberChan", &HFDigiFiberChan, &b_HFDigiFiberChan);
-   fChain->SetBranchAddress("HFDigiLADC", &HFDigiLADC, &b_HFDigiLADC);
-   fChain->SetBranchAddress("HFDigiRaw", &HFDigiRaw, &b_HFDigiRaw);
    fChain->SetBranchAddress("HODigiADC", &HODigiADC, &b_HODigiADC);
    fChain->SetBranchAddress("HODigiCapID", &HODigiCapID, &b_HODigiCapID);
    fChain->SetBranchAddress("HODigiDV", &HODigiDV, &b_HODigiDV);
@@ -539,7 +602,61 @@ void HcalTupleTree::Init(TTree *tree)
    fChain->SetBranchAddress("HcalUnpackerTotalDigis", &HcalUnpackerTotalDigis, &b_HcalUnpackerTotalDigis);
    fChain->SetBranchAddress("HcalUnpackerTotalHOTPDigis", &HcalUnpackerTotalHOTPDigis, &b_HcalUnpackerTotalHOTPDigis);
    fChain->SetBranchAddress("HcalUnpackerTotalTPDigis", &HcalUnpackerTotalTPDigis, &b_HcalUnpackerTotalTPDigis);
-   Notify();
+   fChain->SetBranchAddress("QIE10DigiSize", &QIE10DigiSize, &b_QIE10DigiSize);
+   fChain->SetBranchAddress("QIE10DigiPresamples", &QIE10DigiPresamples, &b_QIE10DigiPresamples);
+   fChain->SetBranchAddress("QIE11DigiSize", &QIE11DigiSize, &b_QIE11DigiSize);
+   fChain->SetBranchAddress("QIE11DigiPresamples", &QIE11DigiPresamples, &b_QIE11DigiPresamples);
+   fChain->SetBranchAddress("QIE10DigiTimeFC", &QIE11DigiTimeFC, &b_QIE11DigiTimeFC);
+   fChain->SetBranchAddress("QIE10DigiTimeTDC", &QIE11DigiTimeTDC, &b_QIE11DigiTimeTDC);
+   fChain->SetBranchAddress("QIE11DigiTimeFC", &QIE11DigiTimeFC, &b_QIE11DigiTimeFC);
+   fChain->SetBranchAddress("QIE11DigiTimeTDC", &QIE11DigiTimeTDC, &b_QIE11DigiTimeTDC);
+   fChain->SetBranchAddress("QIE10DigiFC", &QIE10DigiFC, &b_QIE10DigiFC);
+   fChain->SetBranchAddress("QIE10DigiPedFC", &QIE10DigiPedFC, &b_QIE10DigiPedFC);
+   fChain->SetBranchAddress("QIE11DigiFC", &QIE11DigiFC, &b_QIE11DigiFC);
+   fChain->SetBranchAddress("QIE11DigiPedFC", &QIE11DigiPedFC, &b_QIE11DigiPedFC);
+   fChain->SetBranchAddress("QIE10DigiEta", &QIE10DigiEta, &b_QIE10DigiEta);
+   fChain->SetBranchAddress("QIE10DigiPhi", &QIE10DigiPhi, &b_QIE10DigiPhi);
+   fChain->SetBranchAddress("QIE11DigiEta", &QIE11DigiEta, &b_QIE11DigiEta);
+   fChain->SetBranchAddress("QIE11DigiPhi", &QIE11DigiPhi, &b_QIE11DigiPhi);
+   fChain->SetBranchAddress("QIE10DigiDepth", &QIE10DigiDepth, &b_QIE10DigiDepth);
+   fChain->SetBranchAddress("QIE10DigiFlags", &QIE10DigiFlags, &b_QIE10DigiFlags);
+   fChain->SetBranchAddress("QIE10DigiIEta", &QIE10DigiIEta, &b_QIE10DigiIEta);
+   fChain->SetBranchAddress("QIE10DigiIPhi", &QIE10DigiIPhi, &b_QIE10DigiIPhi);
+   fChain->SetBranchAddress("QIE10DigiLinkError", &QIE10DigiLinkError, &b_QIE10DigiLinkError);
+   fChain->SetBranchAddress("QIE10DigiRawID", &QIE10DigiRawID, &b_QIE10DigiRawID);
+   fChain->SetBranchAddress("QIE10DigiSubdet", &QIE10DigiSubdet, &b_QIE10DigiSubdet);
+   //fChain->SetBranchAddress("QIE10DigiCapIDError", &QIE10DigiCapIDError, &b_QIE10DigiCapIDError);
+   fChain->SetBranchAddress("QIE11DigiCapIDError", &QIE11DigiCapIDError, &b_QIE11DigiCapIDError);
+   fChain->SetBranchAddress("QIE11DigiDepth", &QIE11DigiDepth, &b_QIE11DigiDepth);
+   fChain->SetBranchAddress("QIE11DigiFlags", &QIE11DigiFlags, &b_QIE11DigiFlags);
+   fChain->SetBranchAddress("QIE11DigiIEta", &QIE11DigiIEta, &b_QIE11DigiIEta);
+   fChain->SetBranchAddress("QIE11DigiIPhi", &QIE11DigiIPhi, &b_QIE11DigiIPhi);
+   fChain->SetBranchAddress("QIE11DigiLinkError", &QIE11DigiLinkError, &b_QIE11DigiLinkError);
+   fChain->SetBranchAddress("QIE10DigiNTDC", &QIE10DigiNTDC, &b_QIE10DigiNTDC);
+   fChain->SetBranchAddress("QIE11DigiNTDC", &QIE11DigiNTDC, &b_QIE11DigiNTDC);
+   fChain->SetBranchAddress("QIE11DigiRawID", &QIE11DigiRawID, &b_QIE11DigiRawID);
+   fChain->SetBranchAddress("QIE11DigiSubdet", &QIE11DigiSubdet, &b_QIE11DigiSubdet);
+   fChain->SetBranchAddress("QIE10DigiADC", &QIE10DigiADC, &b_QIE10DigiADC);
+   fChain->SetBranchAddress("QIE10DigiCapID", &QIE10DigiCapID, &b_QIE10DigiCapID);
+   fChain->SetBranchAddress("QIE10DigiOK", &QIE10DigiOK, &b_QIE10DigiOK);
+   fChain->SetBranchAddress("QIE10DigiSOI", &QIE10DigiSOI, &b_QIE10DigiSOI);
+   fChain->SetBranchAddress("QIE10DigiTDC", &QIE10DigiTDC, &b_QIE10DigiTDC);
+   fChain->SetBranchAddress("QIE11DigiADC", &QIE11DigiADC, &b_QIE11DigiADC);
+   fChain->SetBranchAddress("QIE11DigiCapID", &QIE11DigiCapID, &b_QIE11DigiCapID);
+   fChain->SetBranchAddress("QIE11DigiSOI", &QIE11DigiSOI, &b_QIE11DigiSOI);
+   fChain->SetBranchAddress("QIE11DigiTDC", &QIE11DigiTDC, &b_QIE11DigiTDC);
+
+   fChain->SetBranchAddress("HFPhase1RecHitCharge", &HFPhase1RecHitCharge, &b_HFPhase1RecHitCharge);
+   fChain->SetBranchAddress("HFPhase1RecHitEnergy", &HFPhase1RecHitEnergy, &b_HFPhase1RecHitEnergy);
+   fChain->SetBranchAddress("HFPhase1RecHitEta", &HFPhase1RecHitEta, &b_HFPhase1RecHitEta);
+   fChain->SetBranchAddress("HFPhase1RecHitPhi", &HFPhase1RecHitPhi, &b_HFPhase1RecHitPhi);
+   fChain->SetBranchAddress("HFPhase1RecHitQie10Charge", &HFPhase1RecHitQie10Charge, &b_HFPhase1RecHitQie10Charge);
+   fChain->SetBranchAddress("HFPhase1RecHitQie10Energy", &HFPhase1RecHitQie10Energy, &b_HFPhase1RecHitQie10Energy);
+   fChain->SetBranchAddress("HFPhase1RecHitQie10Time", &HFPhase1RecHitQie10Time, &b_HFPhase1RecHitQie10Time);
+   fChain->SetBranchAddress("HFPhase1RecHitDepth", &HFPhase1RecHitDepth, &b_HFPhase1RecHitDepth);
+   fChain->SetBranchAddress("HFPhase1RecHitIEta", &HFPhase1RecHitIEta, &b_HFPhase1RecHitIEta);
+   fChain->SetBranchAddress("HFPhase1RecHitIPhi", &HFPhase1RecHitIPhi, &b_HFPhase1RecHitIPhi);
+   fChain->SetBranchAddress("HFPhase1RecHitQie10Soi", &HFPhase1RecHitQie10Soi, &b_HFPhase1RecHitQie10Soi);   Notify();
 }
 
 Bool_t HcalTupleTree::Notify()
@@ -568,3 +685,4 @@ Int_t HcalTupleTree::Cut(Long64_t entry)
    return 1;
 }
 #endif // #ifdef HcalTupleTree_cxx
+

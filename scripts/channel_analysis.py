@@ -4,8 +4,8 @@ import ROOT
 import HCALPFG.PFGAnalysis.hcal_analysis as hcal_analysis
 from math import ceil
 
-ROOT.gInterpreter.Declare("#include \"MyTools/RootUtils/interface/HistogramManager.h\"")
-ROOT.gSystem.Load("/home/dryu/HCAL/CMSSW_8_0_8_patch1/lib/slc6_amd64_gcc530/libMyToolsRootUtils.so")
+ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramManager.h\"")
+ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc530/libHCALPFGPFGAnalysis.so"))
 ROOT.gROOT.SetBatch(ROOT.kTRUE);
 ROOT.gStyle.SetOptStat(0)
 ROOT.gStyle.SetOptTitle(0)

@@ -10,6 +10,8 @@
 	<class name="HcalDigi"/>
 	<class name="HBHEDigi"/>
 	<class name="HBHESample"/>
+	<class name="HEDigi"/>
+	<class name="HESample"/>
 	<class name="Collection"/>
 	<class name="Object"/>
 	<class name="HcalData"/>

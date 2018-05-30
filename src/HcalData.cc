@@ -4,7 +4,8 @@
 #include "HCALPFG/PFGAnalysis/interface/HcalData.h"
 
 HcalData::HcalData(TTree *tree) : HcalTupleTree(tree) {
-	AddDetector(pfg::kHBHE);
+	AddDetector(pfg::kHB);
+	AddDetector(pfg::kHE);
 	AddDetector(pfg::kHF);
 	//AddDetector(pfg::kHO);
 }
@@ -21,10 +22,12 @@ Int_t HcalData::GetEntry(Long64_t entry) {
 	Int_t ret = fChain->GetEntry(entry);
 	for (auto& it_detector : detectors_) {
 		size_t n_digis = 0;
-		if (it_detector == pfg::kHBHE) {
+		if (it_detector == pfg::kHB) {
 			n_digis = HBHEDigiIEta->size();
+		} else if (it_detector == pfg::kHE) {
+			n_digis = QIE11DigiIEta->size();
 		} else if (it_detector == pfg::kHF) {
-			n_digis = HFDigiIEta->size();
+			n_digis = QIE10DigiIEta->size();
 		} else if (it_detector == pfg::kHO) {
 			n_digis = HODigiIEta->size();
 		}

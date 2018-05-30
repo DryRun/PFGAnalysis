@@ -10,6 +10,10 @@ class HFSample : public HcalSample {
   HFSample();
   HFSample(Collection& c, unsigned short i, short j);
   
+  int    rawId();
+  int    linkError();
+  int    capIdError();
+
   float allFC()     ;
   float energy()    ;
   float gain()      ;
@@ -25,6 +29,13 @@ class HFSample : public HcalSample {
   int   fiber()     ;
   int   fiberChan() ;
   int   raw()       ;
+
+  int    flags();
+  int    ntdc();
+  float timeFC();
+  float timeTDC();
+  int    soi();
+  int    tdc();
 
   int getRawIndex () { return m_raw_index; }
   int getTimeSlice() { return m_timeslice; }

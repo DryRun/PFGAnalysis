@@ -7,6 +7,7 @@
 #include "HCALPFG/PFGAnalysis/interface/Collection.h"
 #include "HCALPFG/PFGAnalysis/interface/Object.h"
 #include "HCALPFG/PFGAnalysis/interface/HBHEDigi.h"
+#include "HCALPFG/PFGAnalysis/interface/HEDigi.h"
 #include "HCALPFG/PFGAnalysis/interface/HFDigi.h"
 #include "HCALPFG/PFGAnalysis/interface/HODigi.h"
 #include "HCALPFG/PFGAnalysis/interface/Object.h"
@@ -34,7 +35,9 @@ public:
 	Collection* Digis() {
 		Collection* collection = 0;
 		if (typeid(T) == typeid(HBHEDigi)) {
-			collection = digis_.at(pfg::kHBHE);
+			collection = digis_.at(pfg::kHB);
+		} else if (typeid(T) == typeid(HEDigi)) {
+			collection = digis_.at(pfg::kHE);
 		} else if (typeid(T) == typeid(HFDigi)) {
 			collection = digis_.at(pfg::kHF);
 		} else if (typeid(T) == typeid(HODigi)) {

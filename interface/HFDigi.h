@@ -24,6 +24,12 @@ class HFDigi : public HcalDigi {
   int dv (int i);
   int er (int i);
   int capid (int i);
+  int   tdc           (int i);
+  int   timeFC        ();
+  int   timeTDC       ();
+  int   ntdc          ();
+  int   flags         ();
+  int   soi           (int i);
   
   int getRawIndex () { return m_raw_index; }
 

@@ -7,8 +7,11 @@ import ROOT
 from ROOT import *
 
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HcalData.h\"")
-ROOT.gSystem.Load("/home/dryu/HCAL/CMSSW_8_0_8_patch1/lib/slc6_amd64_gcc530/libHCALPFGPFGAnalysis.so")
+ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/$SCRAM_ARCH/libHCALPFGPFGAnalysis.so"))
 ROOT.gROOT.ProcessLine('template HBHEDigi HcalData::Digi<HBHEDigi>(int i);') # Unfortunate hack needed for pyroot to recognize templated member functions
+ROOT.gROOT.ProcessLine('template HEDigi HcalData::Digi<HEDigi>(int i);') # Unfortunate hack needed for pyroot to recognize templated member functions
+ROOT.gROOT.ProcessLine('template HFDigi HcalData::Digi<HFDigi>(int i);') # Unfortunate hack needed for pyroot to recognize templated member functions
+ROOT.gROOT.ProcessLine('template HODigi HcalData::Digi<HODigi>(int i);') # Unfortunate hack needed for pyroot to recognize templated member functions
 
 class HcalAnalysis(object):
 	__metaclass__ = ABCMeta
@@ -16,22 +19,27 @@ class HcalAnalysis(object):
 		self._files = []
 		self._chain = ROOT.TChain(tree_name)
 		self._data = HcalData(self._chain)
-		self._detectors = ["HBHE", "HF", "HO"]
+		self._detectors = ["HB", "HE", "HF", "HO"]
 		self._detector_volumes = {
-			"HBHE":{
-				"ieta":[-29,29],
-				"iphi":[1,72],
-				"depth":[1,4]
+			"HB":{
+				"ieta":range(-14, 14+1),
+				"iphi":range(1, 72+1),
+				"depth":range(1, 4+1),
+			},
+			"HE":{
+				"ieta":range(-29,-14+1) + range(14, 29+1),
+				"iphi":range(1, 72+1),
+				"depth":range(1, 7+1),
 			},
 			"HF":{
-				"ieta":[-41,-29] + [29,41],
-				"iphi":[1,72],
-				"depth":[1,2]
+				"ieta":range(-41,-29+1) + range(29,41+1),
+				"iphi":range(1, 72+1),
+				"depth":range(1, 4+1),
 			},
 			"HO":{
-				"ieta":[-29,29],
-				"iphi":[1,72],
-				"depth":[4,4]
+				"ieta":range(-29, 29+1),
+				"iphi":range(1, 72+1),
+				"depth":[4],
 			}
 		}
 		self._ts_start = -1

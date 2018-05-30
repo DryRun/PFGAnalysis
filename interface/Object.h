@@ -15,7 +15,7 @@ class Object {
 
   Object( Collection& collection,  short raw_index,  short hlt_filter_index );
   Object( Collection& collection,  short raw_index,  short hlt_filter_index, const char* name );
-  ~Object();
+  virtual ~Object();
   
   const char* Name() const { return m_name; }
   virtual short GetRawIndex() { return m_raw_index; }

@@ -14,8 +14,8 @@ float HBHEDigi::eta          () {return m_collection -> GetData() -> HBHEDigiEta
 float HBHEDigi::phi          () {return m_collection -> GetData() -> HBHEDigiPhi           -> at(m_raw_index);}
 int   HBHEDigi::depth        () {return m_collection -> GetData() -> HBHEDigiDepth         -> at(m_raw_index);}
 int   HBHEDigi::subdet       () {return m_collection -> GetData() -> HBHEDigiSubdet        -> at(m_raw_index);}
-int   HBHEDigi::size         () {return m_collection -> GetData() -> HBHEDigiSize          -> at(m_raw_index);}
-int   HBHEDigi::presamples   () {return m_collection -> GetData() -> HBHEDigiPresamples    -> at(m_raw_index);}
+int   HBHEDigi::size         () {return m_collection -> GetData() -> HBHEDigiSize;}
+int   HBHEDigi::presamples   () {return m_collection -> GetData() -> HBHEDigiPresamples;}
 int   HBHEDigi::rawId        () {return m_collection -> GetData() -> HBHEDigiRawID         -> at(m_raw_index);}
 int   HBHEDigi::electronicsId() {return -1; }
 float HBHEDigi::fc      (int i) {return m_collection -> GetData() -> HBHEDigiFC            -> at(m_raw_index)[i];}

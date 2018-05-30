@@ -8,18 +8,29 @@ HFSample::HFSample(Collection& c, unsigned short i, short j):
   HcalSample(c, i, j)
 {}
 
-float HFSample::allFC()     {return m_collection -> GetData() -> HFDigiAllFC     -> at(m_raw_index)[m_timeslice];}
-float HFSample::energy()    {return m_collection -> GetData() -> HFDigiEnergy    -> at(m_raw_index)[m_timeslice];}
-float HFSample::gain()      {return m_collection -> GetData() -> HFDigiGain      -> at(m_raw_index)[m_timeslice];}
-float HFSample::fc()        {return m_collection -> GetData() -> HFDigiFC        -> at(m_raw_index)[m_timeslice];}
-float HFSample::nomFC()     {return m_collection -> GetData() -> HFDigiNomFC     -> at(m_raw_index)[m_timeslice];}
-float HFSample::pedFC()     {return m_collection -> GetData() -> HFDigiPedFC     -> at(m_raw_index)[m_timeslice];}
-float HFSample::rcGain()    {return m_collection -> GetData() -> HFDigiRCGain    -> at(m_raw_index)[m_timeslice];}
+int    HFSample::rawId()      {return m_collection->GetData()->QIE10DigiRawID     ->at(m_raw_index);}
+int    HFSample::linkError()  {return m_collection->GetData()->QIE10DigiLinkError ->at(m_raw_index);}
+int    HFSample::capIdError() {return 0;}
 
-int   HFSample::adc()       {return m_collection -> GetData() -> HFDigiADC       -> at(m_raw_index)[m_timeslice];}
-int   HFSample::capid()     {return m_collection -> GetData() -> HFDigiCapID     -> at(m_raw_index)[m_timeslice];}
-int   HFSample::dv()        {return m_collection -> GetData() -> HFDigiDV        -> at(m_raw_index)[m_timeslice];}
-int   HFSample::er()        {return m_collection -> GetData() -> HFDigiER        -> at(m_raw_index)[m_timeslice];}
-int   HFSample::fiber()     {return m_collection -> GetData() -> HFDigiFiber     -> at(m_raw_index)[m_timeslice];}
-int   HFSample::fiberChan() {return m_collection -> GetData() -> HFDigiFiberChan -> at(m_raw_index)[m_timeslice];}
-int   HFSample::raw()       {return m_collection -> GetData() -> HFDigiRaw       -> at(m_raw_index)[m_timeslice];}
+float HFSample::allFC()     {return fc() + pedFC();}
+float HFSample::energy()    {return 0;}
+float HFSample::gain()      {return 0;}
+float HFSample::fc()        {return m_collection -> GetData() -> QIE10DigiFC        -> at(m_raw_index)[m_timeslice];}
+float HFSample::nomFC()     {return 0.;}
+float HFSample::pedFC()     {return m_collection -> GetData() -> QIE10DigiPedFC     -> at(m_raw_index)[m_timeslice];}
+float HFSample::rcGain()    {return 0.;}
+
+int   HFSample::adc()       {return m_collection -> GetData() -> QIE10DigiADC       -> at(m_raw_index)[m_timeslice];}
+int   HFSample::capid()     {return m_collection -> GetData() -> QIE10DigiCapID     -> at(m_raw_index)[m_timeslice];}
+int   HFSample::dv()        {return 0;}
+int   HFSample::er()        {return 0;}
+int   HFSample::fiber()     {return 0;}
+int   HFSample::fiberChan() {return 0;}
+int   HFSample::raw()       {return 0;}
+
+int    HFSample::flags()      {return m_collection->GetData()->QIE10DigiFlags     ->at(m_raw_index);}
+int    HFSample::ntdc()       {return m_collection->GetData()->QIE10DigiNTDC      ->at(m_raw_index);}
+float HFSample::timeFC()         {return m_collection->GetData()->QIE10DigiTimeFC    ->at(m_raw_index);}
+float HFSample::timeTDC()        {return m_collection->GetData()->QIE10DigiTimeTDC   ->at(m_raw_index);}
+int    HFSample::soi()        {return m_collection->GetData()->QIE10DigiSOI       ->at(m_raw_index)[m_timeslice];}
+int    HFSample::tdc()        {return m_collection->GetData()->QIE10DigiTDC       ->at(m_raw_index)[m_timeslice];}
