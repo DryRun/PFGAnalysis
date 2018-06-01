@@ -2,7 +2,7 @@ import os
 import sys
 import ROOT
 import HCALPFG.PFGAnalysis.hcal_analysis as hcal_analysis
-from math import ceil
+from math import ceil, floor
 
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramManager.h\"")
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/PFGEnums.h\"")
