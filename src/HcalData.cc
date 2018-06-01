@@ -4,10 +4,6 @@
 #include "HCALPFG/PFGAnalysis/interface/HcalData.h"
 
 HcalData::HcalData(TTree *tree) : HcalTupleTree(tree) {
-	AddDetector(pfg::kHB);
-	AddDetector(pfg::kHE);
-	AddDetector(pfg::kHF);
-	//AddDetector(pfg::kHO);
 }
 
 HcalData::~HcalData() {

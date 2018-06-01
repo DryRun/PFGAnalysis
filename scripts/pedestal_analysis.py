@@ -5,6 +5,7 @@ import HCALPFG.PFGAnalysis.hcal_analysis as hcal_analysis
 from math import ceil
 
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramManager.h\"")
+ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/PFGEnums.h\"")
 ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc530/libHCALPFGPFGAnalysis.so"))
 ROOT.gROOT.SetBatch(ROOT.kTRUE);
 ROOT.gStyle.SetOptStat(0)
@@ -16,8 +17,13 @@ class PedestalAnalysis(hcal_analysis.HcalAnalysis):
 
 
 	def start(self):
+		self._data.AddDetector(pfg.kHB)
+		self._data.AddDetector(pfg.kHE)
+		#self._data.AddDetector(pfg.kHF)
+		#self._data.AddDetector(pfg.kHO)
+
 		self._subdet_histograms = {}
-		for subdet in ["HB", "HE", "HF", "HO"]:
+		for subdet in ["HB", "HE"]: # , "HF", "HO"
 			self._subdet_histograms[subdet] = ROOT.Root.HistogramManager()
 			self._subdet_histograms[subdet].AddPrefix("h_{}_".format(subdet))
 			self._subdet_histograms[subdet].AddTH1F("occupancy_bx", "occupancy_bx", "BX", 3564, -0.5, 3564-0.5)
