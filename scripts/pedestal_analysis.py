@@ -17,10 +17,10 @@ class PedestalAnalysis(hcal_analysis.HcalAnalysis):
 
 
 	def start(self):
-		self._data.AddDetector(pfg.kHB)
-		self._data.AddDetector(pfg.kHE)
-		#self._data.AddDetector(pfg.kHF)
-		#self._data.AddDetector(pfg.kHO)
+		self._data.AddDetector(ROOT.pfg.kHB)
+		self._data.AddDetector(ROOT.pfg.kHE)
+		#self._data.AddDetector(ROOT.pfg.kHF)
+		#self._data.AddDetector(ROOT.pfg.kHO)
 
 		self._subdet_histograms = {}
 		for subdet in ["HB", "HE"]: # , "HF", "HO"
