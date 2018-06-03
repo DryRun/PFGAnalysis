@@ -36,10 +36,10 @@ class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 		self._run_lses = {315689:[1000,1200], 315690:[1,50]}
 
 		self._histograms = {}
-		for run in runs:
+		for run in self._runs:
 			self._histograms[run] = ROOT.Root.HistogramManager()
 			self._histograms[run].AddPrefix("h_run{}".format(run))
-			for rbx in rbxes:
+			for rbx in self._rbxes:
 				self._histograms[run].AddTH2F("sumq_vs_ls_RBX{}".format(rbx), "sumq_vs_ls", "LS", run_lses[run][1]-run_lses[run][0]+1, run_lses[run][0]-0.5, run_lses[run][1]+0.5, "SumQ [fC]", 1000, 0., 1000.)
 
 		self._processed_events = 0
