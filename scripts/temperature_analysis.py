@@ -85,7 +85,7 @@ class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 
 	def finish(self):
 		print "[TemperatureAnalysis::finish] INFO : Saving histograms"
-		f_out = ROOT.TFile("temperature_histograms.root", "RECREATE")
+		f_out = ROOT.TFile(self._output_filename, "RECREATE")
 		for run, histogram_manager in self._histograms.iteritems():
 			histogram_manager.SaveAll(f_out)
 
