@@ -25,15 +25,15 @@ class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 		#self._data.AddDetector(ROOT.pfg.kHF)
 		#self._data.AddDetector(ROOT.pfg.kHO)
 
-		rbxes = [13, 14, 15]
-		rbx_iphi = {
+		self._rbxes = [13, 14, 15]
+		self._rbx_iphi = {
 			13:[47,48,49,50],
 			14:[51,52,53,54],
 			15:[55,56,57,58],
 		}
 
-		runs = [315689, 315690]
-		run_lses = {315689:[1000,1200], 315690:[1,50]}
+		self._runs = [315689, 315690]
+		self._run_lses = {315689:[1000,1200], 315690:[1,50]}
 
 		self._histograms = {}
 		for run in runs:
@@ -76,7 +76,7 @@ class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 
 				# RBX 13, 14, 15 only
 				rbx = (((iphi + 2) % 72) + 4 - 1) / 4
-				if not rbx in rbxes:
+				if not rbx in self._rbxes:
 					continue
 
 				sumq = digi.fcTotal()
@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
 	# List of all input files on eos
 	all_input_file_basenames = ["tree_48.root","tree_18.root","tree_31.root","tree_13.root","tree_38.root","tree_37.root","tree_47.root","tree_28.root","tree_42.root","tree_22.root","tree_46.root","tree_45.root","tree_44.root","tree_25.root","tree_26.root","tree_27.root","tree_10.root","tree_43.root","tree_32.root","tree_30.root","tree_36.root","tree_40.root","tree_24.root","tree_16.root","tree_34.root","tree_7.root","tree_19.root","tree_15.root","tree_41.root","tree_3.root","tree_8.root","tree_33.root","tree_21.root","tree_11.root","tree_2.root","tree_14.root","tree_39.root","tree_6.root","tree_12.root","tree_9.root","tree_17.root","tree_23.root","tree_35.root","tree_4.root","tree_5.root","tree_29.root","tree_1.root","tree_20.root"]
-	eos_prefix = "root root://cmseos.fnal.gov//store/user/dryu/ZeroBias/Run2018A-v1_RAW_20180531_172711/180531_152741/0000/"
+	eos_prefix = "root://cmseos.fnal.gov//store/user/dryu/ZeroBias/Run2018A-v1_RAW_20180531_172711/180531_152741/0000/"
 	all_input_files = ["{}/{}".format(eos_prefix, x) for x in all_input_file_basenames]
 
 	input_files = args.files.split(",")
