@@ -7,13 +7,10 @@ from math import ceil, floor
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramManager.h\"")
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/PFGEnums.h\"")
 ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/$SCRAM_ARCH/libHCALPFGPFGAnalysis.so"))
-ROOT.gInterpreter.Declare("#include \"MyTools/RootUtils/interface/SeabornInterface.h\"")
-ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/$SCRAM_ARCH/libMyToolsRootUtils.so"))
 ROOT.gROOT.SetBatch(ROOT.kTRUE)
 ROOT.gStyle.SetOptStat(0)
 ROOT.gStyle.SetOptTitle(0)
-seaborn = ROOT.Root.SeabornInterface()
-seaborn.Initialize()
+import MyTools.RootUtils.seaborn_colors
 
 class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 	def __init__(self):
@@ -100,9 +97,9 @@ def make_plots(filename):
 	rbxes = [13, 14, 15]
 	runs = [315689, 315690]
 	colors = {
-		13:seaborn.GetColorRoot("Greens_d", 3),
-		14:seaborn.GetColorRoot("Blues_d", 3),
-		15:seaborn.GetColorRoot("Reds_d", 3),
+		13:seaborn_colors.get_root_color("Greens_d", 3),
+		14:seaborn_colors.get_root_color("Blues_d", 3),
+		15:seaborn_colors.get_root_color("Reds_d", 3),
 	}
 
 	hists = {}
