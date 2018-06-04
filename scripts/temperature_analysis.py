@@ -111,11 +111,12 @@ def make_plots(filename):
 	hists = {}
 	profs = {}
 	graphs = {}
+	graphs_ls = {}
 	for run in runs:
 		hists[run] = {}
 		profs[run] = {}
 		graphs[run] = {}
-		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
+		c = ROOT.TCanvas("c_sumq_vs_time_{}".format(run), "SumQ vs LS", 800, 600)
 		l = ROOT.TLegend(0.6, 0.7, 0.8, 0.88)
 		l.SetFillStyle(0)
 		l.SetBorderSize(0)
@@ -130,6 +131,7 @@ def make_plots(filename):
 			profs[run][rbx] = hists[run][rbx].ProfileX()
 
 			graphs[run][rbx] = ROOT.TGraphErrors(profs[run][rbx].GetNbinsX())
+			graphs_ls[run][rbx] = ROOT.TGraphErrors(profs[run][rbx].GetNbinsX())
 			for bin in xrange(1, profs[run][rbx].GetXaxis().GetNbins() + 1):
 				ls = int(profs[run][rbx].GetXaxis().GetBinCenter(bin))
 				ts_start = ls_timestamps[run][ls]
@@ -140,6 +142,8 @@ def make_plots(filename):
 				ts = (ts_start + ts_end) / 2.
 				graphs[run][rbx].SetPoint(bin-1, ts, profs[run][rbx].GetBinContent(bin))
 				graphs[run][rbx].SetPointError(bin-1, (ts_start - ts_end) / 2., profs[run][rbx].GetBinError(bin))
+				graphs_ls[run][rbx].SetPoint(bin-1, ls, profs[run][rbx].GetBinContent(bin))
+				graphs_ls[run][rbx].SetPointError(bin-1, 0.5, profs[run][rbx].GetBinError(bin))
 
 			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeDisplay(1)
 			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeFormat("%H:%M")
@@ -148,6 +152,10 @@ def make_plots(filename):
 			graphs[run][rbx].SetMarkerStyle(20 + rbx - 13)
 			graphs[run][rbx].SetMarkerColor(colors[rbx])
 			graphs[run][rbx].SetLineColor(colors[rbx])
+
+			graphs_ls[run][rbx].SetMarkerStyle(20 + rbx - 13)
+			graphs_ls[run][rbx].SetMarkerColor(colors[rbx])
+			graphs_ls[run][rbx].SetLineColor(colors[rbx])
 			l.AddEntry(graphs[run][rbx], "RBX {}".format(rbx), "lp")
 			if rbx == rbxes[0]:
 				graphs[run][rbx].GetHistogram().SetMinimum(540)
@@ -160,6 +168,18 @@ def make_plots(filename):
 		l.Draw()
 		c.SaveAs("/uscms/home/dryu/DQM/Studies/temperature/{}.pdf".format(c.GetName()))
 
+		c_ls = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
+		for rbx in rbxes:
+			if rbx == rbxes[0]:
+				graphs_ls[run][rbx].GetHistogram().SetMinimum(540)
+				graphs_ls[run][rbx].GetHistogram().SetMaximum(580)
+				graphs_ls[run][rbx].GetHistogram().GetXaxis().SetTitle("Time (UTC)")
+				graphs_ls[run][rbx].GetHistogram().GetYaxis().SetTitle("SumQ")
+				graphs_ls[run][rbx].Draw("ap")
+			else:
+				graphs_ls[run][rbx].Draw("p")
+		l.Draw()
+		c_ls.SaveAs("/uscms/home/dryu/DQM/Studies/temperature/{}.pdf".format(c_ls.GetName()))
 
 if __name__ == "__main__":
 	import argparse
