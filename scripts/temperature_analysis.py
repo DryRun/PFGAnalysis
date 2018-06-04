@@ -127,6 +127,8 @@ def make_plots(filename):
 			profs[run][rbx].SetMarkerColor(colors[rbx])
 			profs[run][rbx].SetLineColor(colors[rbx])
 			if rbx == rbxes[0]:
+				profs[run][rbx].SetMinimum(540)
+				profs[run][rbx].SetMaximum(600)
 				profs[run][rbx].Draw()
 			else:
 				profs[run][rbx].Draw("same")
