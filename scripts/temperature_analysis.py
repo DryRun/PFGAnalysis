@@ -100,9 +100,9 @@ def make_plots(filename):
 	rbxes = [13, 14, 15]
 	runs = [315689, 315690]
 	colors = {
-		13:seaborn.GetColorRoot("Greens_d", 3)
-		14:seaborn.GetColorRoot("Blues_d", 3)
-		15:seaborn.GetColorRoot("Reds_d", 3)
+		13:seaborn.GetColorRoot("Greens_d", 3),
+		14:seaborn.GetColorRoot("Blues_d", 3),
+		15:seaborn.GetColorRoot("Reds_d", 3),
 	}
 
 	hists = {}
