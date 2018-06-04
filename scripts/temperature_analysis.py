@@ -8,7 +8,7 @@ ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramMan
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/PFGEnums.h\"")
 ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc530/libHCALPFGPFGAnalysis.so"))
 ROOT.gInterpreter.Declare("#include \"MyTools/RootUtils/interface/SeabornInterface.h\"")
-gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc491/libMyToolsRootUtils.so"))
+ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc491/libMyToolsRootUtils.so"))
 ROOT.gROOT.SetBatch(ROOT.kTRUE)
 ROOT.gStyle.SetOptStat(0)
 ROOT.gStyle.SetOptTitle(0)
