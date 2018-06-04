@@ -113,7 +113,7 @@ def make_plots(filename):
 	for run in runs:
 		hists[run] = {}
 		profs[run] = {}
-		c = TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
+		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
 		for rbx in rbxes:
 			hists[run][rbx] = f.Get("h_run{}sumq_vs_ls_RBX{}".format(run, rbx))
 			hists[run][rbx].GetXaxis().SetTimeDisplay(1)
