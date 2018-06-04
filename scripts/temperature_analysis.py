@@ -110,9 +110,11 @@ def make_plots(filename):
 
 	hists = {}
 	profs = {}
+	graphs = {}
 	for run in runs:
 		hists[run] = {}
 		profs[run] = {}
+		graphs[run] = {}
 		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
 		for rbx in rbxes:
 			hists[run][rbx] = f.Get("h_run{}sumq_vs_ls_RBX{}".format(run, rbx))
@@ -121,21 +123,34 @@ def make_plots(filename):
 				ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
 				timestr = datetime.datetime.utcfromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
 				print timestr
-				hists[run][rbx].GetXaxis().SetBinLabel(bin, timestr)
+				hists[run][rbx].GetXaxis().SetBinLabel(bin, ls_timestamps[run][ls])
 			profs[run][rbx] = hists[run][rbx].ProfileX()
-			profs[run][rbx].GetXaxis().SetTimeDisplay(1)
-			profs[run][rbx].GetXaxis().SetTimeFormat("%H:%M")
-			profs[run][rbx].SetMarkerStyle(20 + rbx - 13)
-			profs[run][rbx].SetMarkerColor(colors[rbx])
-			profs[run][rbx].SetLineColor(colors[rbx])
+
+			graphs[run][rbx] = TGraphErrors(profs[run][rbx].GetNbinsX())
+			for bin in xrange(1, profs[run][rbx].GetXaxis().GetNbins() + 1):
+				ls = int(profs[run][rbx].GetXaxis().GetBinCenter(bin))
+				ts_start = ls_timestamps[run][ls]
+				if ls+1 in ls_timestamps[run]:
+					ts_end = ls_timestamps[run][ls+1]
+				else:
+					ts_end = ts_start + 23.
+				ts = (ts_start + ts_end) / 2.
+				graphs[run][rbx].SetPoint(bin-1, ts, profs[run][rbx].GetBinContent(bin))
+				graphs[run][rbx].SetPointError(bin-1, (ts_start - ts_end) / 2., profs[run][rbx].GetBinError(bin))
+
+			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeDisplay(1)
+			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeFormat("%H:%M")
+			graphs[run][rbx].SetMarkerStyle(20 + rbx - 13)
+			graphs[run][rbx].SetMarkerColor(colors[rbx])
+			graphs[run][rbx].SetLineColor(colors[rbx])
 			if rbx == rbxes[0]:
-				profs[run][rbx].SetMinimum(540)
-				profs[run][rbx].SetMaximum(580)
-				profs[run][rbx].GetXaxis().SetTitle("Time (UTC)")
-				profs[run][rbx].GetYaxis().SetTitle("SumQ")
-				profs[run][rbx].Draw()
+				graphs[run][rbx].GetHistogram().SetMinimum(540)
+				graphs[run][rbx].GetHistogram().SetMaximum(580)
+				graphs[run][rbx].GetHistogram().GetXaxis().SetTitle("Time (UTC)")
+				graphs[run][rbx].GetHistogram().GetYaxis().SetTitle("SumQ")
+				graphs[run][rbx].Draw("ap")
 			else:
-				profs[run][rbx].Draw("same")
+				graphs[run][rbx].Draw("p")
 		c.SaveAs("/uscms/home/dryu/DQM/Studies/temperature/{}.pdf".format(c.GetName()))
 
 
