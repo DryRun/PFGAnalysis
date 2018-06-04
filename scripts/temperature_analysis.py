@@ -174,7 +174,7 @@ def make_plots(filename):
 			if rbx == rbxes[0]:
 				graphs_ls[run][rbx].GetHistogram().SetMinimum(540)
 				graphs_ls[run][rbx].GetHistogram().SetMaximum(580)
-				graphs_ls[run][rbx].GetHistogram().GetXaxis().SetTitle("Time (UTC)")
+				graphs_ls[run][rbx].GetHistogram().GetXaxis().SetTitle("LS")
 				graphs_ls[run][rbx].GetHistogram().GetYaxis().SetTitle("SumQ")
 				graphs_ls[run][rbx].Draw("ap")
 			else:
