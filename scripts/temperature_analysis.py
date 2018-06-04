@@ -124,6 +124,7 @@ def make_plots(filename):
 				hists[run][rbx].GetXaxis().SetBinLabel(bin, timestr)
 			profs[run][rbx] = hists[run][rbx].ProfileX()
 			profs[run][rbx].GetXaxis().SetTimeDisplay(1)
+			profs[run][rbx].GetXaxis().SetTimeFormat("%H:%M")
 			profs[run][rbx].SetMarkerStyle(20 + rbx - 13)
 			profs[run][rbx].SetMarkerColor(colors[rbx])
 			profs[run][rbx].SetLineColor(colors[rbx])
