@@ -141,6 +141,8 @@ def make_plots(filename):
 
 			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeDisplay(1)
 			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeFormat("%H:%M")
+			graphs[run][rbx].GetHistogram().GetXaxis().SetTimeOffset(0, "GMT")
+
 			graphs[run][rbx].SetMarkerStyle(20 + rbx - 13)
 			graphs[run][rbx].SetMarkerColor(colors[rbx])
 			graphs[run][rbx].SetLineColor(colors[rbx])
