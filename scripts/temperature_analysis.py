@@ -118,15 +118,15 @@ def make_plots(filename):
 		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
 		for rbx in rbxes:
 			hists[run][rbx] = f.Get("h_run{}sumq_vs_ls_RBX{}".format(run, rbx))
-			hists[run][rbx].GetXaxis().SetTimeDisplay(1)
-			for bin in xrange(1, hists[run][rbx].GetXaxis().GetNbins() + 1):
-				ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
-				timestr = datetime.datetime.utcfromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
-				print timestr
-				hists[run][rbx].GetXaxis().SetBinLabel(bin, ls_timestamps[run][ls])
+			#hists[run][rbx].GetXaxis().SetTimeDisplay(1)
+			#for bin in xrange(1, hists[run][rbx].GetXaxis().GetNbins() + 1):
+			#	#ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
+			#	#timestr = datetime.datetime.utcfromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
+			#	#print timestr
+			#	#hists[run][rbx].GetXaxis().SetBinLabel(bin, ls_timestamps[run][ls])
 			profs[run][rbx] = hists[run][rbx].ProfileX()
 
-			graphs[run][rbx] = TGraphErrors(profs[run][rbx].GetNbinsX())
+			graphs[run][rbx] = ROOT.TGraphErrors(profs[run][rbx].GetNbinsX())
 			for bin in xrange(1, profs[run][rbx].GetXaxis().GetNbins() + 1):
 				ls = int(profs[run][rbx].GetXaxis().GetBinCenter(bin))
 				ts_start = ls_timestamps[run][ls]
