@@ -135,6 +135,7 @@ def make_plots(filename):
 				else:
 					ts_end = ts_start + 23.
 				ts = (ts_start + ts_end) / 2.
+				print ts
 				graphs[run][rbx].SetPoint(bin-1, ts, profs[run][rbx].GetBinContent(bin))
 				graphs[run][rbx].SetPointError(bin-1, (ts_start - ts_end) / 2., profs[run][rbx].GetBinError(bin))
 
