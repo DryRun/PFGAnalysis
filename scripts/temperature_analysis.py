@@ -116,6 +116,9 @@ def make_plots(filename):
 		profs[run] = {}
 		graphs[run] = {}
 		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
+		l = TLegend(0.6, 0.7, 0.8, 0.88)
+		l.SetFillStyle(0)
+		l.SetBorderSize(0)
 		for rbx in rbxes:
 			hists[run][rbx] = f.Get("h_run{}sumq_vs_ls_RBX{}".format(run, rbx))
 			#hists[run][rbx].GetXaxis().SetTimeDisplay(1)
@@ -146,6 +149,7 @@ def make_plots(filename):
 			graphs[run][rbx].SetMarkerStyle(20 + rbx - 13)
 			graphs[run][rbx].SetMarkerColor(colors[rbx])
 			graphs[run][rbx].SetLineColor(colors[rbx])
+			l.AddEntry(graphs[run][rbx], "RBX {}".format(rbx), "lp")
 			if rbx == rbxes[0]:
 				graphs[run][rbx].GetHistogram().SetMinimum(540)
 				graphs[run][rbx].GetHistogram().SetMaximum(580)
@@ -154,6 +158,7 @@ def make_plots(filename):
 				graphs[run][rbx].Draw("ap")
 			else:
 				graphs[run][rbx].Draw("p")
+		l.Draw()
 		c.SaveAs("/uscms/home/dryu/DQM/Studies/temperature/{}.pdf".format(c.GetName()))
 
 
