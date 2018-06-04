@@ -7,9 +7,13 @@ from math import ceil, floor
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/HistogramManager.h\"")
 ROOT.gInterpreter.Declare("#include \"HCALPFG/PFGAnalysis/interface/PFGEnums.h\"")
 ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc530/libHCALPFGPFGAnalysis.so"))
-ROOT.gROOT.SetBatch(ROOT.kTRUE);
+ROOT.gInterpreter.Declare("#include \"MyTools/RootUtils/interface/SeabornInterface.h\"")
+gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/slc6_amd64_gcc491/libMyToolsRootUtils.so"))
+ROOT.gROOT.SetBatch(ROOT.kTRUE)
 ROOT.gStyle.SetOptStat(0)
 ROOT.gStyle.SetOptTitle(0)
+seaborn = ROOT.Root.SeabornInterface()
+seaborn.Initialize()
 
 class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 	def __init__(self):
@@ -90,31 +94,40 @@ class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 			histogram_manager.SaveAll(f_out)
 
 def make_plots(filename):
+	import datetime
+	from ls_timestamps import ls_timestamps
 	f = ROOT.TFile(filename)
-	dir_list = ROOT.gDirectory.GetListOfKeys()
-	for key in dir_list:
-		if key.GetClassName() == "TH2F":
-			hist = key.ReadObj()
-			hist_name = hist.GetName()
-			if "adcTotal" in hist_name:
-				canvas_name = "c_" + hist_name[2:]
-				c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
-				c.SetLogz()
-				hist.SetMaximum(128*10);
-				hist.Draw("colz")
-				c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
+	rbxes = [13, 14, 15]
+	runs = [315689, 315690]
+	colors = {
+		13:seaborn.GetColorRoot("Greens_d", 3)
+		14:seaborn.GetColorRoot("Blues_d", 3)
+		15:seaborn.GetColorRoot("Reds_d", 3)
+	}
 
-		elif key.GetClassName() == "TH1F":
-			hist = key.ReadObj()
-			hist_name = hist.GetName()
-			if "adc_ts" in hist_name:
-				canvas_name = "c_" + hist_name[2:]
-				c = ROOT.TCanvas(canvas_name, canvas_name, 800, 600)
-				hist.SetMaximum(128);
-				hist.GetYaxis().SetTitle("ADC")
-				hist.Draw()
-				c.SaveAs("/home/dryu/HCAL/data/HCALPFG/LaserTag/figures/{}.pdf".format(c.GetName()))
-
+	hists = {}
+	profs = {}
+	for run in runs:
+		hists[run] = {}
+		profs[run] = {}
+		c = TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
+		for rbx in rbxes:
+			hists[run][rbx] = f.Get("h_run{}sumq_vs_ls_RBX{}".format(run, rbx))
+			hists[run][rbx].GetXaxis().SetTimeDisplay(1)
+			for bin in xrange(1, hists[run][rbx].GetXaxis().GetNbins() + 1):
+				ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
+				timestr = datetime.datetime.fromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
+				hists[run][rbx].GetXaxis().SetBinLabel(timestr)
+			profs[run][rbx] = hists[run][rbx].ProfileY()
+			profs[run][rbx].GetXaxis().SetTimeDisplay(1)
+			profs[run][rbx].SetMarkerStyle(20 + rbx - 13)
+			profs[run][rbx].SetMarkerColor(colors[rbx])
+			profs[run][rbx].SetLineColor(colors[rbx])
+			if rbx == rbxes[0]:
+				profs[run][rbx].Draw()
+			else:
+				profs[run][rbx].Draw("same")
+		c.SaveAs("/uscms/home/dryu/DQM/Studies/temperature/{}.pdf".format(c.GetName()))
 
 
 if __name__ == "__main__":
@@ -175,7 +188,7 @@ if __name__ == "__main__":
 		job_script.write("echo \"Input files:\"\n")
 		job_script.write("echo $this_input_files_string\n")
 
-		job_command = "python $CMSSW_BASE/src/HCALPFG/PFGAnalysis/scripts/temperature_analysis.py --hist --files $this_input_files_string --output_name temperature_csubjob$1"
+		job_command = "python $CMSSW_BASE/src/HCALPFG/PFGAnalysis/scripts/temperature_analysis.py --hist --files $this_input_files_string --output_name temperature_csubjob$1.root"
 
 		job_command += " 2>&1\n"
 		job_script.write(job_command)
@@ -231,4 +244,4 @@ if __name__ == "__main__":
 		
 
 	if args.plots:
-		make_plots("/home/dryu/HCAL/data/HCALPFG/LaserTag/histograms.root")
+		make_plots("/uscms/home/dryu/DQM/Studies/temperature/temperature_histograms.root")
