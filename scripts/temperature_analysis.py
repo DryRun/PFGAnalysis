@@ -120,7 +120,7 @@ def make_plots(filename):
 			for bin in xrange(1, hists[run][rbx].GetXaxis().GetNbins() + 1):
 				ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
 				timestr = datetime.datetime.fromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
-				hists[run][rbx].GetXaxis().SetBinLabel(timestr)
+				hists[run][rbx].GetXaxis().SetBinLabel(bin, timestr)
 			profs[run][rbx] = hists[run][rbx].ProfileY()
 			profs[run][rbx].GetXaxis().SetTimeDisplay(1)
 			profs[run][rbx].SetMarkerStyle(20 + rbx - 13)
