@@ -116,7 +116,7 @@ def make_plots(filename):
 		profs[run] = {}
 		graphs[run] = {}
 		c = ROOT.TCanvas("c_sumq_vs_ls_{}".format(run), "SumQ vs LS", 800, 600)
-		l = TLegend(0.6, 0.7, 0.8, 0.88)
+		l = ROOT.TLegend(0.6, 0.7, 0.8, 0.88)
 		l.SetFillStyle(0)
 		l.SetBorderSize(0)
 		for rbx in rbxes:
@@ -138,7 +138,6 @@ def make_plots(filename):
 				else:
 					ts_end = ts_start + 23.
 				ts = (ts_start + ts_end) / 2.
-				print ts
 				graphs[run][rbx].SetPoint(bin-1, ts, profs[run][rbx].GetBinContent(bin))
 				graphs[run][rbx].SetPointError(bin-1, (ts_start - ts_end) / 2., profs[run][rbx].GetBinError(bin))
 
