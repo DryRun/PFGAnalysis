@@ -10,7 +10,13 @@ ROOT.gSystem.Load(os.path.expandvars("$CMSSW_BASE/lib/$SCRAM_ARCH/libHCALPFGPFGA
 ROOT.gROOT.SetBatch(ROOT.kTRUE)
 ROOT.gStyle.SetOptStat(0)
 ROOT.gStyle.SetOptTitle(0)
-import MyTools.RootUtils.seaborn_colors
+from MyTools.RootUtils.seaborn_colors import SeabornColors
+seaborn_colors = SeabornColors()
+seaborn_colors.load_palette("Blues_d", palette_dir="./python/seaborn_palettes")
+seaborn_colors.load_palette("Reds_d", palette_dir="./python/seaborn_palettes")
+seaborn_colors.load_palette("Oranges_d", palette_dir="./python/seaborn_palettes")
+seaborn_colors.load_palette("Greens_d", palette_dir="./python/seaborn_palettes")
+seaborn_colors.load_palette("Purples_d", palette_dir="./python/seaborn_palettes")
 
 class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 	def __init__(self):
