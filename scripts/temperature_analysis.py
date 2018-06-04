@@ -116,6 +116,7 @@ def make_plots(filename):
 		hists[run] = {}
 		profs[run] = {}
 		graphs[run] = {}
+		graphs_ls[run] = {}
 		c = ROOT.TCanvas("c_sumq_vs_time_{}".format(run), "SumQ vs LS", 800, 600)
 		l = ROOT.TLegend(0.6, 0.7, 0.8, 0.88)
 		l.SetFillStyle(0)
