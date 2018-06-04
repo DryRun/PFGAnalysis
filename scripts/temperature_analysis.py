@@ -18,6 +18,9 @@ seaborn_colors.load_palette("Oranges_d", palette_dir=os.path.expandvars("$CMSSW_
 seaborn_colors.load_palette("Greens_d", palette_dir=os.path.expandvars("$CMSSW_BASE/src/MyTools/RootUtils/python/seaborn_palettes"))
 seaborn_colors.load_palette("Purples_d", palette_dir=os.path.expandvars("$CMSSW_BASE/src/MyTools/RootUtils/python/seaborn_palettes"))
 
+from dateutil import tz
+utc_zone = tz.gettz('UTC')
+
 class TemperatureAnalysis(hcal_analysis.HcalAnalysis):
 	def __init__(self):
 		super(TemperatureAnalysis, self).__init__()
@@ -119,7 +122,7 @@ def make_plots(filename):
 			hists[run][rbx].GetXaxis().SetTimeDisplay(1)
 			for bin in xrange(1, hists[run][rbx].GetXaxis().GetNbins() + 1):
 				ls = hists[run][rbx].GetXaxis().GetBinCenter(bin)
-				timestr = datetime.datetime.fromtimestamp(ls_timestamps[run][ls]).strftime('%H:%M:%S')
+				timestr = datetime.datetime.fromtimestamp(ls_timestamps[run][ls], tzinfo=utc_zone).strftime('%H:%M:%S')
 				hists[run][rbx].GetXaxis().SetBinLabel(bin, timestr)
 			profs[run][rbx] = hists[run][rbx].ProfileX()
 			profs[run][rbx].GetXaxis().SetTimeDisplay(1)
@@ -128,7 +131,9 @@ def make_plots(filename):
 			profs[run][rbx].SetLineColor(colors[rbx])
 			if rbx == rbxes[0]:
 				profs[run][rbx].SetMinimum(540)
-				profs[run][rbx].SetMaximum(600)
+				profs[run][rbx].SetMaximum(580)
+				profs[run][rbx].GetXaxis().SetTitle("Time (UTC)")
+				profs[run][rbx].GetYaxis().SetTitle("SumQ")
 				profs[run][rbx].Draw()
 			else:
 				profs[run][rbx].Draw("same")
