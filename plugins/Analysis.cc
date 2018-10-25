@@ -1,4 +1,4 @@
-#include "HCALPFG/Analysis/interface/Analysis.h"
+#include "HCALPFG/PFGAnalysis/interface/Analysis.h"
 
 #include "FWCore/Framework/interface/ConstProductRegistry.h"
 #include "FWCore/Framework/interface/ProductSelector.h"
